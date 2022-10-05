@@ -1,0 +1,91 @@
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+
+class About extends Component {
+    
+    render() {
+
+
+        const AboutHeader = () => {
+            return (
+                <div className='about-header d-flex justify-content-center align-items-center my-3'>
+                    <div className='row text-center text-white'>
+                    <div className='col'>
+                        <h1 className='font home-title'>Layerlabs</h1>
+                        <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        const AboutPage = () => {
+            return (
+                <>
+                    <div className='col-12 col-md-6'>
+                        <h1 className='font'>About</h1>
+                        <hr></hr>
+                        <p>Hi, my name is Sean Hackett and welcome to my website Layerlabs. There are many layers to consider as a Full
+                            Stack Web Developer from writing the back-end code to building the framework of the application, planning and designing the front-end to full deployment of the website.
+                        </p>
+                        <p>As an individual I am very creative yet also curious.
+                            When I began my journey into web development that curiosity to discover and learn all aspects of the development proccess in building a
+                            full scale web application was very evident. I created this
+                            website with my love for web development specifically creation & design.
+                        </p>
+                        <NavLink to='/personal-portfolio' className='btn btn-outline-dark my-4'>Personal Portfolio</NavLink>
+                    </div>
+                    <div className='col-12 col-md-6'>
+                        <img src='assets/images/logo.png'/>
+                    </div>
+            </>
+            );
+        }
+
+        const AboutMore = () => {
+            return (
+                <div className='col-12 text-center text-white py-5'>
+                    <h1 className='font pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
+                    <p className='pt-5'>At Layerlabs I want to bring my own touch
+                        giving you the best and most responsive
+                        website design possible. What you want from a website can vary yet
+                        what matters most is the experience yourself and your users have. A clean, cutting edge design
+                        is what we aim to achieve. Whether you're looking for a personal website, portfolio, or business I've got it handled. Every detail matters, from layout and design to
+                        color palettes, security and much more I am with you every step of the way. Check out the discover page to get inspired or view my previous work for
+                        reference.
+                    </p>
+                </div>
+            )
+        }
+
+        return (
+            <div className='container-fluid'>
+                <AboutHeader />
+                <div className='row py-5'>
+                    <div className='col-12 py-5'>
+                        <h3 className='font-two text-center'>
+                            <span className='about-tag'>PLAN 
+                            <span className='fa fa-chevron-right ml-4'></span> VISUALIZE  
+                            <span className='fa fa-chevron-right ml-4'></span> DESIGN</span>
+                        </h3>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center py-3">
+                        <img class="img-fluid" src="assets/images/logo.png" alt="Layerlabs logo" width='60' height='60' />
+                    </div>
+                </div>
+                <div className='container'>
+                    <div className='row py-5'>
+                        <AboutPage />
+                    </div>
+                </div>
+                <div className='container-fluid'>
+                <div className='row dark-bg py-5'>
+                        <AboutMore />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default About;
