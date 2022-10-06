@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { RenderInstagram } from '../functionalComponents/functionalComponents';
 
 class About extends Component {
     
@@ -33,7 +34,7 @@ class About extends Component {
                             full scale web application was very evident. I created this
                             website with my love for web development specifically creation & design.
                         </p>
-                        <NavLink to='/personal-portfolio' className='btn btn-outline-dark my-4'>Personal Portfolio</NavLink>
+                        <NavLink to='/about/personal-profile' className='btn btn-outline-dark my-4'>Personal Portfolio</NavLink>
                     </div>
                     <div className='col-12 col-md-6'>
                         <img src='assets/images/logo.png'/>
@@ -46,7 +47,7 @@ class About extends Component {
             return (
                 <div className='col-12 text-center text-white py-5'>
                     <h1 className='font pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
-                    <p className='pt-5'>At Layerlabs I want to bring my own touch
+                    <p className='large-text pt-5'>At Layerlabs I want to bring my own touch
                         giving you the best and most responsive
                         website design possible. What you want from a website can vary yet
                         what matters most is the experience yourself and your users have. A clean, cutting edge design
@@ -79,9 +80,12 @@ class About extends Component {
                     </div>
                 </div>
                 <div className='container-fluid'>
-                <div className='row dark-bg py-5'>
+                    <div className='row dark-bg py-5'>
                         <AboutMore />
                     </div>
+                </div>
+                <div className='container py-5'>
+                    <RenderInstagram />
                 </div>
             </div>
         );

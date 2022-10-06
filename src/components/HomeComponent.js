@@ -5,6 +5,7 @@ import { Card, CardBody, CardImg, Carousel, CarouselItem,
     } 
 from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
+import { RenderContact } from '../functionalComponents/functionalComponents';
 
 const items = [
     {
@@ -102,7 +103,7 @@ class Home extends Component {
                         <div className='col-12'>
                             <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
                             <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
-                            <NavLink className='home-header-btn btn btn-light font'to='/services'>Services <span className='fa fa-chevron-right'></span></NavLink>
+                            <NavLink className='home-header-btn btn btn-light font-two'to='/services'>Services <span className='fa fa-chevron-right'></span></NavLink>
                         </div>
                         <div className='col-12 pt-5'>
                             <a class="fa-brands fa-medium fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
@@ -117,7 +118,7 @@ class Home extends Component {
         const RenderCardOne = () => {
             return (
                 <>
-                <Card className='home-card text-center'>
+                <Card className='home-card text-center py-4'>
                     <CardBody>
                         <span className='fa fa-panorama fa-lg'></span>
                         <h2 className='font-two py-3'>Plan</h2>
@@ -130,7 +131,7 @@ class Home extends Component {
         const RenderCardTwo = () => {
             return (
                 <>
-                <Card className='home-card text-center'>
+                <Card className='home-card text-center py-4'>
                     <CardBody>
                         <span className='fa fa-wand-magic-sparkles fa-lg'></span>
                         <h2 className='font-two py-3'>Visualize</h2>
@@ -143,7 +144,7 @@ class Home extends Component {
         const RenderCardThree = () => {
             return (
                 <>
-                <Card className='home-card text-center'>
+                <Card className='home-card text-center py-4'>
                     <CardBody>
                         <span className='fa fa-crop-simple fa-lg'></span>
                         <h2 className='font-two py-3'>Design</h2>
@@ -156,7 +157,7 @@ class Home extends Component {
 
         const RenderWork = () => {
             return(
-                <>  <div className='row align-items-center py-5'>
+                <>  <div className='row align-items-center pt-5'>
                         <div className='col-12 col-md-5 py-5'>
                             <h2 className="font py-5">Shirley's Art Studio</h2>
                             <p>
@@ -166,19 +167,17 @@ class Home extends Component {
                                 You can easily browse the gallery, find a painting you like view and buy. 
                                 The checkout experience is quick and easy, make a purchase within seconds.
                             </p>
-                            <NavLink to='/shirleysStudio' className='btn btn-outline-dark'>View</NavLink>
+                            <NavLink to='/projects/shirleys-studio' className='btn btn-outline-dark'>View</NavLink>
                             <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
                         </div>
                         <div className='col-12 col-md-5 offset-md-2'>
-                            <Card>
-                                <CardImg src='assets/images/logo.png' />
-                            </Card>
+                            <img className='discover-img' src='assets/images/shirley-studio.png' />
 
                         </div>
                     </div>
                     <div className='row align-items-center py-4'>
                         <div className='col-12 col-md-5 offset-md-2 order-md-2 py-5'>
-                            <h2 className="font py-5">Shirley's Art Studio</h2>
+                            <h2 className="font py-5">Vacay - Cottage Rentals</h2>
                             <p>
                                 A small business website built for an artist to showcase 
                                 their work and passion for art. This website features a built in store 
@@ -186,18 +185,16 @@ class Home extends Component {
                                 You can easily browse the gallery, find a painting you like view and buy. 
                                 The checkout experience is quick and easy, make a purchase within seconds.
                             </p>
-                            <NavLink to='/shirleysStudio' className='btn btn-outline-dark'>View</NavLink>
+                            <NavLink to='/projects/vacay' className='btn btn-outline-dark'>View</NavLink>
                             <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
                         </div>
                         <div className='col-12 col-md-5 order-md-1'>
-                            <Card>
-                                <CardImg src='assets/images/logo.png' />
-                            </Card>
+                            <img className='discover-img' src='assets/images/vacay.png' />
 
                         </div>
                     </div>
-                    <div className='col-12 text-center pt-5'>
-                        <NavLink to='/' className='btn btn-outline-dark'>View All</NavLink>
+                    <div className='col-12 text-center'>
+                        <NavLink to='/projects' className='btn btn-outline-dark'>View All</NavLink>
                     </div>
                 </>
             );
@@ -246,9 +243,16 @@ class Home extends Component {
                             </Carousel>
                         </div>
                     </div>
-                    <h2 className='font text-center pt-5'>Check out some of my work.</h2>
+                    <h2 className='font text-center pt-5'>Check out some of my work <span className='fa fa-chevron-down'></span></h2>
                     <div className='row py-5'>
                         <RenderWork />
+                    </div>
+                </div>
+                <div className='container-fluid'>
+                    <div className='row mb-4'>
+                        <div className='col-12'>
+                            <RenderContact />
+                        </div>
                     </div>
                 </div>
             </div>

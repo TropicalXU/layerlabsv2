@@ -53,10 +53,10 @@ class Footer extends Component {
                     <p>© 2022 Layerlabs. All rights reserved.</p>
                 </div>
                 <div className='col col-sm-3'>
-                    <p>Terms & Conditions</p>
+                    <NavLink className='link' to='termsAndConditions'>Terms & Conditions</NavLink>
                 </div>
                 <div className='col col-sm-3'>
-                    <p>Privacy Policy</p>
+                    <NavLink className='link' to='privacyPolicy'>Privacy Policy</NavLink>
                 </div>
             </div>
         </div>
