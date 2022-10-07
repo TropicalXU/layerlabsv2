@@ -4,7 +4,7 @@ import { RenderServicesAd } from "../functionalComponents/functionalComponents";
 const Vacay = () => {
     return (
         <>
-            <div className='row-shirleys-studio'>
+            <div className='row-layerlabs'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
                         <h1 className='font text-white shirleys-studio-header'>Vacay</h1>
@@ -31,11 +31,11 @@ const Vacay = () => {
                                     implemented a location’s feature that will populate and filter each destination based on its location. 
                                     The goal of this application is to provide a seamless and fluid experience for the user.
                                 </p>
-                                <a href="/" className="btn btn-outline-dark">Visit Site</a>
+                                <a href="https://vacay.layerlabs.io/" className="btn btn-outline-dark">Visit Site</a>
                                 <a href="/"><span className="fa fa-github fa-lg ml-4"></span></a>
                             </div>
                             <div className='col-12 col-md-6 pt-5'>
-                                <img className='discover-img' src='assets/images/vacay.png' />
+                                <img className='discover-img' src='/assets/images/vacay.png' />
                             </div>
                         </div>
                     </div>

@@ -15,28 +15,31 @@ class Footer extends Component {
                     </div>
                 </div>
                 <div className='col col-sm-2'>
-                    <h6 className='font'>Home</h6>
+                    <h6 className='font'>Layerlabs</h6>
                     <ul className='list-unstyled'>
                         <li><NavLink className='link' to='/home'>Home</NavLink></li>
                         <li><NavLink className='link' to='/about'>About</NavLink></li>
-                        <li><NavLink className='link' to='/work'>Work</NavLink></li>
+                        <li><NavLink className='link' to='/about/personal-profile'>Personal Profile</NavLink></li>
                         <li><NavLink className='link' to='/contact'>Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className='col col-sm-2'>
                     <h6 className='font'>Services</h6>
                     <ul className='list-unstyled'>
-                        <li><NavLink className='link' to='/locations/ontario'>Discover</NavLink></li>
-                        <li><NavLink className='link' to='/locations/british-columbia'>Services</NavLink></li>
-                        <li><NavLink className='link' to='/locations/alberta'>Personal</NavLink></li>
-                        <li><NavLink className='link' to='/locations/quebec'>Business</NavLink></li>
+                        <li><NavLink className='link' to='/services'>Services</NavLink></li>
+                        <li><NavLink className='link' to='/locations/british-columbia'>Discover</NavLink></li>
+                        <li><NavLink className='link' to='/locations/alberta'>Custom Package</NavLink></li>
+                        <li><NavLink className='link' to='/locations/quebec'>Custom + Package</NavLink></li>
+                        <li><NavLink className='link' to='/locations/quebec'>Busines + Package</NavLink></li>
                     </ul>
                 </div>
                 <div className='col col-sm-2'>
-                    <h6 className='font'>Legal</h6>
+                    <h6 className='font'>Work</h6>
                     <ul className='list-unstyled'>
-                        <li><NavLink className='link' to='/termsAndConditions'>Terms & Conditions</NavLink></li>
-                        <li><NavLink className='link' to='/privacyPolicy'>Privacy Policy</NavLink></li>
+                        <li><NavLink className='link' to='/about'>Projects</NavLink></li>
+                        <li><NavLink className='link' to='/personal-profile'>Shirleys Studio</NavLink></li>
+                        <li><NavLink className='link' to='/personal-profile'>Vacay</NavLink></li>
+                        <li><NavLink className='link' to='/personal-profile'>Viewpoint Ireland</NavLink></li>
                     </ul>
                 </div>
                 <div className='col col-sm-2 align-items-center'>

@@ -91,7 +91,7 @@ export const RenderServicesAd = () => {
     return (
         <div className='row dark-bg text-center py-5'>
             <div className='col-12 col-md-2 align-self-center'>
-                <img src='assets/images/package-box.png' width='200' height='200' />
+                <img src='/assets/images/package-box.png' width='200' height='200' />
             </div>
             <div className='col-12 col-md-8'>
                 <h2 className='font-two text-white py-5'>Interested in your own personal or business website?</h2>

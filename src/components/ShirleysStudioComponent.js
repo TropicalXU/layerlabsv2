@@ -4,7 +4,7 @@ import { RenderServicesAd } from '../functionalComponents/functionalComponents';
 const ShirleysStudio = () => {
     return (
         <>
-            <div className='row-shirleys-studio'>
+            <div className='row-layerlabs'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
                         <h1 className='font text-white shirleys-studio-header'>Shirleys Art Studio</h1>
@@ -31,9 +31,11 @@ const ShirleysStudio = () => {
                                     the end result. Having her own website to showcase and sell her artwork allows Shirley a platform to share her 
                                     work beyond the gallery and reach even more enthusiastic art lovers who can now get in touch from anywhere in the world.
                                 </p>
+                                <a href='https://shirleysartstudio.layerlabs.io/' className='btn btn-outline-dark'>Visit Site</a>
+                                <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-6 pt-5'>
-                                <img className='discover-img' src='assets/images/shirley-studio.png' />
+                                <img className='discover-img' src='/assets/images/shirley-studio.png' />
                             </div>
                         </div>
                     </div>

@@ -70,9 +70,9 @@ class About extends Component {
                             <span className='fa fa-chevron-right ml-4'></span> DESIGN</span>
                         </h3>
                     </div>
-                    <div class="col-12 d-flex justify-content-center py-3">
+                    {/* <div class="col-12 d-flex justify-content-center py-3">
                         <img class="img-fluid" src="assets/images/logo.png" alt="Layerlabs logo" width='60' height='60' />
-                    </div>
+                    </div> */}
                 </div>
                 <div className='container'>
                     <div className='row py-5'>

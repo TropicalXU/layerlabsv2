@@ -18,12 +18,23 @@ class Services extends Component {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-4'>
-                            <CardBody>
-                                <h3 className='font'>Custom</h3>
+                        <Card className='package-card py-2'>
+                            <CardBody className='font-two'>
+                                <h2>Custom</h2>
+                                <p>Standard custom features</p>
                                 <hr></hr>
-                                <CardText>sample</CardText>
-                                <NavLink to='/services/custom-package' className='btn btn-primary'>Read More</NavLink>
+                                <p>Choose from...</p>
+                                <div className='cards-bg py-2'>
+                                    <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 1 Page Application</p>
+                                    <h5>$250</h5>
+                                    <hr></hr>
+                                    <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</p>
+                                    <h5>$550</h5>
+                                    <hr></hr>
+                                    <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</p> 
+                                    <h5>$799</h5> 
+                                </div>
+                                <NavLink to='/services/custom-package' className='btn btn-black my-3'>More Detials</NavLink>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -38,12 +49,23 @@ class Services extends Component {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-4'>
-                            <CardBody>
-                                <h3 className='font'>Custom <span className='fa fa-plus'></span></h3>
+                        <Card className='package-card py-2'>
+                            <CardBody className='font-two'>
+                                <h2>Custom <span className='fa fa-plus'></span></h2>
+                                <p>Includes additional functional features</p>
                                 <hr></hr>
-                                <CardText>sample</CardText>
-                                <NavLink to='/services/custom-plus-package' className='btn btn-primary'>Read More</NavLink>
+                                <p>Choose from...</p>
+                                <div className='cards-bg py-2'>
+                                    <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</p>
+                                    <h5>$650</h5>
+                                    <hr></hr>
+                                    <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</p>
+                                    <h5>$899</h5>
+                                    <hr></hr>
+                                    <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 7 Page Application</p>
+                                    <h5>$1099</h5>
+                                </div>
+                                <NavLink to='/services/custom-plus-package' className='btn btn-black my-3'>More Details</NavLink>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -59,11 +81,11 @@ class Services extends Component {
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
                         <Card className='package-card py-4'>
-                            <CardBody>
-                                <h3 className='font text-black'>Business <span className='fa fa-plus'></span></h3>
+                            <CardBody className='font-two'>
+                                <h2 className='text-black'>Business <span className='fa fa-plus'></span></h2>
                                 <hr></hr>
                                 <CardText>sample</CardText>
-                                <NavLink to='/services/business-plus-package' className='btn btn-primary'>Read More</NavLink>
+                                <NavLink to='/services/business-plus-package' className='btn btn-black'>More Details</NavLink>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -82,7 +104,6 @@ class Services extends Component {
                                     <li>Create a roadmap</li>
                                     <li>Design a schedule</li>
                                     <li>Gather material</li>
-                                    <li>Establish your brand</li>
                                     <li>Make a deadline</li>
                                 </ul>
                             </CardBody>
@@ -94,8 +115,8 @@ class Services extends Component {
                                 <h3 className='font text-center py-3'>Design <span className="fa-solid fa-object-ungroup fa-lg px-2"></span></h3>
                                 <ul>
                                     <li>Establish a theme</li>
-                                    <li>Choosing color palettes</li>
-                                    <li>Branding design</li>
+                                    <li>Choose your color palettes</li>
+                                    <li>Branding & design</li>
                                     <li>Mapping out the responsive design</li>
                                 </ul>
                             </CardBody>

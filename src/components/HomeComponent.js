@@ -85,7 +85,7 @@ class Home extends Component {
                         <Card className='carousel-card'>
                             <CardBody>
                                 <h2 className='text-center font'>{item.header}</h2>
-                                <p className='text-center'>{item.caption}</p>
+                                <p className='text-center large-text'>{item.caption}</p>
                             </CardBody>
                         </Card>
                         </div>
@@ -103,7 +103,7 @@ class Home extends Component {
                         <div className='col-12'>
                             <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
                             <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
-                            <NavLink className='home-header-btn btn btn-light font-two'to='/services'>Services <span className='fa fa-chevron-right'></span></NavLink>
+                            <NavLink className='home-header-btn btn btn-black font-two px-4'to='/services'>Services <span className='fa fa-chevron-right'></span></NavLink>
                         </div>
                         <div className='col-12 pt-5'>
                             <a class="fa-brands fa-medium fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
@@ -167,12 +167,11 @@ class Home extends Component {
                                 You can easily browse the gallery, find a painting you like view and buy. 
                                 The checkout experience is quick and easy, make a purchase within seconds.
                             </p>
-                            <NavLink to='/projects/shirleys-studio' className='btn btn-outline-dark'>View</NavLink>
+                            <NavLink to='/projects/shirleys-studio' className='btn btn-outline-dark my-3'>View</NavLink>
                             <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
                         </div>
                         <div className='col-12 col-md-5 offset-md-2'>
                             <img className='discover-img' src='assets/images/shirley-studio.png' />
-
                         </div>
                     </div>
                     <div className='row align-items-center py-4'>
@@ -185,7 +184,7 @@ class Home extends Component {
                                 You can easily browse the gallery, find a painting you like view and buy. 
                                 The checkout experience is quick and easy, make a purchase within seconds.
                             </p>
-                            <NavLink to='/projects/vacay' className='btn btn-outline-dark'>View</NavLink>
+                            <NavLink to='/projects/vacay' className='btn btn-outline-dark my-3'>View</NavLink>
                             <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
                         </div>
                         <div className='col-12 col-md-5 order-md-1'>
@@ -232,6 +231,8 @@ class Home extends Component {
                             </FadeTransform>
                         </div>
                     </div>
+                </div>
+                <div className='container-fluid'>
                     <div className='row py-5'>
                         <div className='col-12'>
                             <Carousel className='carousel-content'
@@ -240,9 +241,13 @@ class Home extends Component {
                                 previous={this.previous}
                             >
                                 {slides}
+                                <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+                                <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
                             </Carousel>
                         </div>
-                    </div>
+                    </div>`
+                </div>
+                <div className='container'>
                     <h2 className='font text-center pt-5'>Check out some of my work <span className='fa fa-chevron-down'></span></h2>
                     <div className='row py-5'>
                         <RenderWork />

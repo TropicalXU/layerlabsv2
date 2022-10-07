@@ -8,8 +8,9 @@ class Contact extends Component {
         const RenderContactForm = () => {
             return (
                 <div className='container'>
-                    <div className='row py-5'>
+                    <div className='row align-items-center py-5'>
                     <div className='col-12 col-md-6'>
+                        <h1 className='font-two text-white'>Interested in your own personal or business website?</h1>
                     </div>
                     <div className='col-12 col-md-6'>
                         <Card className='contact-card'>
@@ -40,7 +41,7 @@ class Contact extends Component {
                                             rows='6'
                                         />
                                     </FormGroup>
-                                    <Button type='submit' className='btn btn-primary'>Submit</Button>
+                                    <Button type='submit' className='btn btn-black px-4'>Submit</Button>
                                 </Form>
                             </CardBody>
                         </Card>
