@@ -48,15 +48,15 @@ class Header extends Component {
                             <Nav navbar className='ml-auto'>
                                 <UncontrolledDropdown nav>
                                     <DropdownToggle nav className='font'>Info<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>
-                                    <DropdownMenu className='drop-menu' end>
+                                    <DropdownMenu className='drop-menu mt-2' top>
                                         <DropdownItem className='drop-item'>
-                                            <NavLink to='/about'><span className='fa fa-info mr-2'></span>About</NavLink>
+                                            <NavLink to='/about' className='font-two py-2'><span className='fa fa-info mr-2'></span>About</NavLink>
                                         </DropdownItem>
                                         <DropdownItem className='drop-item'>
-                                            <NavLink to='/projects'><span className='fa fa-folder mr-2'></span>Work</NavLink>
+                                            <NavLink to='/projects' className='font-two'><span className='fa fa-folder mr-2'></span>Work</NavLink>
                                         </DropdownItem>
                                         <DropdownItem className='drop-item'>
-                                            <NavLink to='/about/personal-profile'><span className='fa fa-user mr-2'></span>Personal Profile</NavLink>
+                                            <NavLink to='/about/personal-profile' className='font-two py-2'><span className='fa fa-user mr-2'></span>Personal Profile</NavLink>
                                         </DropdownItem>
                                     </DropdownMenu>
                                 </UncontrolledDropdown>

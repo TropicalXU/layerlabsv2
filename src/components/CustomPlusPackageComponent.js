@@ -11,7 +11,7 @@ const CustomPlusPackage = () => {
                     <div className='breadcrumb'>
                         <BreadcrumbItem>
                             <NavLink className='breadcrumb-link' to='/services'>
-                                <span className='fa fa-chevron-left'></span> Services
+                                <span className='fa fa-chevron-left'></span> <span className='b-link'>Services</span>
                             </NavLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem active className='text-white'>Custom <span className='fa fa-plus'></span>

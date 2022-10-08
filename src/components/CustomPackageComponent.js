@@ -9,8 +9,8 @@ const CustomPackage = () => {
                 <div className='row py-3'>
                     <div className='breadcrumb'>
                         <BreadcrumbItem>
-                            <NavLink className='breadcrumb-link' to='/services'>
-                                <span className='fa fa-chevron-left'></span> Services
+                            <NavLink className='breadcrumb-link text-white' to='/services'>
+                                <span className='fa fa-chevron-left'></span> <span className='b-link'>Services</span>
                             </NavLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem active className='text-white'>Custom

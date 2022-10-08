@@ -1,3 +1,47 @@
+@media (max-width: 360px) {
+  .tabs span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 290px) {
+  .tabs .btn-services-tab {
+    font-size: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {width:100%;  margin: 0 auto; }
+  .home-header h1 {
+    font-size: 38px;
+  }
+  .home-header h3 {
+    font-size: 20px;
+  }
+  .discover-page p {
+    font-size: 15px;
+  }
+  .about-header h1 {
+    font-size: 54px;
+  }
+  .about-header h3 {
+    font-size: 22px;
+  }
+  .tag-about h3 {
+    font-size: 20px;
+  }
+  .about-text p {
+    font-size: 15px;
+  }
+  .work-description p {
+    font-size: 15px;
+  }
+  .bg-gradient h1 {
+    font-size: 28px;
+  }
+  
+}
+
 a:link { text-decoration: none; }
 
 p {
@@ -22,14 +66,18 @@ p {
 }
 
 .large-text {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.large-text-two {
+  font-size: 16px;
 }
 
 .text-black {
   color: black;
 }
 
-.fa-github {
+.fa-github-work {
   color: black;
   font-size: 30px;
 }
@@ -60,23 +108,24 @@ p {
 }
 
 .drop-menu {
-  background-color: black;
-  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.834);
+  padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(84, 84, 84);
+  border: none;
+  box-shadow: 0 0 10px rgba(49, 49, 49, 0.486);
 }
 
 .drop-item a {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .drop-item:hover a {
-  color: black;
+  color: rgba(0, 0, 0, 0.894);
 }
 
 .drop-item:hover {
-  color: black;
-  background-color: white;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.398);
   border-radius: 50px;
 }
 
@@ -89,10 +138,34 @@ p {
 }
 
 .btn-black:hover {
-  color: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.689);
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.803);
+  transition: 1s;
+}
+
+.btn-gradient {
+  color: white;
+  font-weight: 600;
+  background-image: linear-gradient(to right top,rgb(91, 173, 255), rgb(204, 0, 204), rgb(255, 92, 92) );
+  border-radius: 50px;
+  border: none;
+  padding: 8px 24px 8px 24px;
+}
+
+.btn-gradient:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: none;
+  background-color: black;
+  background-image: none;
+  transition: all ease-in-out 2s;
+}
+
+.b-link:hover {
   font-weight: 500;
-  border: 1.5px solid black;
-  background-color: transparent;
+  color: rgba(255, 255, 255, 0.665);
+  transition: .5s;
 }
 
 .fa-cloud-arrow-down {
@@ -184,6 +257,7 @@ p {
   color: white;
   border: 1px solid black;
   border-radius: 50px;
+  transition: 1.1s;
 }
 
 .package-card {
@@ -229,6 +303,15 @@ p {
 .services-bg {
   background-image: url("https://res.cloudinary.com/dhrs5mwhz/image/upload/v1655054175/LayerLabs/dynamic-wang-EHnrP9CanuQ-unsplash_x98uqd.jpg");
   background-size: cover;
+}
+
+.card-discover {
+  background-color: rgb(29, 38, 45);
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+  
 }
 
 .discover-img {
@@ -291,3 +374,24 @@ p {
 .footer li, p {
   font-size: 14px;
 }
+
+.footer, .fa-github, .fa-instagram, .fa-linkedin, .fa-medium {
+  color: rgb(0, 0, 0);
+}
+
+.move-img {
+  animation-name : mymove;
+  animation-iteration-count : infinite;
+  animation-direction : alternate;
+  animation-duration : 2s;
+}
+
+@keyframes mymove {
+  from {transform: translateY(0px);}
+  to {transform: translateY(20px);}
+}
+
+
+
+
+

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { RenderContact, RenderInstagram } from '../functionalComponents/functionalComponents'
-import { Card, CardImg } from 'reactstrap';
+import { RenderContact, RenderInstagram, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { NavLink } from 'react-router-dom';
-import { Fade, Stagger } from 'react-animation-components';
+import { Fade, Stagger, FadeTransform } from 'react-animation-components';
+
 class Discover extends Component {
     render() {
 
@@ -45,11 +45,11 @@ class Discover extends Component {
                                 navigating through your site. Thus establishing a clean navigation menu is key for optimal user experience. On another note secondary navigation functions are just as important. Making sure to successfully implement navigation within each page and 
                                 section of your content is paramount allowing your users to easily maneuver throughout the website. To accomplish this lets consider these rules:
                             </p>
-                            <ul>
-                                <li>Prioritize consistency</li>
-                                <li>Design clear interactions</li>
-                                <li>Avoid deep navigation</li>
-                                <li>Design for responsive compatibility</li>
+                            <ul className='list-unstyled font-two'>
+                                <li><span className='fa fa-check mr-3'></span>Prioritize consistency</li>
+                                <li><span className='fa fa-check mr-3'></span>Design clear interactions</li>
+                                <li><span className='fa fa-check mr-3'></span>Avoid deep navigation</li>
+                                <li><span className='fa fa-check mr-3'></span>Design for responsive compatibility</li>
                             </ul>
                         </div>
                         <div className='col-12 col-md-6 mt-3'>
@@ -79,12 +79,12 @@ class Discover extends Component {
                                 confidence in your website. At Layerlabs it is of upmost importance to implement full scale security features to make sure your website is free from any potential risks or harm to you, your data or users.
                                 Here is a list of some of these potential risks:
                             </p>
-                            <ul>
-                                <li>Cross Site Scripting(XSS)</li>
-                                <li>SQL Injecting</li>
-                                <li>Cross-Site Request Forgery(CSRF)</li>
-                                <li>Denial of Service(DOS)</li>
-                                <li>File Inclusion</li>
+                            <ul className='list-unstyled font-two'>
+                                <li><span className='fa fa-check mr-3'></span>Cross Site Scripting(XSS)</li>
+                                <li><span className='fa fa-check mr-3'></span>SQL Injecting</li>
+                                <li><span className='fa fa-check mr-3'></span>Cross-Site Request Forgery(CSRF)</li>
+                                <li><span className='fa fa-check mr-3'></span>Denial of Service(DOS)</li>
+                                <li><span className='fa fa-check mr-3'></span>File Inclusion</li>
                             </ul>
                         </div>
                         <div className='col-12 col-md-6 mt-3'>
@@ -97,31 +97,39 @@ class Discover extends Component {
 
 
         return (
-            <div className='container-fluid py-5'>
+            <div className='container-fluid discover-page py-5'>
                 <div className='container'>
                     <div className='row d-flex justify-content-center'>
-                        <div className='col-12 col-md-4 text-center'>
+                        <div className='col-12 col-md-6 text-center'>
                             <div className='btn-services-tab'>
-                                <NavLink to='/services' className='btn btn-services'><span className='fa fa-box mr-2'></span>Packages</NavLink>
+                                <NavLink to='/services' className='btn btn-services'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></NavLink>
                                 <NavLink to='/discover' className='btn btn-services-active active ml-2'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></NavLink>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='container-fluid py-5'>
-                    <div className='row py-5'>
-                        <div className='col-12'>
-                           <h1 className='font text-center py-4'>What <i className='gradient-text'>really</i> matters?</h1> 
-                           <p class="text-center text-white large-text dark-bg py-5">Well lets take a look at some key components when considering building a successful website. 
+                <div className='container-fluid pt-5'>
+                <h1 className='font text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
+                <FadeTransform in
+                        transformProps={{
+                        exitTransform: 'scale(0.3) translateY(-20%)'
+                    }}>
+                    <div className='row card-discover py-5 mt-5'>
+                        <div className='col-12 col-md-8'>
+                           <p class="large-text text-white my-5">Well lets take a look at some key components when considering building a successful website. 
                                 Intergrating a clean, simple and responsive design is what provides great user experience along with implementing easy to navigate web pages. 
                                 Creating familirarity and awareness by designing a respectable brand model. Administering effective
                                 Search Engine Optimization to bring visibility within the search engine ecosystem thus allowing users to easily find you. Lastly making sure your website is
                                 intergrated with end to end encryption and proper security measures so that your data and user data is fully secure preventing any third party access.
                             </p>
                         </div>
+                        <div className='col-12 col-md-4 text-center'>
+                            <img src='/assets/images/blocks.png' className='img-fluid move-img' width='320px' height='320px'/>
+                        </div>
                     </div>
+                    </FadeTransform>
                 </div>
-                <div className='container'>
+                <div className='container py-4'>
                     <Stagger in>
                         <Fade in>
                             <RenderList />
@@ -129,7 +137,7 @@ class Discover extends Component {
                     </Stagger>
                 </div>
                 <div className='container-fluid'>
-                    <RenderContact />
+                    <RenderServicesAd />
                 </div>
                 <div className='container py-5'>
                     <RenderInstagram />

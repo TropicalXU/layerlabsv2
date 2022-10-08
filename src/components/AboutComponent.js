@@ -26,43 +26,27 @@ class About extends Component {
                     <div className='col-12 col-md-6'>
                         <h1 className='font'>About</h1>
                         <hr></hr>
-                        <p>Hi, my name is Sean Hackett and welcome to my website Layerlabs. There are many layers to consider as a Full
+                        <p className='pt-5'>Hi, my name is Sean Hackett and welcome to my website Layerlabs. There are many layers to consider as a Full
                             Stack Web Developer from writing the back-end code to building the framework of the application, planning and designing the front-end to full deployment of the website.
                         </p>
-                        <p>As an individual I am very creative yet also curious.
+                        <p className='pb-5'>As an individual I am very creative yet also curious.
                             When I began my journey into web development that curiosity to discover and learn all aspects of the development proccess in building a
                             full scale web application was very evident. I created this
                             website with my love for web development specifically creation & design.
                         </p>
-                        <NavLink to='/about/personal-profile' className='btn btn-outline-dark my-4'>Personal Portfolio</NavLink>
+                        <NavLink to='/about/personal-profile' className='btn btn-black px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></NavLink>
                     </div>
-                    <div className='col-12 col-md-6'>
-                        <img src='assets/images/logo.png'/>
+                    <div className='col-12 col-md-6 mt-4'>
+                        <img src='/assets/images/layerlabs-home.png' className='img-fluid move-img' width='560px' height='620px'/>
                     </div>
             </>
             );
         }
 
-        const AboutMore = () => {
-            return (
-                <div className='col-12 text-center text-white py-5'>
-                    <h1 className='font pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
-                    <p className='large-text pt-5'>At Layerlabs I want to bring my own touch
-                        giving you the best and most responsive
-                        website design possible. What you want from a website can vary yet
-                        what matters most is the experience yourself and your users have. A clean, cutting edge design
-                        is what we aim to achieve. Whether you're looking for a personal website, portfolio, or business I've got it handled. Every detail matters, from layout and design to
-                        color palettes, security and much more I am with you every step of the way. Check out the discover page to get inspired or view my previous work for
-                        reference.
-                    </p>
-                </div>
-            )
-        }
-
         return (
             <div className='container-fluid'>
                 <AboutHeader />
-                <div className='row py-5'>
+                <div className='row tag-about py-5'>
                     <div className='col-12 py-5'>
                         <h3 className='font-two text-center'>
                             <span className='about-tag'>PLAN 
@@ -70,9 +54,6 @@ class About extends Component {
                             <span className='fa fa-chevron-right ml-4'></span> DESIGN</span>
                         </h3>
                     </div>
-                    {/* <div class="col-12 d-flex justify-content-center py-3">
-                        <img class="img-fluid" src="assets/images/logo.png" alt="Layerlabs logo" width='60' height='60' />
-                    </div> */}
                 </div>
                 <div className='container'>
                     <div className='row py-5'>
@@ -81,7 +62,20 @@ class About extends Component {
                 </div>
                 <div className='container-fluid'>
                     <div className='row dark-bg py-5'>
-                        <AboutMore />
+                        <div className='col-12 col-md-8 about-text text-white py-5'>
+                            <h1 className='font text-center pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
+                            <p className='large-text-two'>At Layerlabs I want to bring my own touch
+                                giving you the best and most responsive
+                                website design possible. What you want from a website can vary yet
+                                what matters most is the experience yourself and your users have. A clean, cutting edge design
+                                is what we aim to achieve. Whether you're looking for a personal website, portfolio, or business I've got it handled. Every detail matters, from layout and design to
+                                color palettes, security and much more I am with you every step of the way. Check out the discover page to get inspired or view my previous work for
+                                reference.
+                            </p>
+                        </div>
+                        <div className='col-12 col-md-4 pl-5 py-5'>
+                            <img src='/assets/images/computer.png' className='img-fluid' width='260px' height='260px'/>
+                        </div>
                     </div>
                 </div>
                 <div className='container py-5'>

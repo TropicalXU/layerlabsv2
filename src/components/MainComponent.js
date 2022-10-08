@@ -16,6 +16,7 @@ import Vacay from './VacayComponent';
 import Contact from './ContactComponent';
 import TermsAndConditions from './termsAndConditions';
 import PrivacyPolicy from './privacyPolicy';
+import CookieConsent, { Cookies } from 'react-cookie-consent';
 
 
 class Main extends Component {
@@ -27,8 +28,10 @@ class Main extends Component {
 
         return (
             <div>
+               
                 <Header />
                 <Switch>
+                    <Route exact path='/' component={ () => <Home />} />
                     <Route path='/home' component={ () => <Home /> } />
                     <Route exact path='/services' component={ () => <Services /> } />
                     <Route exact path='/services/custom-package' component={ () => <CustomPackage /> } />
@@ -43,11 +46,21 @@ class Main extends Component {
                     <Route exact path='/contact' component={ () => <Contact /> } />
                     <Route exact path='/termsAndConditions' component={ () => <TermsAndConditions /> } />
                     <Route exact path='/privacyPolicy' component={ () => <PrivacyPolicy /> } />
-                    <Redirect to='/home' />
+                    <Redirect to='/' />
                 </Switch>
+                {/* <div className='container'>
+                <CookieConsent
+                buttonClasses='btn btn-primary'>
+                    <div className='container'>
+           
+
+                    </div>
+                </CookieConsent>
+                </div> */}
                 <Footer />
+             
             </div>
-        )
+        );
     }
 }
 

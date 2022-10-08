@@ -9,10 +9,10 @@ class Contact extends Component {
             return (
                 <div className='container'>
                     <div className='row align-items-center py-5'>
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-md-12 col-lg-6 pb-5'>
                         <h1 className='font-two text-white'>Interested in your own personal or business website?</h1>
                     </div>
-                    <div className='col-12 col-md-6'>
+                    <div className='col-12 col-md-12 col-lg-6'>
                         <Card className='contact-card'>
                             <CardBody>
                                 <h1 className='font text-center'>Get in touch!</h1>
@@ -53,21 +53,21 @@ class Contact extends Component {
 
         return (
             <div>
-                <div className='container-fluid row-contact'>
-                    <RenderContactForm />
-                </div>
                 <div className='container my-5'>
                     <div className='row py-5'>
-                        <div className='col-12 col-md-4 py-3'>
+                        <div className='col-12 col-md-12 col-lg-4 py-3'>
                             <RenderCardOne />
                         </div>
-                        <div className='col-12 col-md-4 py-3'>
+                        <div className='col-12 col-md-12 col-lg-4 py-3'>
                             <RenderCardTwo />
                         </div>
-                        <div className='col-12 col-md-4 py-3'>
+                        <div className='col-12 col-md-12 col-lg-4 py-3'>
                             <RenderCardThree />
                         </div>
                     </div>
+                </div>
+                <div className='container-fluid row-contact'>
+                    <RenderContactForm />
                 </div>
             </div>
         );
