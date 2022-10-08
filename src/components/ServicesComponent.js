@@ -21,18 +21,15 @@ class Services extends Component {
                         <Card className='package-card py-2'>
                             <CardBody className='font-two'>
                                 <h2>Custom</h2>
-                                <p>Standard custom features</p>
+                                <p>Pre-built custom website</p>
                                 <hr></hr>
                                 <p>Choose from...</p>
-                                <div className='cards-bg py-2'>
+                                <div className='cards-bg py-4'>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 1 Page Application</p>
-                                    <h5>$250</h5>
                                     <hr></hr>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</p>
-                                    <h5>$550</h5>
                                     <hr></hr>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</p> 
-                                    <h5>$799</h5> 
                                 </div>
                                 <NavLink to='/services/custom-package' className='btn btn-black my-3 px-4'>More Detials</NavLink>
                             </CardBody>
@@ -52,18 +49,15 @@ class Services extends Component {
                         <Card className='package-card py-2'>
                             <CardBody className='font-two'>
                                 <h2>Custom <span className='fa fa-plus'></span></h2>
-                                <p>Includes additional functional features</p>
+                                <p>Flexible custom design & features</p>
                                 <hr></hr>
                                 <p>Choose from...</p>
-                                <div className='cards-bg py-2'>
+                                <div className='cards-bg py-4'>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</p>
-                                    <h5>$650</h5>
                                     <hr></hr>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</p>
-                                    <h5>$899</h5>
                                     <hr></hr>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 7 Page Application</p>
-                                    <h5>$1099</h5>
                                 </div>
                                 <NavLink to='/services/custom-plus-package' className='btn btn-black my-3 px-4'>More Details</NavLink>
                             </CardBody>
@@ -96,58 +90,31 @@ class Services extends Component {
         const RenderSteps = () => {
             return (
                 <>
-                    <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
-                        <Card className='steps-card'>
+                    <div className='col-12 col-sm-12 col-md-6 py-3'>
+                        <Card className='steps-card text-center'>
                             <CardBody>
-                                <h3 className='font text-center py-3'>Plan <span className='fa fa-file-lines fa-lg'></span></h3>
-                                <ul>
-                                    <li>Create a roadmap</li>
-                                    <li>Design a schedule</li>
-                                    <li>Gather material</li>
-                                    <li>Make a deadline</li>
+                                <h1 className='font-two py-3'>Custom</h1>
+                                <ul className='list-unstyled py-4'>
+                                    <li><span className='fa fa-check mr-2'></span>Flexibility to choose your own design and functionality</li>
+                                    <li className='py-3'><span className='fa fa-check mr-2'></span>Higher security built in</li>
+                                    <li><span className='fa fa-check mr-2'></span>Built in Search Engin Optimization(SEO)</li>
+                                    <li className='py-3'><span className='fa fa-check mr-2'></span>Your site will be tested for all browser and device types</li>
                                 </ul>
                             </CardBody>
                         </Card>
                     </div>
-                    <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
-                        <Card className='steps-card'>
+                    <div className='col-12 col-sm-12 col-md-6 py-3'>
+                        <Card className='steps-card text-center'>
                             <CardBody>
-                                <h3 className='font text-center py-3'>Design <span className="fa-solid fa-object-ungroup fa-lg px-2"></span></h3>
-                                <ul>
-                                    <li>Establish a theme</li>
-                                    <li>Choose your color palettes</li>
-                                    <li>Branding & design</li>
-                                    <li>Mapping out the responsive design</li>
+                                <h1 className='font-two py-3'>Template</h1>
+                                <ul className='list-unstyled py-4'>
+                                    <li><span className='fa fa-circle-xmark mr-2'></span>Limited options for design & functionality</li>
+                                    <li className='py-3'><span className='fa fa-circle-xmark mr-2'></span>Slower site speed</li>
+                                    <li><span className='fa fa-circle-xmark mr-2'></span>Not always built with mobile responsiveness</li>
+                                    <li className='py-3'><span className='fa fa-circle-xmark mr-2'></span>Organic SEO not built in</li>
                                 </ul>
                             </CardBody>
                         </Card>
-                    </div>
-                    <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
-                        <Card className='steps-card'>
-                            <CardBody>
-                                <h3 className='font text-center py-3'>Develop <span className='fa-solid fa-code fa-lg'></span></h3>
-                                <ul>
-                                    <li>Building the framework</li>
-                                    <li>Implementing the code</li>
-                                    <li>Intergrating top level navigation tools</li>
-                                    <li>Administering Search Engine Optimization</li>
-                                    <li>Installing high level security</li>
-                                </ul>
-                            </CardBody>
-                        </Card>  
-                    </div>
-                    <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
-                        <Card className='steps-card'>
-                            <CardBody>
-                                <h3 className='font text-center py-3'>Launch <span className='fa-solid fa-cloud-arrow-up fa-lg'></span></h3>
-                                <ul>
-                                    <li>Review material</li>
-                                    <li>Testing the application</li>
-                                    <li>Launching the application</li>
-                                    <li>Continue ongoing support</li>
-                                </ul>
-                            </CardBody>
-                        </Card>  
                     </div>
                 </>
             );
@@ -174,14 +141,14 @@ class Services extends Component {
                         </div>
                     </div>
                     <div className='container-fluid'>
-                        <div className='row dark-bg my-5 py-5'>
+                        <div className='row pt-5'>
                             <div className='col-12'>
-                                <h1 className='font text-white text-center py-5'>How it works?</h1>
-                            </div>
-                            <div className='row pb-5'>
-                                <RenderSteps />
+                                <h1 className='font-two text-center py-5'>Custom Websites vs Template Websites</h1>
                             </div>
                         </div>
+                        <div className='row pb-5'>
+                                <RenderSteps />
+                            </div>
                     </div>
                     <div className='container'>
                         <div className='row pb-5 pt-3'>
@@ -225,8 +192,7 @@ class Services extends Component {
                                     It serves as a window in which you can showcase your marketable skills and connect with a targeted audience. When factoring in the costs, 
                                     a website may seem like a luxury that may not seem neccessary. However investing in a website for your business can go a long way in setting 
                                     you up for long-term success. It can be an incredibly important asset with a positive ROI when executed correctly. Word of mouth can only get 
-                                    you so far, having a website acts as advertisement in itself, it is a one stop shop to share all your business details and information about each 
-                                    of the products and services you provide. Lets look at some of the main reasons why you should consider having an online presense for your business.
+                                    you so far, having a website acts as advertisement in itself. Lets look at some of the main reasons why you should consider having an online presense for your business.
                                 </p>
                                 <ul className='list-unstyled font-two'>
                                     <li><span className='fa fa-square-check mr-3'></span>Attract new customers</li>

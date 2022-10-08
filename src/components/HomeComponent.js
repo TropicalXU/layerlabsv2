@@ -4,14 +4,14 @@ import { Card, CardBody, CardImg, Carousel, CarouselItem,
         CarouselControl, CarouselIndicators, CarouselCaption 
     } 
 from 'reactstrap';
-import { FadeTransform } from 'react-animation-components';
+import { FadeTransform, Fade } from 'react-animation-components';
 import { RenderContact } from '../functionalComponents/functionalComponents';
 
 const items = [
     {
         src: 'assets/images/logo.png',
         altText: 'Slide 1',
-        caption: 'At Layerlabs I want to bring my own touch giving you the best and most responsive website design possible. What you want from a website can vary yet what matters most is the experience yourself and your users have.',
+        caption: 'At Layerlabs I want to bring my own touch giving you the best and most responsive custom website design possible. What you want from a website can vary yet what matters most is the experience yourself and your users have.',
         header: "Let's get creative!"
     },
     {
@@ -98,20 +98,22 @@ class Home extends Component {
         {/* HOMEPAGE HEADER */}
         const HomeHeader = () => {
             return (
-                <div className='home-header d-flex justify-content-center align-items-center my-3'>
-                    <div className='row text-center text-white'>
-                        <div className='col-12'>
-                            <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
-                            <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
-                            <NavLink className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></NavLink>
-                        </div>
-                        <div className='col-12 pt-5'>
-                            <a className="fa-brands fa-medium fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
-                            <a className="fa-brands fa-instagram fa-2xl text-white px-2" href="https://www.instagram.com/layerlabs.io"></a>
-                            <a className="fa-brands fa-github fa-2xl text-white px-2" href="https://github.com/TropicalXU"></a>
+                <Fade in>
+                    <div className='home-header d-flex justify-content-center align-items-center my-3'>
+                        <div className='row text-center text-white'>
+                            <div className='col-12'>
+                                <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
+                                <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
+                                <NavLink className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                            </div>
+                            <div className='col-12 pt-5'>
+                                <a className="fa-brands fa-medium fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
+                                <a className="fa-brands fa-instagram fa-2xl text-white px-2" href="https://www.instagram.com/layerlabs.io"></a>
+                                <a className="fa-brands fa-github fa-2xl text-white px-2" href="https://github.com/TropicalXU"></a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Fade>
             );
         }
 

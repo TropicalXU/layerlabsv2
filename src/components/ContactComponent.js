@@ -11,6 +11,7 @@ class Contact extends Component {
                     <div className='row align-items-center py-5'>
                     <div className='col-12 col-md-12 col-lg-6 pb-5'>
                         <h1 className='font-two text-white'>Interested in your own personal or business website?</h1>
+                        <h3 className='font two py-4'>Contact for a quote.</h3>
                     </div>
                     <div className='col-12 col-md-12 col-lg-6'>
                         <Card className='contact-card'>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Fade } from 'react-animation-components';
 import { RenderInstagram } from '../functionalComponents/functionalComponents';
 
 class About extends Component {
@@ -9,14 +10,16 @@ class About extends Component {
 
         const AboutHeader = () => {
             return (
-                <div className='about-header d-flex justify-content-center align-items-center my-3'>
-                    <div className='row text-center text-white'>
-                    <div className='col'>
-                        <h1 className='font home-title'>Layerlabs</h1>
-                        <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
+                <Fade in>
+                    <div className='about-header d-flex justify-content-center align-items-center my-3'>
+                        <div className='row text-center text-white'>
+                        <div className='col'>
+                            <h1 className='font home-title'>Layerlabs</h1>
+                            <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </Fade>
             );
         }
 
@@ -31,7 +34,7 @@ class About extends Component {
                         </p>
                         <p className='pb-5'>As an individual I am very creative yet also curious.
                             When I began my journey into web development that curiosity to discover and learn all aspects of the development proccess in building a
-                            full scale web application was very evident. I created this
+                            full scale custom web application was very evident. I created this
                             website with my love for web development specifically creation & design.
                         </p>
                         <NavLink to='/about/personal-profile' className='btn btn-black px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></NavLink>
@@ -65,7 +68,7 @@ class About extends Component {
                         <div className='col-12 col-md-8 about-text text-white py-5'>
                             <h1 className='font text-center pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
                             <p className='large-text-two'>At Layerlabs I want to bring my own touch
-                                giving you the best and most responsive
+                                giving you the best and most responsive custom
                                 website design possible. What you want from a website can vary yet
                                 what matters most is the experience yourself and your users have. A clean, cutting edge design
                                 is what we aim to achieve. Whether you're looking for a personal website, portfolio, or business I've got it handled. Every detail matters, from layout and design to

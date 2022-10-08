@@ -14,7 +14,7 @@ class Discover extends Component {
                             <h2 className='font-two'>Clean & Responsive Design</h2>
                             <p className='pt-3'>Having a responsive design not only looks good but is essential for optimal user experience.
                                 Responsive means the adaptation of the layout whatever device the user is on. Allowing the webpage to adapt to the screen is crutial in most if not all modern websites.
-                                Wether its for mobile, tablet, laptops and larger displays a responsive design is flexible to the ratio of the screen. When screens are minimized
+                                Whether its for mobile, tablet, laptops and larger displays a responsive design is flexible to the ratio of the screen. When screens are minimized
                                 we want to make sure the layout responds and adjusts.
                             </p>
                         </div>

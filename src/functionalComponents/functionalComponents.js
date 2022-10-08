@@ -13,8 +13,8 @@ export const RenderCardOne = () => {
                 <Card className='home-card text-center'>
                     <CardBody>
                         <span className='fa fa-cubes fa-lg'></span>
-                        <h2 className='font-two py-3'>Custom</h2>
-                        <p className='home-card-text'>Create and design a roadmap of what you hope to achieve for your website.</p>
+                        <h2 className='font-two py-3'>Pro Custom</h2>
+                        <p className='home-card-text'>Proffesional, fully custom & responsive websites built from scratch</p>
                     </CardBody>
                 </Card>
             </FadeTransform>
@@ -33,7 +33,7 @@ export const RenderCardTwo = () => {
                     <CardBody>
                         <span className='fa fa-box fa-lg'></span>
                         <h2 className='font-two py-3'>Packages</h2>
-                        <p className='home-card-text'>Gather images and material to help you visualize and plan your website</p>
+                        <p className='home-card-text'>Choose from 3 different packages: Custom, Custom + & Business +</p>
                     </CardBody>
                 </Card>
             </FadeTransform>
