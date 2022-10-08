@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { RenderContact, RenderInstagram, RenderServicesAd } from '../functionalComponents/functionalComponents';
+import { RenderInstagram, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { NavLink } from 'react-router-dom';
 import { Fade, Stagger, FadeTransform } from 'react-animation-components';
 
@@ -19,7 +19,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-6 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover1.jpg' />
+                            <img className='discover-img img-fluid' src='assets/images/discover1.jpg' alt='Responsive design section image' />
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -33,7 +33,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-6 order-md-1 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover2.jpg' />
+                            <img className='discover-img img-fluid' src='assets/images/discover2.jpg' alt='Branding section image' />
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -53,7 +53,7 @@ class Discover extends Component {
                             </ul>
                         </div>
                         <div className='col-12 col-md-6 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover3.jpg' />
+                            <img className='discover-img img-fluid' src='assets/images/discover3.jpg' alt='Navigation section image' />
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -67,7 +67,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-6 order-md-1 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover4.jpg' />
+                            <img className='discover-img img-fluid' src='assets/images/discover4.jpg' alt='SEO section image' />
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -88,7 +88,7 @@ class Discover extends Component {
                             </ul>
                         </div>
                         <div className='col-12 col-md-6 mt-3'>
-                        <img className='discover-img img-fluid' src='assets/images/discover5.jpg' />
+                        <img className='discover-img img-fluid' src='assets/images/discover5.jpg' alt='Security section image' />
                         </div>
                     </div>
                 </>
@@ -124,7 +124,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-4 text-center'>
-                            <img src='/assets/images/blocks.png' className='img-fluid move-img' width='320px' height='320px'/>
+                            <img src='/assets/images/blocks.png' className='img-fluid move-img' width='320px' height='320px' alt='Building blocks image'/>
                         </div>
                     </div>
                     </FadeTransform>

@@ -1,8 +1,55 @@
 import React from 'react';
 import { RenderServicesAd } from '../functionalComponents/functionalComponents';
+import { Fade, Stagger} from 'react-animation-components';
 import { NavLink } from 'react-router-dom';
 
-const Projects = () => {
+const RenderProjects = ({project}) => {
+    if(project.id % 2 == 0) {
+
+        return (
+            <>
+                <div className='row align-items-center py-5'>
+                    <div className='col-12 col-md-6'>
+                        <h2 className='font'>{project.title}</h2>
+                        <p className='py-5'>{project.intro}</p>
+                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <a href={project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
+                    </div>
+                    <div className='col-12 col-md-6 pt-4'>
+                        <img className='img-fluid discover-img' src={project.image} alt={project.title} />
+                    </div>
+                </div>
+            </>
+        );
+    }else {
+        return (
+            <>
+                <div className='row align-items-center py-5'>
+                    <div className='col-12 col-md-6 order-md-2'>
+                        <h2 className='font'>{project.title}</h2>
+                        <p className='py-5'>{project.intro}</p>
+                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <a href={project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
+                    </div>
+                    <div className='col-12 col-md-6 pt-4'>
+                        <img className='img-fluid discover-img order-md-1' src={project.image} alt={project.title} />
+                    </div>
+                </div>
+            </>
+        )
+    }
+}
+
+const Projects = (props) => {
+    const proj = props.projects.map((project) => {
+        return (
+            <div className='container'>
+                <Fade in>
+                    <RenderProjects project={project} />
+                </Fade>
+            </div>
+        );
+    })
     return (
         <>
             <div className='row-layerlabs'>
@@ -24,58 +71,15 @@ const Projects = () => {
                             </p>
                         </div>
                         <div className='col-12 col-md-4'>
-                            <img src='/assets/images/develop.png' className='img-fluid ml-5' width='260px' height='260px'/>
+                            <img src='/assets/images/develop.png' className='img-fluid ml-5' width='260px' height='260px' alt='Section image'/>
                         </div>
                     </div>
                 </div>
-                <div className='container'>
-                    <div className='row align-items-center py-5'>
-                        <div className='col-12 col-md-6'>
-                            <h2 className='font'>Shrileys Art Studio</h2>
-                            <p className='py-5'>
-                                A small business website built for an artist to showcase their work and passion for art. This website features a built in store with secure payment options such as 
-                                Stripe, Google Pay, Apple Pay and Visa. You can easily browse the gallery, find a painting you like view and buy. The checkout experience is quick and easy, make a 
-                                purchase within seconds.
-                            </p>
-                            <NavLink to='/projects/shirleys-studio' className='btn btn-gradient'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
-                            <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
-                        </div>
-                        <div className='col-12 col-md-6 pt-4'>
-                            <img className='img-fluid discover-img' src='assets/images/shirley-studio.png' />
-                        </div>
-                    </div>
-                    <div className='row align-items-center py-5'>
-                        <div className='col-12 col-md-6 order-md-2'>
-                            <h2 className='font'>Vacay</h2>
-                            <p className='py-5'>
-                            Vacay is a website built on top of the React framework. This is a project based website for the Front End Development With React Specialization 
-                            (honors)course from The Hong Kong University of Science and Technology.
-                            </p>
-                            <NavLink to='/projects/vacay' className='btn btn-gradient'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
-                            <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
-                        </div>
-                        <div className='col-12 col-md-6 order-md-1 pt-4'>
-                            <img className='img-fluid discover-img' src='assets/images/vacay.png' />
-                        </div>
-                    </div>
-                    <div className='row align-items-center py-5'>
-                        <div className='col-12 col-md-6'>
-                            <h2 className='font'>Viewpoint Ireland</h2>
-                            <p className='py-5'>
-                                A list of key scenic locations to view and stay in Ireland. This website features Register and Login options 
-                                which allow the user to post and upload images alongside a location of their choice. The application also features a built in map 
-                                so you can view and pinpoint the exact location of each site.
-                            </p>
-                            <NavLink to='/' className='btn btn-gradient'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
-                            <a href='/'><span className='fa fa-github fa-lg ml-3'></span></a>
-                        </div>
-                        <div className='col-12 col-md-6 pt-4'>
-                            <img className='img-fluid discover-img' src='assets/images/vacay.png' />
-                        </div>
-                    </div>
-                </div>
+                <Stagger in>
+                    {proj}
+                </Stagger>
                 <div className='container-fluid my-4 pt-3'>
-                    <RenderServicesAd />
+                    <RenderServicesAd project={props.projects} />
                 </div>
             </div>
         </>

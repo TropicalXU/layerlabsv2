@@ -37,7 +37,7 @@ class About extends Component {
                         <NavLink to='/about/personal-profile' className='btn btn-black px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></NavLink>
                     </div>
                     <div className='col-12 col-md-6 mt-4'>
-                        <img src='/assets/images/layerlabs-home.png' className='img-fluid move-img' width='560px' height='620px'/>
+                        <img src='/assets/images/layerlabs-home.png' className='img-fluid move-img' width='560px' height='620px' alt='Layerlabs home page image'/>
                     </div>
             </>
             );
@@ -74,7 +74,7 @@ class About extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-4 pl-5 py-5'>
-                            <img src='/assets/images/computer.png' className='img-fluid' width='260px' height='260px'/>
+                            <img src='/assets/images/computer.png' className='img-fluid' width='260px' height='260px' alt='computer image'/>
                         </div>
                     </div>
                 </div>

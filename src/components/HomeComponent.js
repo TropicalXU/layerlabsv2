@@ -155,48 +155,44 @@ class Home extends Component {
             );
         }
 
-        const RenderWork = () => {
-            return(
-                <>  <div className='row align-items-center'>
-                        <div className='col-12 col-md-5 py-4'>
-                            <h2 className="font py-5">Shirley's Art Studio</h2>
-                            <p>
-                                A small business website built for an artist to showcase 
-                                their work and passion for art. This website features a built in store 
-                                with secure payment options such as Stripe, Google Pay, Apple Pay and Visa. 
-                                You can easily browse the gallery, find a painting you like view and buy. 
-                                The checkout experience is quick and easy, make a purchase within seconds.
-                            </p>
-                            <NavLink to='/projects/shirleys-studio' className='btn btn-gradient my-3'>View <span className='fa fa-chevron-right ml-2'></span></NavLink>
-                            <a href='/'><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
+        const RenderWork = ({item}) => {
+            if(item.id % 2 == 0 ) {
+                return(
+                    <>  <div className='row align-items-center'>
+                            <div className='col-12 col-md-5 py-4'>
+                                <h2 className="font py-5">{item.title}</h2>
+                                <p>
+                                    {item.intro}
+                                </p>
+                                <NavLink to={`/projects/${item.id}`} className='btn btn-gradient my-3'>View <span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
+                            </div>
+                            <div className='col-12 col-md-5 offset-md-2'>
+                                <img className='img-fluid discover-img' src={item.image} alt={item.title} />
+                            </div>
                         </div>
-                        <div className='col-12 col-md-5 offset-md-2'>
-                            <img className='img-fluid discover-img' src='assets/images/shirley-studio.png' />
-                        </div>
-                    </div>
-                    <div className='row align-items-center mb-5'>
-                        <div className='col-12 col-md-5 offset-md-2 order-md-2 py-5'>
-                            <h2 className="font py-5">Vacay - Cottage Rentals</h2>
-                            <p>
-                                A small business website built for an artist to showcase 
-                                their work and passion for art. This website features a built in store 
-                                with secure payment options such as Stripe, Google Pay, Apple Pay and Visa. 
-                                You can easily browse the gallery, find a painting you like view and buy. 
-                                The checkout experience is quick and easy, make a purchase within seconds.
-                            </p>
-                            <NavLink to='/projects/vacay' className='btn btn-gradient my-3'>View<span className='fa fa-chevron-right ml-2'></span></NavLink>
-                            <a href='/'><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
-                        </div>
-                        <div className='col-12 col-md-5 order-md-1'>
-                            <img className='img-fluid discover-img' src='assets/images/vacay.png' />
+                    </>
+                );
+            }else {
+                return(
+                    <>
+                        <div className='row align-items-center mb-5'>
+                            <div className='col-12 col-md-5 offset-md-2 order-md-2 py-5'>
+                                <h2 className="font py-5">{item.title}</h2>
+                                <p>
+                                    {item.intro}
+                                </p>
+                                <NavLink to={`/projects/${item.id}`}className='btn btn-gradient my-3'>View<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
+                            </div>
+                            <div className='col-12 col-md-5 order-md-1'>
+                                <img className='img-fluid discover-img' src={item.image} alt={item.title} />
 
+                            </div>
                         </div>
-                    </div>
-                    <div className='col-12 text-center'>
-                        <a href='/projects' className='btn btn-black px-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
-                    </div>
-                </>
-            );
+                    </>
+                );
+            }
         }
 
 
@@ -248,7 +244,11 @@ class Home extends Component {
                 <div className='container'>
                     <h2 className='font text-center pt-3'>Check out some of my work <span className='fa fa-chevron-down'></span></h2>
                     <div className='row pb-5'>
-                        <RenderWork />
+                        <RenderWork item={this.props.project1} />
+                        <RenderWork item={this.props.project2}/>
+                        <div className='col-12 text-center'>
+                            <a href='/projects' className='btn btn-black px-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
+                        </div>
                     </div>
                 </div>
                 <div className='container-fluid'>

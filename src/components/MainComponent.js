@@ -11,38 +11,78 @@ import Discover from './DiscoverComponent';
 import About from './AboutComponent';
 import PersonalProfile from './PersonalProfileComponent';
 import Projects from './ProjectComponent';
-import ShirleysStudio from './ShirleysStudioComponent';
-import Vacay from './VacayComponent';
+import WorkDetail from './WorkListComponent';
+import { WORK } from '../shared/work';
 import Contact from './ContactComponent';
 import TermsAndConditions from './termsAndConditions';
 import PrivacyPolicy from './privacyPolicy';
 import CookieConsent, { Cookies } from 'react-cookie-consent';
+import { PACKAGE } from '../shared/packages';
 
 
 class Main extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            projects: WORK,
+            packages: PACKAGE
+        }
     }
 
     render() {
+
+        const HomePage = () => {
+            return(
+                <Home
+                project1={this.state.projects.filter((project) => project.featured)[0]}
+                project2={this.state.projects.filter((project) => project.featured)[1]}
+                 />
+            );
+        }
+
+        const WorkId = ({match}) => {
+            return (
+                <WorkDetail 
+                project={this.state.projects.filter((project) => project.id === parseInt(match.params.id))[0]}
+                 />
+            );
+        }
+
+        // const PackageId = ({match}) => {
+        //     return (
+        //         <Packages
+        //         packageId={this.state.packages.filter((packageId) => packageId.id === parseInt(match.params.id))[0]} 
+        //         />
+        //     );
+        // }
+        
+        // const Services = () => {
+        //     return (
+        //         <Services
+        //         customPackage={this.state.packages.filter((package1) => package1.id)[0]} 
+        //         customPlusPackage={this.state.packages.filter((package2) => package2.id)[1]} 
+        //         businessPackage={this.state.packages.filter((package3) => package3.id)[2]} 
+        //         />
+        //     );
+        // }
 
         return (
             <div>
                
                 <Header />
                 <Switch>
-                    <Route exact path='/' component={ () => <Home />} />
-                    <Route path='/home' component={ () => <Home /> } />
-                    <Route exact path='/services' component={ () => <Services /> } />
+                    <Route exact path='/' component={ HomePage} />
+                    <Route path='/home' component={ HomePage } />
+                    <Route exact path='/services' component={ () =>  <Services />} />
+                    {/* <Route exact path='/services/:id' component={ PackageId } /> */}
                     <Route exact path='/services/custom-package' component={ () => <CustomPackage /> } />
                     <Route exact path='/services/custom-plus-package' component={ () => <CustomPlusPackage /> } />
                     <Route exact path='/services/business-plus-package' component={ () => <BusinessPackage /> } />
                     <Route exact path='/discover' component={ () => <Discover /> } />
                     <Route exact path='/about' component={ () => <About /> } />
                     <Route exact path='/about/personal-profile' component={ () => <PersonalProfile /> } />
-                    <Route exact path='/projects' component={ () => <Projects /> } />
-                    <Route exact path='/projects/shirleys-studio' component={ () => <ShirleysStudio /> } />
-                    <Route exact path='/projects/vacay' component={ () => <Vacay /> } />
+                    <Route exact path='/projects' component={ () => <Projects projects={this.state.projects} /> } />
+                    <Route exact path='/projects/:id' component={ WorkId } />
                     <Route exact path='/contact' component={ () => <Contact /> } />
                     <Route exact path='/termsAndConditions' component={ () => <TermsAndConditions /> } />
                     <Route exact path='/privacyPolicy' component={ () => <PrivacyPolicy /> } />

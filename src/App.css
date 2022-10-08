@@ -159,7 +159,7 @@ p {
   border: none;
   background-color: black;
   background-image: none;
-  transition: all ease-in-out 2s;
+  transition: all ease-in-out 1s;
 }
 
 .b-link:hover {

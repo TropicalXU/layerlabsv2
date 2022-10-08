@@ -64,7 +64,7 @@ export const RenderContact = () => {
     return (
         <div className='row dark-bg text-center py-5'>
             <div className='col-12 col-md-2'>
-                <img src='assets/images/email.png' className='img-fluid' width='180' height='180' />
+                <img src='assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail image' />
             </div>
             <div className='col-12 col-md-8'>
                 <h2 className='font text-white py-5'>Let's create something together!</h2>
@@ -107,7 +107,7 @@ export const RenderServicesAd = () => {
     return (
         <div className='row dark-bg text-center py-5'>
             <div className='col-12 col-md-2 align-self-center'>
-                <img src='/assets/images/package-box.png' width='200' height='200' />
+                <img src='/assets/images/package-box.png' width='200' height='200' alt='Box image' />
             </div>
             <div className='col-12 col-md-8'>
                 <h2 className='font-two text-white py-5'>Interested in your own personal or business website?</h2>
