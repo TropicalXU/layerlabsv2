@@ -13,7 +13,7 @@ const BusinessPackage = () => {
                     <div className='breadcrumb'>
                         <BreadcrumbItem>
                             <NavLink className='breadcrumb-link' to='/services'>
-                                <span className='fa fa-chevron-left'></span> <span className='b-link'>Services</span>
+                                <span className='fa fa-chevron-left mr-2'></span> <span className='b-link'>Services</span>
                             </NavLink>
                         </BreadcrumbItem>
                         <BreadcrumbItem active className='text-white'>Business <span className='fa fa-plus'></span>

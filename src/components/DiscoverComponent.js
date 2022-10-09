@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { RenderInstagram, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { NavLink } from 'react-router-dom';
-import { Fade, Stagger, FadeTransform } from 'react-animation-components';
+import { Fade, Stagger } from 'react-animation-components';
 
 //discover page
 class Discover extends Component {
@@ -12,21 +12,21 @@ class Discover extends Component {
             return (
                 <>
                     <div className='row my-3 py-5'>
-                        <div className='col-12 col-md-6'>
-                            <h2 className='font-two'>Clean & Responsive Design</h2>
+                        <div className='col-12 col-md-12 col-lg-6'>
+                            <h2 className='font-two'><span className='number'>01.</span>Clean & Responsive Design</h2>
                             <p className='pt-3'>Having a responsive design not only looks good but is essential for optimal user experience.
                                 Responsive means the adaptation of the layout whatever device the user is on. Allowing the webpage to adapt to the screen is crutial in most if not all modern websites.
                                 Whether its for mobile, tablet, laptops and larger displays a responsive design is flexible to the ratio of the screen. When screens are minimized
                                 we want to make sure the layout responds and adjusts.
                             </p>
                         </div>
-                        <div className='col-12 col-md-6 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover1.jpg' alt='Responsive design section image' />
+                        <div className='col-12 col-md-12 col-lg-6 mt-3'>
+                            <img src='/assets/images/web-design.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
-                        <div className='col-12 col-md-6 order-md-2'>
-                            <h2 className='font-two'>Branding</h2>
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
+                            <h2 className='font-two'><span className='number'>02.</span>Branding</h2>
                             <p class="pt-3">
                                 Your brand is your identity, it tells a story of who you are and what you stand for. Having a brand provides a sense of familirarity to your users. It gives your website it's own personality bringing your
                                 ideas and products to life. There are many things to consider when creating your brand. Your logo which stands as your identity. A clean and simple logo is important to establish, it brings with it a sense of recognition and awareness. 
@@ -34,13 +34,13 @@ class Discover extends Component {
                                 Two or three primary colors should be more than enough. Lastly you want your brand to create trust. It is essential to keep your website functional and current with up to date content. Thus increasing your brands authority and providing confidence to your users.
                             </p>
                         </div>
-                        <div className='col-12 col-md-6 order-md-1 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover2.jpg' alt='Branding section image' />
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3'>
+                            <img src='/assets/images/brand-identity.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
-                        <div className='col-12 col-md-6'>
-                            <h2 className='font-two'>Navigation</h2>
+                        <div className='col-12 col-md-12 col-lg-6'>
+                            <h2 className='font-two'><span className='number'>03.</span>Navigation</h2>
                             <p class="pt-3">
                                 Implementing and organizing the navigation structure of your website is crutial when planning the layout of your site. Think of yourself as the user, have you ever clicked on a website and found yourself lost and overwhelmed? Well
                                 at times you can simply get frustrated and leave, especially if there is a lot of content to sift through. This is one thing you cannot fall short on when planning a website. Like yourself you want your users to have a seemless experience when 
@@ -54,13 +54,13 @@ class Discover extends Component {
                                 <li><span className='fa fa-check mr-3'></span>Design for responsive compatibility</li>
                             </ul>
                         </div>
-                        <div className='col-12 col-md-6 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover3.jpg' alt='Navigation section image' />
+                        <div className='col-12 col-md-12 col-lg-6 mt-3'>
+                            <img src='/assets/images/navigator.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Website navigation logo'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
-                        <div className='col-12 col-md-6 order-md-2'>
-                            <h2 className='font-two'>Search Engine Optimization</h2>
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
+                            <h2 className='font-two'><span className='number'>04.</span>Search Engine Optimization</h2>
                             <p class="pt-3">
                                 The job of a search engine is quite simple which is to provide users with the most relevent information. It does this by analyzing information using search algorithms. The goal of Search Engine Optimization(SEO) is to expand the visibility of your website bringing more visitors
                                 through search results. Essentially it allows your website to scale up through the rankings. Having an SEO strategy in place
@@ -68,13 +68,13 @@ class Discover extends Component {
                                 provides inbound links bringing acknowledgement and increasing each individual contents ranking. The more visibility recieved the higher the ranking through each link that is clicked.
                             </p>
                         </div>
-                        <div className='col-12 col-md-6 order-md-1 mt-3'>
-                            <img className='discover-img img-fluid' src='assets/images/discover4.jpg' alt='SEO section image' />
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3'>
+                            <img src='/assets/images/seo.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
-                        <div className='col-12 col-md-6'>
-                            <h2 className='font-two'>Security</h2>
+                        <div className='col-12 col-md-12 col-lg-6'>
+                            <h2 className='font-two'><span className='number'>05.</span>Security</h2>
                             <p class="pt-3">
                                 Security should be a top priority when it comes to building a website. Website security provides protection not only to your data but also your users data against any type of malicious attack. Cyber attacks
                                 can not just effect your privacy and data but also the functionality of your website. Additionally it can also have lasting negative effects to your brands identity. For users this can significantly destroy
@@ -89,8 +89,8 @@ class Discover extends Component {
                                 <li><span className='fa fa-check mr-3'></span>File Inclusion</li>
                             </ul>
                         </div>
-                        <div className='col-12 col-md-6 mt-3'>
-                        <img className='discover-img img-fluid' src='assets/images/discover5.jpg' alt='Security section image' />
+                        <div className='col-12 col-md-12 col-lg-6 mt-3'>
+                        <img src='/assets/images/cyber-security.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                 </>
@@ -114,12 +114,9 @@ class Discover extends Component {
                 {/* main discover page content*/}
                 <div className='container-fluid pt-5'>
                 <h1 className='font text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
-                <FadeTransform in
-                        transformProps={{
-                        exitTransform: 'scale(0.3) translateY(-20%)'
-                    }}>
+                <Fade in>
                     <div className='row card-discover py-5 mt-5'>
-                        <div className='col-12 col-md-8'>
+                        <div className='col-12 col-md-6 col-lg-8'>
                            <p class="large-text text-white my-5">Well lets take a look at some key components when considering building a successful website. 
                                 Intergrating a clean, simple and responsive design is what provides great user experience along with implementing easy to navigate web pages. 
                                 Creating familirarity and awareness by designing a respectable brand model. Administering effective
@@ -127,11 +124,11 @@ class Discover extends Component {
                                 intergrated with end to end encryption and proper security measures so that your data and user data is fully secure preventing any third party access.
                             </p>
                         </div>
-                        <div className='col-12 col-md-4 text-center'>
+                        <div className='col-12 col-md-6 col-lg-4 text-center'>
                             <img src='/assets/images/blocks.png' className='img-fluid move-img' width='320px' height='320px' alt='Building blocks image'/>
                         </div>
                     </div>
-                    </FadeTransform>
+                </Fade>
                 </div>
                 {/* rendering list */}
                 <div className='container py-4'>

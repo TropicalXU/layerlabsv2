@@ -51,7 +51,7 @@ class About extends Component {
             /* about page header image*/
             <div className='container-fluid'>
                 <AboutHeader />
-                <div className='row tag-about py-5'>
+                {/* <div className='row tag-about py-5'>
                     <div className='col-12 py-5'>
                         <h3 className='font-two text-center'>
                             <span className='about-tag'>PLAN 
@@ -59,9 +59,9 @@ class About extends Component {
                             <span className='fa fa-chevron-right ml-4'></span> DESIGN</span>
                         </h3>
                     </div>
-                </div>
+                </div> */}
                 {/* about page content*/}
-                <div className='container'>
+                <div className='container py-5'>
                     <div className='row py-5'>
                         <AboutPage />
                     </div>

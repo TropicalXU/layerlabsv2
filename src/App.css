@@ -117,6 +117,14 @@ p {
   font-size: 28px;
 }
 
+.fa-personal:hover {
+  font-size: 30px;
+}
+
+.home-fa:hover {
+  font-size: 35px
+}
+
 /* background styles */
 .dark-bg {
   background-color: rgb(29, 38, 45);
@@ -147,7 +155,6 @@ p {
 
 .btn-gradient {
   color: white;
-  font-weight: 600;
   background-image: linear-gradient(to right top,rgb(91, 173, 255), rgb(204, 0, 204), rgb(255, 92, 92) );
   border-radius: 50px;
   border: none;
@@ -286,6 +293,12 @@ p {
   border-radius: 25px;
 }
 
+.home-projects-card {
+  padding: 65px;
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 15px;
+}
+
 /* services/package page styling */
 .package-card {
   color: rgb(255, 255, 255);
@@ -304,7 +317,7 @@ p {
 .custom-card {
   border: none;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(214, 214, 214);
+  box-shadow: 0 0 10px rgb(124, 124, 124);
 }
 
 .business-card {
@@ -337,6 +350,12 @@ p {
   border-radius: 25px;
   border: none;
   box-shadow: 0 0 10px rgb(232, 232, 232);
+}
+
+.number {
+  font-size: 60px;
+  color: darkgrey;
+  padding-right: 10px;
 }
 
 /* about page styles */
@@ -375,9 +394,9 @@ p {
 .profile-card {
   color: #edf2f4;
   padding: 20px;
-  background-color: rgb(29, 38, 45);
+  background-color: rgb(0, 0, 0);
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(142, 142, 142);
+  box-shadow: 0 0 10px rgb(54, 54, 54);
 }
 
 .course-card {
@@ -386,7 +405,7 @@ p {
   padding: 20px;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(204, 204, 204);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.197);
 }
 
 /* footer styling */

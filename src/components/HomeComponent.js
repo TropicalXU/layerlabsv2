@@ -6,7 +6,7 @@ import { Card, CardBody, CardImg, Carousel, CarouselItem,
     } 
 from 'reactstrap';
 import { FadeTransform, Fade } from 'react-animation-components';
-import { RenderContact } from '../functionalComponents/functionalComponents';
+import { RenderContact, RenderCardOne, RenderCardTwo, RenderCardThree} from '../functionalComponents/functionalComponents';
 
 //carousel items
 const items = [
@@ -112,54 +112,13 @@ class Home extends Component {
                                 <NavLink className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></NavLink>
                             </div>
                             <div className='col-12 pt-5'>
-                                <a className="fa-brands fa-medium fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
-                                <a className="fa-brands fa-instagram fa-2xl text-white px-2" href="https://www.instagram.com/layerlabs.io"></a>
-                                <a className="fa-brands fa-github fa-2xl text-white px-2" href="https://github.com/TropicalXU"></a>
+                                <a className="fa-brands fa-medium home-fa fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
+                                <a className="fa-brands fa-instagram home-fa fa-2xl text-white px-2" href="https://www.instagram.com/layerlabs.io"></a>
+                                <a className="fa-brands fa-github fa-2xl home-fa text-white px-2" href="https://github.com/TropicalXU"></a>
                             </div>
                         </div>
                     </div>
                 </Fade>
-            );
-        }
-
-        //HOME PAGE CARDS//--------
-        const RenderCardOne = () => {
-            return (
-                <>
-                <Card className='home-card text-center py-4'>
-                    <CardBody>
-                        <span className='fa fa-panorama fa-lg'></span>
-                        <h2 className='font-two py-3'>Plan</h2>
-                        <p className='home-card-text'>Create and design a roadmap of what you hope to achieve for your website.</p>
-                    </CardBody>
-                </Card>
-                </>
-            );
-        }
-        const RenderCardTwo = () => {
-            return (
-                <>
-                <Card className='home-card text-center py-4'>
-                    <CardBody>
-                        <span className='fa fa-wand-magic-sparkles fa-lg'></span>
-                        <h2 className='font-two py-3'>Visualize</h2>
-                        <p className='home-card-text'>Gather images and material to help you visualize and plan your website</p>
-                    </CardBody>
-                </Card>
-                </>
-            );
-        }
-        const RenderCardThree = () => {
-            return (
-                <>
-                <Card className='home-card text-center py-4'>
-                    <CardBody>
-                        <span className='fa fa-crop-simple fa-lg'></span>
-                        <h2 className='font-two py-3'>Design</h2>
-                        <p className='home-card-text'>Establish a theme, choose your color palettes and construct your brand.</p>
-                    </CardBody>
-                </Card>
-                </>
             );
         }
 
@@ -186,7 +145,7 @@ class Home extends Component {
             }else {
                 return(
                     <>
-                        <div className='row align-items-center mb-5'>
+                        <div className='row align-items-center'>
                             <div className='col-12 col-md-5 offset-md-2 order-md-2 py-5'>
                                 <h2 className="font py-5">{item.title}</h2>
                                 <p>
@@ -211,7 +170,7 @@ class Home extends Component {
                 {/* rendering home page header */}
                 <HomeHeader />
                 {/* rendering home page cards */}
-                <div className='container mt-5 py-5'>
+                <div className='container mt-5 pb-5'>
                     <h2 className='font'>Bring your visions to life with Layerlabs..</h2>
                     <div className='row py-5'>
                         <div className='col-12 col-md-12 col-lg-4 py-3'>
@@ -257,12 +216,13 @@ class Home extends Component {
                 </div>
                 {/* rendering work section */}
                 <div className='container'>
-                    <h2 className='font text-center pt-3'>Check out some of my work <span className='fa fa-chevron-down'></span></h2>
-                    <div className='row my-4 py-5'>
+                    <h2 className='font text-center pt-3'>Check out some of my work</h2>
+                    <hr></hr>
+                    <div className='row mb-4 py-5'>
                         <RenderWork item={this.props.project1} />
                         <RenderWork item={this.props.project2}/>
                         <div className='col-12 text-center'>
-                            <a href='/projects' className='btn btn-black px-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
+                            <a href='/projects' className='btn btn-black font-two px-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
                         </div>
                     </div>
                 </div>

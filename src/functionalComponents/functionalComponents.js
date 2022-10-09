@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Card, CardBody, CardImg } from 'reactstrap'; 
 import { FadeTransform } from 'react-animation-components';
 
-//Render card one - section cards
+//SECTION CARDS-------------------------------
 export const RenderCardOne = () => {
     return (
         <>
@@ -23,7 +23,7 @@ export const RenderCardOne = () => {
         </>
     );
 }
-//render card two -section cards
+
 export const RenderCardTwo = () => {
     return (
         <>
@@ -42,7 +42,7 @@ export const RenderCardTwo = () => {
         </>
     );
 }
-//render card three section cards
+
 export const RenderCardThree = () => {
     return (
         <>
@@ -53,7 +53,7 @@ export const RenderCardThree = () => {
                 <Card className='home-card text-center'>
                     <CardBody>
                         <span className='fa fa-square-check fa-lg'></span>
-                        <h2 className='font-two py-3'>Branding</h2>
+                        <h2 className='font-two py-3'>Support</h2>
                         <p className='home-card-text'>Establish a theme, choose your color palettes and construct your brand.</p>
                     </CardBody>
                 </Card>
@@ -62,11 +62,137 @@ export const RenderCardThree = () => {
     );
 }
 
-//render steps component
-const RenderSteps = () => {
+export const RenderCardFour = () => {
     return (
         <>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+            <Card className='home-card text-center py-4'>
+                <CardBody>
+                    <span className='fa fa-panorama fa-lg'></span>
+                    <h2 className='font-two py-3'>Plan</h2>
+                    <p className='home-card-text'>Create and design a roadmap of what you hope to achieve for your website.</p>
+                </CardBody>
+            </Card>
+        </>
+    );
+}
+
+export const RenderCardFive = () => {
+    return (
+        <>
+            <Card className='home-card text-center py-4'>
+                <CardBody>
+                    <span className='fa fa-wand-magic-sparkles fa-lg'></span>
+                    <h2 className='font-two py-3'>Visualize</h2>
+                    <p className='home-card-text'>Gather images and material to help you visualize and plan your website</p>
+                </CardBody>
+            </Card>
+        </>
+    );
+}
+        
+export const RenderCardSix = () => {
+    return (
+        <>
+            <Card className='home-card text-center py-4'>
+                <CardBody>
+                    <span className='fa fa-crop-simple fa-lg'></span>
+                    <h2 className='font-two py-3'>Design</h2>
+                    <p className='home-card-text'>Establish a theme, choose your color palettes and construct your brand.</p>
+                </CardBody>
+            </Card>
+        </>
+        );
+}
+
+//PACKAGES-------------------------
+export const RenderPackageOne = () => {
+    return (
+        <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
+            {/* react animations component plugin */}
+            <FadeTransform in
+                transformProps={{
+                exitTransform: 'scale(0.3) translateY(-20%)'
+            }}>
+                <Card className='package-card py-2'>
+                    <CardBody className='font-two'>
+                        <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
+                        <h2>Custom</h2>
+                        <p>Pre-built custom website</p>
+                        <hr></hr>
+                        <h5>Choose from...</h5>
+                        <div className='service-cards-bg py-4'>
+                            <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 1 Page Application</h6>
+                          
+                            <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</h6>
+                      
+                            <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</h6> 
+                        </div>
+                    </CardBody>
+                </Card>
+            </FadeTransform>
+        </div>
+    );
+}
+
+export const RenderPackageTwo = () => {
+    return ( 
+        <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
+             {/* react animations component plugin */}
+            <FadeTransform in
+                transformProps={{
+                exitTransform: 'scale(0.3) translateY(-20%)'
+            }}>
+                <Card className='package-card py-1'>
+                    <CardBody className='font-two'>
+                        <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
+                        <h2>Custom <span className='fa fa-plus'></span></h2>
+                        <p>Flexible custom design & features</p>
+                        <hr></hr>
+                        <h5>Choose from...</h5>
+                        <div className='service-cards-bg py-4'>
+                           <h6>Choose from up to 7 custom pages additional features are provided with this package.</h6>
+                           <h6>Prices are available on request.</h6>
+                        </div>
+                    </CardBody>
+                </Card>
+            </FadeTransform>
+        </div>
+    );
+}
+
+export const RenderPackageThree = () => {
+    return (
+        <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
+             {/* react animations component plugin */}
+            <FadeTransform in
+                transformProps={{
+                exitTransform: 'scale(0.3) translateY(-20%)'
+            }}>
+                <Card className='package-card py-1'>
+                    <CardBody className='font-two'>
+                        <img src='/assets/images/shuttle.png' className='img-fluid text-white my-2' width='70px' height='70px'/>
+                        <h2 className='text-black'>Business <span className='fa fa-plus'></span></h2>
+                        <p>Flexible custom design, business features and functionality</p>
+                        <hr></hr>
+                        <h5>Choose from...</h5>
+                        <div className='service-cards-bg py-4'>
+                            <h6>
+                                Choose from up to 12 custom pages with your desired features, functionality and design.
+                                This package is fully flexible to meet your needs. 
+                            </h6>
+                        </div>
+                    </CardBody>
+                </Card>
+            </FadeTransform>
+        </div>
+    );
+}
+
+//STEPS SECTION----------------------
+export const RenderSteps = () => {
+    return (
+        <>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
                 <Card className='steps-card'>
                     <CardBody>
                         <h3 className='font text-center py-3'>Plan <span className='fa fa-file-lines fa-lg'></span></h3>
@@ -79,7 +205,7 @@ const RenderSteps = () => {
                     </CardBody>
                 </Card>
             </div>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
                 <Card className='steps-card'>
                     <CardBody>
                         <h3 className='font text-center py-3'>Design <span className="fa-solid fa-object-ungroup fa-lg px-2"></span></h3>
@@ -92,7 +218,7 @@ const RenderSteps = () => {
                     </CardBody>
                 </Card>
             </div>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
                 <Card className='steps-card'>
                     <CardBody>
                         <h3 className='font text-center py-3'>Develop <span className='fa-solid fa-code fa-lg'></span></h3>
@@ -106,7 +232,7 @@ const RenderSteps = () => {
                     </CardBody>
                 </Card>  
             </div>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
                 <Card className='steps-card'>
                     <CardBody>
                         <h3 className='font text-center py-3'>Launch <span className='fa-solid fa-cloud-arrow-up fa-lg'></span></h3>
@@ -123,7 +249,7 @@ const RenderSteps = () => {
     );
 }
 
-//render contact component
+//CONTACT COMPONENT-------------------
 export const RenderContact = () => {
     return (
         <div className='row dark-bg text-center py-5'>
@@ -138,7 +264,7 @@ export const RenderContact = () => {
     );
 }
 
-//render instagram component
+//INSTAGRAM COMPONENT------------------------
 export const RenderInstagram = () => {
     return (
         <>
@@ -149,13 +275,13 @@ export const RenderInstagram = () => {
             </div>
             <div className='row'>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/logo.png' className='img-fluid discover-img' />
+                    <img src='/assets/images/layerlabs-insta1.png' className='img-fluid discover-img' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/logo.png' className='img-fluid discover-img' />
+                    <img src='/assets/images/layerlabs-insta.png' className='img-fluid discover-img' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/logo.png' className='img-fluid discover-img' />
+                    <img src='/assets/images/layerlabs-insta2.png' className='img-fluid discover-img' />
                 </div>
             </div>
             <div className='row pt-5 font-two'>
@@ -167,7 +293,7 @@ export const RenderInstagram = () => {
     );
 }
 
-//render services ad components
+//SERVICES AD COMPONENT--------------------
 export const RenderServicesAd = () => {
     return (
         <div className='row dark-bg text-center py-5'>
