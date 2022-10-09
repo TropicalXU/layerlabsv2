@@ -1,3 +1,4 @@
+//importing main links
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
+  <>{/* RENDERING MAIN APP COMPONENT */}
     <React.StrictMode>
     <App />
     </React.StrictMode>

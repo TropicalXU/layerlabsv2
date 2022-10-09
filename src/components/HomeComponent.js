@@ -1,3 +1,4 @@
+//importing main links
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, CardBody, CardImg, Carousel, CarouselItem, 
@@ -7,6 +8,7 @@ from 'reactstrap';
 import { FadeTransform, Fade } from 'react-animation-components';
 import { RenderContact } from '../functionalComponents/functionalComponents';
 
+//carousel items
 const items = [
     {
         src: 'assets/images/logo.png',
@@ -28,8 +30,10 @@ const items = [
     }
   ];
 
+//home page component
 class Home extends Component {
     constructor(props) {
+        //state used for carousel
         super(props);
         this.state = {
             activeIndex: 0
@@ -40,7 +44,7 @@ class Home extends Component {
         this.onExiting = this.onExiting.bind(this);
         this.onExited = this.onExited.bind(this);
     }
-    
+    //carousel functions
     onExiting() {
         this.animating = true;
     }
@@ -68,10 +72,11 @@ class Home extends Component {
 
 
     render() {
-
+        //mapping over items to display in carousel
         const { activeIndex } = this.state;
             const slides = items.map((item) => {
                 return (
+                //carousel items
                   <CarouselItem 
                     onExiting={this.onExiting}
                     onExited={this.onExited}
@@ -117,6 +122,7 @@ class Home extends Component {
             );
         }
 
+        //HOME PAGE CARDS//--------
         const RenderCardOne = () => {
             return (
                 <>
@@ -157,6 +163,8 @@ class Home extends Component {
             );
         }
 
+        //home page work section
+        //taking in work items from main state as props
         const RenderWork = ({item}) => {
             if(item.id % 2 == 0 ) {
                 return(
@@ -166,7 +174,7 @@ class Home extends Component {
                                 <p>
                                     {item.intro}
                                 </p>
-                                <NavLink to={`/projects/${item.id}`} className='btn btn-gradient my-3'>View <span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <NavLink to={`/projects/${item.id}`} className='btn btn-gradient my-5'>View <span className='fa fa-chevron-right ml-2'></span></NavLink>
                                 <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-5 offset-md-2'>
@@ -184,7 +192,7 @@ class Home extends Component {
                                 <p>
                                     {item.intro}
                                 </p>
-                                <NavLink to={`/projects/${item.id}`}className='btn btn-gradient my-3'>View<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <NavLink to={`/projects/${item.id}`}className='btn btn-gradient my-5'>View<span className='fa fa-chevron-right ml-2'></span></NavLink>
                                 <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-5 order-md-1'>
@@ -200,11 +208,14 @@ class Home extends Component {
 
         return (
             <div className='container-fluid'>
+                {/* rendering home page header */}
                 <HomeHeader />
+                {/* rendering home page cards */}
                 <div className='container mt-5 py-5'>
                     <h2 className='font'>Bring your visions to life with Layerlabs..</h2>
                     <div className='row py-5'>
                         <div className='col-12 col-md-12 col-lg-4 py-3'>
+                            {/* using react animation components */}
                             <FadeTransform in
                                 transformProps={{
                                 exitTransform: 'scale(0.3) translateY(-20%)'
@@ -230,6 +241,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                {/* rendering homepage carousel */}
                 <div className='container-fluid'>
                     <div className='row pb-5'>
                         <div className='col-12'>
@@ -243,9 +255,10 @@ class Home extends Component {
                         </div>
                     </div>`
                 </div>
+                {/* rendering work section */}
                 <div className='container'>
                     <h2 className='font text-center pt-3'>Check out some of my work <span className='fa fa-chevron-down'></span></h2>
-                    <div className='row pb-5'>
+                    <div className='row my-4 py-5'>
                         <RenderWork item={this.props.project1} />
                         <RenderWork item={this.props.project2}/>
                         <div className='col-12 text-center'>
@@ -253,6 +266,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                {/* rendering contact plugin */}
                 <div className='container-fluid'>
                     <div className='row mb-4'>
                         <div className='col-12'>

@@ -1,8 +1,10 @@
+//importing main links
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, CardBody, CardImg } from 'reactstrap'; 
 import { FadeTransform } from 'react-animation-components';
 
+//Render card one - section cards
 export const RenderCardOne = () => {
     return (
         <>
@@ -21,7 +23,7 @@ export const RenderCardOne = () => {
         </>
     );
 }
-
+//render card two -section cards
 export const RenderCardTwo = () => {
     return (
         <>
@@ -40,7 +42,7 @@ export const RenderCardTwo = () => {
         </>
     );
 }
-
+//render card three section cards
 export const RenderCardThree = () => {
     return (
         <>
@@ -60,6 +62,68 @@ export const RenderCardThree = () => {
     );
 }
 
+//render steps component
+const RenderSteps = () => {
+    return (
+        <>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+                <Card className='steps-card'>
+                    <CardBody>
+                        <h3 className='font text-center py-3'>Plan <span className='fa fa-file-lines fa-lg'></span></h3>
+                        <ul>
+                            <li>Create a roadmap</li>
+                            <li>Design a schedule</li>
+                            <li>Gather material</li>
+                            <li>Make a deadline</li>
+                        </ul>
+                    </CardBody>
+                </Card>
+            </div>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+                <Card className='steps-card'>
+                    <CardBody>
+                        <h3 className='font text-center py-3'>Design <span className="fa-solid fa-object-ungroup fa-lg px-2"></span></h3>
+                        <ul>
+                            <li>Establish a theme</li>
+                            <li>Choose your color palettes</li>
+                            <li>Branding & design</li>
+                            <li>Mapping out the responsive design</li>
+                        </ul>
+                    </CardBody>
+                </Card>
+            </div>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+                <Card className='steps-card'>
+                    <CardBody>
+                        <h3 className='font text-center py-3'>Develop <span className='fa-solid fa-code fa-lg'></span></h3>
+                        <ul>
+                            <li>Building the framework</li>
+                            <li>Implementing the code</li>
+                            <li>Intergrating top level navigation tools</li>
+                            <li>Administering Search Engine Optimization</li>
+                            <li>Installing high level security</li>
+                        </ul>
+                    </CardBody>
+                </Card>  
+            </div>
+            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 py-3'>
+                <Card className='steps-card'>
+                    <CardBody>
+                        <h3 className='font text-center py-3'>Launch <span className='fa-solid fa-cloud-arrow-up fa-lg'></span></h3>
+                        <ul>
+                            <li>Review material</li>
+                            <li>Testing the application</li>
+                            <li>Launching the application</li>
+                            <li>Continue ongoing support</li>
+                        </ul>
+                    </CardBody>
+                </Card>  
+            </div>
+        </>
+    );
+}
+
+//render contact component
 export const RenderContact = () => {
     return (
         <div className='row dark-bg text-center py-5'>
@@ -74,6 +138,7 @@ export const RenderContact = () => {
     );
 }
 
+//render instagram component
 export const RenderInstagram = () => {
     return (
         <>
@@ -84,25 +149,25 @@ export const RenderInstagram = () => {
             </div>
             <div className='row'>
                 <div className='col-12 col-md-4'>
-                    <Card>
-                        <CardImg src='assets/images/logo.png' />
-                    </Card>
+                    <img src='/assets/images/logo.png' className='img-fluid discover-img' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <Card>
-                        <CardImg src='assets/images/logo.png' />
-                    </Card>
+                    <img src='/assets/images/logo.png' className='img-fluid discover-img' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <Card>
-                        <CardImg src='assets/images/logo.png' />
-                    </Card>
+                    <img src='/assets/images/logo.png' className='img-fluid discover-img' />
+                </div>
+            </div>
+            <div className='row pt-5 font-two'>
+                <div className='col-12 text-center'>
+                    <a className='btn btn-black px-4'>Visit</a>
                 </div>
             </div>
         </>
     );
 }
 
+//render services ad components
 export const RenderServicesAd = () => {
     return (
         <div className='row dark-bg text-center py-5'>

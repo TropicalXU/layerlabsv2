@@ -1,9 +1,11 @@
+//importing main links
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem,
     Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown
  } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
+//header component containing navbar
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -20,10 +22,9 @@ class Header extends Component {
         });
     }
    
-
     render() {
         return (
-            <>
+            <>  {/* website navbar */}
                 <Navbar light color='white' expand='md'>
                     <div className='container-fluid py-2'>
                         <NavbarBrand className='mr-auto' href='/'>
@@ -45,6 +46,7 @@ class Header extends Component {
                                     </NavLink>
                                 </NavItem>
                             </Nav>
+                            {/* dropdown nav-link - about */}
                             <Nav navbar className='ml-auto'>
                                 <UncontrolledDropdown nav>
                                     <DropdownToggle nav className='font'>Info<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>

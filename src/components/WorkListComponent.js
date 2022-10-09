@@ -1,38 +1,59 @@
+//importing main links
 import React from 'react';
+import { BreadcrumbItem } from 'reactstrap';
 import { RenderServicesAd } from '../functionalComponents/functionalComponents';
+import { NavLink } from 'react-router-dom';
 
+//WORK DETAIL PAGE
 const WorkDetail = (props) => {
 
     return (
         <>
-            <div className='row-layerlabs'>
+            {/* work detail page header image */}
+            <div className='row-layerlabs mb-3'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font text-white shirleys-studio-header'>{props.project.title}</h1>
+                        <h1 className='font text-white work-header'>{props.project.title}</h1>
                     </div>
                 </div>
             </div>
+            {/* breadcrumb section */}
             <div className='container-fluid'>
                 <div className='container'>
-                    <div className='row py-5'>
-                        <div className='col-12 py-5'>
-                            <h1 className='font-two'>Website Launch Date</h1>
-                            <h1 className='font-two'>{props.project.launch}</h1>
-                        </div>
-                        <div className='row py-5'>
-                            <div className='col-12 col-md-6 pt-5'>
-                                <h1 className='font-two'>About the project</h1>
-                                <p className='py-4'>{props.project.description}</p>
-                                <a href={props.project.url} className='btn btn-outline-dark'>Visit Site<span className='fa fa-chevron-right ml-2'></span></a>
-                                <a href={props.project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
-                            </div>
-                            <div className='col-12 col-md-6 pt-5'>
-                                <img className='discover-img' src={props.project.image} alt={props.project.title} />
-                            </div>
+                    <div className='row pt-3'>
+                        <div className='breadcrumb'>
+                            <BreadcrumbItem>
+                                <NavLink className='breadcrumb-link text-white' to='/projects'>
+                                    <span className='fa fa-chevron-left'></span> <span className='b-link'>Projects</span>
+                                </NavLink>
+                            </BreadcrumbItem>
+                            <BreadcrumbItem active className='text-white'>{props.project.title}
+                            </BreadcrumbItem>
                         </div>
                     </div>
                 </div>
-                <div className='container-fluid my-4 pt-3'>
+                {/* projects detail main section*/}
+                <div className='container mt-5'>
+                    <div className='row'>
+                        <div className='col-12'>
+                            <h1 className='font-two'>Website Launch Date</h1>
+                            <h1 className='font-two'>{props.project.launch}</h1>
+                        </div>
+                    </div>
+                    <div className='row py-5 my-3'>
+                        <div className='col-12 col-md-6'>
+                            <h1 className='font-two'>About the project</h1>
+                            <p className='py-4'>{props.project.description}</p>
+                            <a href={props.project.url} className='btn btn-black px-4'>Visit Site<span className='fa fa-chevron-right ml-2'></span></a>
+                            <a href={props.project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
+                        </div>
+                        <div className='col-12 col-md-6 pt-5'>
+                                <img className='img-fluid' src={props.project.image} alt={props.project.title} />
+                        </div>  
+                    </div>
+                </div>
+                {/* importing render services ad plugin */}
+                <div className='container-fluid pt-5'>
                     <RenderServicesAd />
                 </div>
             </div>

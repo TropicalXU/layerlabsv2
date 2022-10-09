@@ -1,19 +1,21 @@
+//importing main links
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { RenderCardOne, RenderCardThree, RenderCardTwo, RenderContact } from '../functionalComponents/functionalComponents';
 
-
+//SERVICES MAIN PAGE
 class Services extends Component {
     constructor(props) {
         super(props);
     }
     render() {
-
+        //RENDERING PACKAGES
         const RenderPackageOne = () => {
             return (
                 <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
+                    {/* react animations component plugin */}
                     <FadeTransform in
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
@@ -24,7 +26,7 @@ class Services extends Component {
                                 <p>Pre-built custom website</p>
                                 <hr></hr>
                                 <p>Choose from...</p>
-                                <div className='cards-bg py-4'>
+                                <div className='service-cards-bg py-4'>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 1 Page Application</p>
                                     <hr></hr>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</p>
@@ -42,6 +44,7 @@ class Services extends Component {
         const RenderPackageTwo = () => {
             return ( 
                 <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
+                     {/* react animations component plugin */}
                     <FadeTransform in
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
@@ -52,7 +55,7 @@ class Services extends Component {
                                 <p>Flexible custom design & features</p>
                                 <hr></hr>
                                 <p>Choose from...</p>
-                                <div className='cards-bg py-4'>
+                                <div className='service-cards-bg py-4'>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</p>
                                     <hr></hr>
                                     <p><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</p>
@@ -70,6 +73,7 @@ class Services extends Component {
         const RenderPackageThree = () => {
             return (
                 <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
+                     {/* react animations component plugin */}
                     <FadeTransform in
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
@@ -86,8 +90,8 @@ class Services extends Component {
                 </div>
             );
         }
-
-        const RenderSteps = () => {
+        // rendering custom vs template section
+        const RenderDifferences = () => {
             return (
                 <>
                     <div className='col-12 col-sm-12 col-md-6 py-3'>
@@ -123,6 +127,7 @@ class Services extends Component {
         return (
             <>
                 <div className='container-fluid'>
+                    {/* service page tabs navigation */}
                     <div className='container tabs'>
                         <div className='row d-flex justify-content-center py-5'>
                             <div className='col-12 col-md-6 text-center'>
@@ -133,6 +138,7 @@ class Services extends Component {
                             </div>
                         </div>
                     </div>
+                    {/* rendering packages*/}
                     <div className='container'>
                         <div className='row d-flex justify-content-center text-center pt-5'>
                             <RenderPackageOne />
@@ -140,6 +146,7 @@ class Services extends Component {
                             <RenderPackageThree />
                         </div>
                     </div>
+                    {/* rendering custom vs template section*/}
                     <div className='container-fluid'>
                         <div className='row pt-5'>
                             <div className='col-12'>
@@ -147,9 +154,10 @@ class Services extends Component {
                             </div>
                         </div>
                         <div className='row pb-5'>
-                                <RenderSteps />
+                                <RenderDifferences />
                             </div>
                     </div>
+                    {/* imporing render cards plugin */}
                     <div className='container'>
                         <div className='row pb-5 pt-3'>
                             <div className='col-12 col-md-12 col-lg-4 py-3'>
@@ -162,6 +170,7 @@ class Services extends Component {
                             <RenderCardThree /> 
                             </div>
                         </div>
+                        {/* personal/business section */}
                         <div className='row'>
                             <div className='col-12 col-md-6'>
                                 <h2 className='font-two pt-5'>Interested in a personal website?</h2>
@@ -207,6 +216,7 @@ class Services extends Component {
                             </div>
                         </div>
                     </div>
+                    {/* importing render contact plugin*/}
                     <div className='container-fluid pb-4'>
                         <RenderContact />
                     </div>

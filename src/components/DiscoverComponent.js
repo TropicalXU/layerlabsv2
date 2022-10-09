@@ -1,11 +1,13 @@
+//importing main links
 import React, { Component } from 'react';
 import { RenderInstagram, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { NavLink } from 'react-router-dom';
 import { Fade, Stagger, FadeTransform } from 'react-animation-components';
 
+//discover page
 class Discover extends Component {
     render() {
-
+        {/*  what matters content function */}
         const RenderList = () => {
             return (
                 <>
@@ -101,6 +103,7 @@ class Discover extends Component {
                 <div className='container'>
                     <div className='row d-flex justify-content-center'>
                         <div className='col-12 col-md-6 text-center'>
+                            {/* discover page links tab */}
                             <div className='btn-services-tab'>
                                 <NavLink to='/services' className='btn btn-services'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></NavLink>
                                 <NavLink to='/discover' className='btn btn-services-active active ml-2'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></NavLink>
@@ -108,6 +111,7 @@ class Discover extends Component {
                         </div>
                     </div>
                 </div>
+                {/* main discover page content*/}
                 <div className='container-fluid pt-5'>
                 <h1 className='font text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
                 <FadeTransform in
@@ -129,6 +133,7 @@ class Discover extends Component {
                     </div>
                     </FadeTransform>
                 </div>
+                {/* rendering list */}
                 <div className='container py-4'>
                     <Stagger in>
                         <Fade in>
@@ -136,6 +141,7 @@ class Discover extends Component {
                         </Fade>
                     </Stagger>
                 </div>
+                {/* rendering instagram plugin */}
                 <div className='container-fluid'>
                     <RenderServicesAd />
                 </div>

@@ -1,6 +1,8 @@
+//importing main links
 import React, { useEffect, Fragment } from 'react';
 import { withRouter } from 'react-router-dom';
 
+//scroll to top function for display use on navlink clicks
 function ScrollToTop({ history, children }) {
   useEffect(() => {
     const unlisten = history.listen(() => {

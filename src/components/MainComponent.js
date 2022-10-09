@@ -1,3 +1,4 @@
+//importing main links
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import Header from './Header';
@@ -19,9 +20,10 @@ import PrivacyPolicy from './privacyPolicy';
 import CookieConsent, { Cookies } from 'react-cookie-consent';
 import { PACKAGE } from '../shared/packages';
 
-
+//---MAIN COMPONENT --------//
 class Main extends Component {
     constructor(props) {
+        //applying the state
         super(props);
         this.state = {
             projects: WORK,
@@ -30,7 +32,7 @@ class Main extends Component {
     }
 
     render() {
-
+        //home page - adding in props
         const HomePage = () => {
             return(
                 <Home
@@ -39,7 +41,7 @@ class Main extends Component {
                  />
             );
         }
-
+        // work detail page - adding in props
         const WorkId = ({match}) => {
             return (
                 <WorkDetail 
@@ -68,7 +70,7 @@ class Main extends Component {
 
         return (
             <div>
-               
+               {/* RENDERING ROUTES */}
                 <Header />
                 <Switch>
                     <Route exact path='/' component={ HomePage} />
@@ -88,6 +90,7 @@ class Main extends Component {
                     <Route exact path='/privacyPolicy' component={ () => <PrivacyPolicy /> } />
                     <Redirect to='/' />
                 </Switch>
+                {/* RENDERING COOKIE CONSENT */}
                 {/* <div className='container'>
                 <CookieConsent
                 buttonClasses='btn btn-primary'>
@@ -98,7 +101,6 @@ class Main extends Component {
                 </CookieConsent>
                 </div> */}
                 <Footer />
-             
             </div>
         );
     }

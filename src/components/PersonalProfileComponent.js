@@ -1,10 +1,13 @@
+//importing main links
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button, Card, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { Fade } from 'react-animation-components';
 
+//PERSONAL PROFILE PAGE
 class PersonalProfile extends Component {
     constructor(props) {
+        //applying the state for modal use
         super(props);
         this.state = {
             isModalOneOpen: false,
@@ -16,7 +19,7 @@ class PersonalProfile extends Component {
         this.toggleModalThree = this.toggleModalThree.bind(this);
 
     }
-
+    // modal functionality
     toggleModalOne() {
         this.setState({
             isModalOneOpen: !this.state.isModalOneOpen
@@ -37,7 +40,7 @@ class PersonalProfile extends Component {
 
 
     render() {
-
+        // configuting modalheader close buttons
         const closeBtn = (
             <button className="close" onClick={this.toggleModalOne} type="button">
                <span className='fa fa-xmark text-white'></span>
@@ -55,7 +58,7 @@ class PersonalProfile extends Component {
         );
         
         return (
-            <>
+            <>  {/* rendering modals */}
                 <Modal isOpen={this.state.isModalOneOpen} toggle={this.toggleModalOne}>
                     <ModalHeader className='modal-header text-white font-two' toggle={this.toggleModalOne} close={closeBtn}>More Details:</ModalHeader>
                     <ModalBody className='modal-body'>
@@ -96,8 +99,10 @@ class PersonalProfile extends Component {
                         </ul>
                     </ModalBody>
                 </Modal>
+                {/* personal profile main */}
                 <div className='container-fluid'>
                     <div className='container'>
+                        {/* personal profile header*/}
                         <div className='row py-5'>
                             <div className='col-12'>
                                 <h1 className='font text-center py-5'>Personal Profile <span className='fa-regular fa-user ml-2'></span></h1>
@@ -105,7 +110,9 @@ class PersonalProfile extends Component {
                         </div>
                     </div>
                     <div className='container pb-5'>
+                        {/* using react animation components*/}
                         <Fade in>
+                        {/* personal profile card */}
                         <div className='row profile-card py-5'>
                             <div className='col-12'>
                                 <div className='row'>
@@ -127,6 +134,7 @@ class PersonalProfile extends Component {
                             </div>
                         </div>
                         </Fade>
+                        {/* proffesional development section ---COURSES CARDS*/}
                         <div className='row py-5'>
                             <div className='col-12'>
                                 <h2 className='font mt-5'>Professional Development</h2>
@@ -178,6 +186,7 @@ class PersonalProfile extends Component {
                                 </div>
                             </div>
                         </div>
+                        {/* ongoing development section - course card */}
                         <div className='row py-5'>
                             <div className='col-12'>
                                 <h2 className='font'>Ongoing Development</h2>

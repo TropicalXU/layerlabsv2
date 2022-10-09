@@ -1,8 +1,11 @@
+//importing main links
 import React from 'react';
 import { RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { Fade, Stagger} from 'react-animation-components';
 import { NavLink } from 'react-router-dom';
 
+//main projects page
+// rendering projects with the use of props
 const RenderProjects = ({project}) => {
     if(project.id % 2 == 0) {
 
@@ -40,11 +43,15 @@ const RenderProjects = ({project}) => {
     }
 }
 
+//taking in props to use in render projects function
 const Projects = (props) => {
+    //mapping over projects to display
     const proj = props.projects.map((project) => {
         return (
             <div className='container'>
+                {/* react animation components */}
                 <Fade in>
+                    {/* rendering projects and applying props */}
                     <RenderProjects project={project} />
                 </Fade>
             </div>
@@ -52,14 +59,17 @@ const Projects = (props) => {
     })
     return (
         <>
+            {/* projexts header image */}
             <div className='row-layerlabs'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font text-white shirleys-studio-header'>Projects</h1>
+                        <h1 className='font text-white work-header'>Projects</h1>
                     </div>
                 </div>
             </div>
+            {/* projects page header */}
             <div className='container-fluid'>
+                {/* react animation component plug in */}
                 <Fade in>
                     <div className='container-fluid work-description'>
                     <h2 className='font text-center py-5'>Check out my work below</h2>
@@ -77,9 +87,12 @@ const Projects = (props) => {
                         </div>
                     </div>
                 </Fade>
+                {/* react animations component plugin */}
                 <Stagger in>
+                    {/* passing in project items list */}
                     {proj}
                 </Stagger>
+                {/* rendering services ad plugin */}
                 <div className='container-fluid my-4 pt-3'>
                     <RenderServicesAd project={props.projects} />
                 </div>

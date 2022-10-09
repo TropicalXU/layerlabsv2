@@ -1,13 +1,14 @@
+//importing main links
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Fade } from 'react-animation-components';
 import { RenderInstagram } from '../functionalComponents/functionalComponents';
 
+//About page component
 class About extends Component {
     
     render() {
-
-
+        //about header image
         const AboutHeader = () => {
             return (
                 <Fade in>
@@ -22,7 +23,7 @@ class About extends Component {
                 </Fade>
             );
         }
-
+        //main about page header
         const AboutPage = () => {
             return (
                 <>
@@ -47,6 +48,7 @@ class About extends Component {
         }
 
         return (
+            /* about page header image*/
             <div className='container-fluid'>
                 <AboutHeader />
                 <div className='row tag-about py-5'>
@@ -58,11 +60,13 @@ class About extends Component {
                         </h3>
                     </div>
                 </div>
+                {/* about page content*/}
                 <div className='container'>
                     <div className='row py-5'>
                         <AboutPage />
                     </div>
                 </div>
+                {/* about page content */}
                 <div className='container-fluid'>
                     <div className='row dark-bg py-5'>
                         <div className='col-12 col-md-8 about-text text-white py-5'>
@@ -81,6 +85,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
+                {/* render instagram plugin */}
                 <div className='container py-5'>
                     <RenderInstagram />
                 </div>

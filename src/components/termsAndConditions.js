@@ -1,5 +1,7 @@
+//importing main links
 import React from "react";
 
+//TERMS AND CONDITIONS PAGE
 const TermsAndConditions = () => {
     return (
         <div class="container my-5 pb-5">

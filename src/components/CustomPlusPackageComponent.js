@@ -1,8 +1,10 @@
+//importing main links
 import React from 'react';
 import { Card, BreadcrumbItem } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { NavLink } from 'react-router-dom';
 
+//custom plus package page
 const CustomPlusPackage = () => {
     return (
         <div className='container-fluid bg-gradient py-5'>

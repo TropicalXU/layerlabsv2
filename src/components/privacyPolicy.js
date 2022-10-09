@@ -1,5 +1,7 @@
+//importing main links
 import React from "react";
 
+//privacy policy page
 const PrivacyPolicy = () => {
     return (
         <div class="container my-5 pb-5">
