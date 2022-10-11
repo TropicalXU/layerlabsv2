@@ -107,7 +107,7 @@ class Home extends Component {
                     <div className='home-header d-flex justify-content-center align-items-center my-3'>
                         <div className='row text-center text-white'>
                             <div className='col-12'>
-                                <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
+                                <h1 className='font-two home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
                                 <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
                                 <NavLink className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></NavLink>
                             </div>
@@ -129,11 +129,11 @@ class Home extends Component {
                 return(
                     <>  <div className='row align-items-center'>
                             <div className='col-12 col-md-5 py-4'>
-                                <h2 className="font py-5">{item.title}</h2>
+                                <h2 className="font-two py-5">{item.title}</h2>
                                 <p>
                                     {item.intro}
                                 </p>
-                                <NavLink to={`/projects/${item.id}`} className='btn btn-gradient my-5'>View <span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <NavLink to={`/projects/${item.id}`} className='btn btn-gradient font-two my-5'>View <span className='fa fa-chevron-right ml-2'></span></NavLink>
                                 <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-5 offset-md-2'>
@@ -147,11 +147,11 @@ class Home extends Component {
                     <>
                         <div className='row align-items-center'>
                             <div className='col-12 col-md-5 offset-md-2 order-md-2 py-5'>
-                                <h2 className="font py-5">{item.title}</h2>
+                                <h2 className="font-two py-5">{item.title}</h2>
                                 <p>
                                     {item.intro}
                                 </p>
-                                <NavLink to={`/projects/${item.id}`}className='btn btn-gradient my-5'>View<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <NavLink to={`/projects/${item.id}`}className='btn btn-gradient font-two my-5'>View<span className='fa fa-chevron-right ml-2'></span></NavLink>
                                 <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-5 order-md-1'>
@@ -171,7 +171,7 @@ class Home extends Component {
                 <HomeHeader />
                 {/* rendering home page cards */}
                 <div className='container mt-5 pb-5'>
-                    <h2 className='font'>Bring your visions to life with Layerlabs..</h2>
+                    <h2 className='font-two'>Bring your visions to life with Layerlabs..</h2>
                     <div className='row py-5'>
                         <div className='col-12 col-md-12 col-lg-4 py-3'>
                             {/* using react animation components */}
@@ -216,7 +216,7 @@ class Home extends Component {
                 </div>
                 {/* rendering work section */}
                 <div className='container'>
-                    <h2 className='font text-center pt-3'>Check out some of my work</h2>
+                    <h2 className='font-two text-center pt-3'>Check out some of my work</h2>
                     <hr></hr>
                     <div className='row mb-4 py-5'>
                         <RenderWork item={this.props.project1} />

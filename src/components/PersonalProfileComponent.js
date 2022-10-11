@@ -104,7 +104,7 @@ class PersonalProfile extends Component {
                     {/* personal profile header*/}
                     <div className='row py-5'>
                         <div className='col-12'>
-                            <h1 className='font text-center py-5'>Personal Profile <span className='fa-regular fa-user ml-2'></span></h1>
+                            <h1 className='font-two text-center py-5'>Personal Profile <span className='fa-regular fa-user ml-2'></span></h1>
                         </div>
                     </div>
                     <div className='container pb-5'>
@@ -113,6 +113,7 @@ class PersonalProfile extends Component {
                         {/* personal profile card */}
                         <div className='row profile-card py-5'>
                             <div className='col-12 col-md-6 font-two'>
+                                <h1 className='font'>Sean Hackett:</h1>
                                 <h2 className='py-4'>Full Stack Web Developer</h2>
                                 <h3>Skills:</h3>
                                 <h4 className='gradient-text py-4'>HTML, CSS, Javascript, React, Node.js, Express.js, MongoDB, Mongoose...</h4>
@@ -131,7 +132,7 @@ class PersonalProfile extends Component {
                         {/* proffesional development section ---COURSES CARDS*/}
                         <div className='row py-5'>
                             <div className='col-12'>
-                                <h2 className='font text-white mt-5'>Professional Development</h2>
+                                <h2 className='font-two text-white mt-5'>Professional Development</h2>
                             </div>
                         </div>
                         <div className='row course-card py-5'>
@@ -139,7 +140,7 @@ class PersonalProfile extends Component {
                                 <h2 className='text-black py-4'>Full Stack Web Development with React Specialization</h2>
                                 <h4>The Hong Kong University of Science and Technology</h4>
                                 <h6 className='py-4'>August 2022 - October 2022</h6>
-                                    <h6 className='text-black'><span className='fa fa-award fa-lg mr-2'></span>Honors Certificate Recieved: October 2022</h6>
+                                    <h6 className='text-black'><span className='fa fa-award fa-lg mr-2'></span>3 Honours Certificates Recieved: October 2022</h6>
                             </div>
                             <div className='col-12 col-md-6 font-two'>
                                 <h4 className='py-5'>Course Content Covered:</h4>
@@ -175,7 +176,7 @@ class PersonalProfile extends Component {
                         {/* ongoing development section - course card */}
                         <div className='row py-5'>
                             <div className='col-12'>
-                                <h2 className='font text-white'>Ongoing Development</h2>
+                                <h2 className='font-two text-white'>Ongoing Development</h2>
                             </div>
                         </div>
                         <div className='row course-card py-5'>

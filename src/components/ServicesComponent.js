@@ -139,8 +139,8 @@ class Services extends Component {
                         <div className='row d-flex justify-content-center py-5'>
                             <div className='col-12 col-md-6 text-center'>
                                 <div className='btn-services-tab'>
-                                    <NavLink to='/services' className='btn btn-services-active active'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></NavLink>
-                                    <NavLink to='/discover' className='btn btn-services ml-1'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></NavLink>
+                                    <NavLink to='/services' className='btn btn-services-active font-two active'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></NavLink>
+                                    <NavLink to='/discover' className='btn btn-services font-two ml-1'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></NavLink>
                                 </div>
                             </div>
                         </div>

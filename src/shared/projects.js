@@ -1,5 +1,5 @@
 //project data
-export const WORK = 
+export const PROJECTS = 
     [
         {
             id: 0,

@@ -1,6 +1,5 @@
 //importing main links
 import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './HomeComponent';
@@ -13,12 +12,29 @@ import About from './AboutComponent';
 import PersonalProfile from './PersonalProfileComponent';
 import Projects from './ProjectComponent';
 import WorkDetail from './WorkListComponent';
-import { WORK } from '../shared/work';
+import { PROJECTS, WORK } from '../shared/projects';
 import Contact from './ContactComponent';
 import TermsAndConditions from './termsAndConditions';
 import PrivacyPolicy from './privacyPolicy';
 import CookieConsent, { Cookies } from 'react-cookie-consent';
 import { PACKAGE } from '../shared/packages';
+import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
+import { postFeedback } from '../redux/ActionCreators';
+import { actions } from 'react-redux-form';
+
+
+const mapStateToProps = state => {
+    return {
+      projects: state.projects,
+    }
+}
+
+const mapDispatchToProps = (dispatch) => ({
+    postFeedback: (user_name, user_email, user_message) => dispatch(postFeedback(user_name, user_email, user_message)),
+
+    resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
+});
 
 //---MAIN COMPONENT --------//
 class Main extends Component {
@@ -26,7 +42,7 @@ class Main extends Component {
         //applying the state
         super(props);
         this.state = {
-            projects: WORK,
+            projects: PROJECTS,
             packages: PACKAGE
         }
     }
@@ -85,7 +101,11 @@ class Main extends Component {
                     <Route exact path='/about/personal-profile' component={ () => <PersonalProfile /> } />
                     <Route exact path='/projects' component={ () => <Projects projects={this.state.projects} /> } />
                     <Route exact path='/projects/:id' component={ WorkId } />
-                    <Route exact path='/contact' component={ () => <Contact /> } />
+                    <Route exact path='/contact' component={ () => 
+                    <Contact 
+                    resetFeedbackForm={this.props.resetFeedbackForm} 
+                    postFeedback={this.props.postFeedback} 
+                     /> } />
                     <Route exact path='/termsAndConditions' component={ () => <TermsAndConditions /> } />
                     <Route exact path='/privacyPolicy' component={ () => <PrivacyPolicy /> } />
                     <Redirect to='/' />
@@ -105,5 +125,4 @@ class Main extends Component {
         );
     }
 }
-
-export default Main;
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));

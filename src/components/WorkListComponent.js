@@ -24,7 +24,7 @@ const WorkDetail = (props) => {
                         <div className='breadcrumb'>
                             <BreadcrumbItem>
                                 <NavLink className='breadcrumb-link text-white' to='/projects'>
-                                    <span className='fa fa-chevron-left mr-2'></span> <span className='b-link'>Projects</span>
+                                    <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Projects</span>
                                 </NavLink>
                             </BreadcrumbItem>
                             <BreadcrumbItem active className='text-white'>{props.project.title}

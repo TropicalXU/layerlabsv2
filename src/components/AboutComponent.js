@@ -15,7 +15,7 @@ class About extends Component {
                     <div className='about-header d-flex justify-content-center align-items-center my-3'>
                         <div className='row text-center text-white'>
                         <div className='col'>
-                            <h1 className='font home-title'>Layerlabs</h1>
+                            <h1 className='font-two home-title'>Layerlabs</h1>
                             <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
                             </div>
                         </div>
@@ -28,7 +28,7 @@ class About extends Component {
             return (
                 <>
                     <div className='col-12 col-md-6'>
-                        <h1 className='font'>About</h1>
+                        <h1 className='font-two'>About</h1>
                         <hr></hr>
                         <p className='pt-5'>Hi, my name is Sean Hackett and welcome to my website Layerlabs. There are many layers to consider as a Full
                             Stack Web Developer from writing the back-end code to building the framework of the application, planning and designing the front-end to full deployment of the website.
@@ -38,7 +38,7 @@ class About extends Component {
                             full scale custom web application was very evident. I created this
                             website with my love for web development specifically creation & design.
                         </p>
-                        <NavLink to='/about/personal-profile' className='btn btn-black px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <NavLink to='/about/personal-profile' className='btn btn-black font-two px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></NavLink>
                     </div>
                     <div className='col-12 col-md-6 mt-4'>
                         <img src='/assets/images/layerlabs-home.png' className='img-fluid move-img' width='560px' height='620px' alt='Layerlabs home page image'/>
@@ -70,7 +70,7 @@ class About extends Component {
                 <div className='container-fluid'>
                     <div className='row dark-bg py-5'>
                         <div className='col-12 col-md-8 about-text text-white py-5'>
-                            <h1 className='font text-center pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
+                            <h1 className='font-two text-center pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
                             <p className='large-text-two'>At Layerlabs I want to bring my own touch
                                 giving you the best and most responsive custom
                                 website design possible. What you want from a website can vary yet
@@ -81,7 +81,7 @@ class About extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-4 pl-5 py-5'>
-                            <img src='/assets/images/computer.png' className='img-fluid' width='260px' height='260px' alt='computer image'/>
+                            <img src='/assets/images/logo.png' className='img-fluid' width='260px' height='260px' alt='computer image'/>
                         </div>
                     </div>
                 </div>

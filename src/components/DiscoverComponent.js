@@ -105,15 +105,15 @@ class Discover extends Component {
                         <div className='col-12 col-md-6 text-center'>
                             {/* discover page links tab */}
                             <div className='btn-services-tab'>
-                                <NavLink to='/services' className='btn btn-services'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></NavLink>
-                                <NavLink to='/discover' className='btn btn-services-active active ml-2'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></NavLink>
+                                <NavLink to='/services' className='btn btn-services font-two'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></NavLink>
+                                <NavLink to='/discover' className='btn btn-services-active font-two active ml-2'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></NavLink>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* main discover page content*/}
                 <div className='container-fluid pt-5'>
-                <h1 className='font text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
+                <h1 className='font-two text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
                 <Fade in>
                     <div className='row card-discover py-5 mt-5'>
                         <div className='col-12 col-md-6 col-lg-8'>

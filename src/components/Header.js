@@ -37,19 +37,19 @@ class Header extends Component {
                             <Nav navbar className='justify-content-center ml-auto'>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/home'>
-                                        <span className='font'>Home</span>
+                                        <span className='font-two'>Home</span>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/services'>
-                                        <span className='font'>Services<span className='fa fa-chevron-down ml-2'></span></span>
+                                        <span className='font-two'>Services<span className='fa fa-chevron-down ml-2'></span></span>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
                             {/* dropdown nav-link - about */}
                             <Nav navbar className='ml-auto'>
                                 <UncontrolledDropdown nav>
-                                    <DropdownToggle nav className='font'>Info<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>
+                                    <DropdownToggle nav className='font-two'>Info<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>
                                     <DropdownMenu className='drop-menu mt-2' top>
                                         <DropdownItem className='drop-item'>
                                             <NavLink to='/about' className='font-two py-2'><span className='fa fa-info mr-2'></span>About</NavLink>

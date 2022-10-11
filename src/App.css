@@ -80,7 +80,7 @@ p {
 }
 
 .font-two {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Kanit', sans-serif !important;
 }
 
 .gradient-text {
@@ -218,6 +218,7 @@ p {
 .navbrand {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 24px;
+  font-weight: 700;
 }
 
 .drop-menu {
@@ -390,6 +391,10 @@ p {
   box-shadow: 0 0 10px rgb(119, 119, 119);
 }
 
+.contact-quote {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+}
 /* personal profile page styling */
 .profile-card {
   color: #edf2f4;

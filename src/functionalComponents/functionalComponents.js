@@ -257,7 +257,7 @@ export const RenderContact = () => {
                 <img src='assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail image' />
             </div>
             <div className='col-12 col-md-8'>
-                <h2 className='font text-white py-5'>Let's create something together!</h2>
+                <h2 className='font-two text-white py-5'>Let's create something together!</h2>
                 <NavLink to='/contact' className='btn btn-gradient font-two'>Get in touch <span className='fa fa-chevron-right ml-2'></span></NavLink>
             </div>
         </div>
@@ -286,7 +286,7 @@ export const RenderInstagram = () => {
             </div>
             <div className='row pt-5 font-two'>
                 <div className='col-12 text-center'>
-                    <a className='btn btn-black px-4'>Visit</a>
+                    <a className='btn btn-black font-two px-4'>Visit<span className='fa fa-chevron-right ml-2'></span></a>
                 </div>
             </div>
         </>

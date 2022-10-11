@@ -13,9 +13,9 @@ const RenderProjects = ({project}) => {
             <>
                 <div className='row align-items-center py-5'>
                     <div className='col-12 col-md-6'>
-                        <h2 className='font'>{project.title}</h2>
+                        <h2 className='font-two'>{project.title}</h2>
                         <p className='py-5'>{project.intro}</p>
-                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient font-two my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
                         <a href={project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                     </div>
                     <div className='col-12 col-md-6 pt-4'>
@@ -29,9 +29,9 @@ const RenderProjects = ({project}) => {
             <>
                 <div className='row align-items-center py-5'>
                     <div className='col-12 col-md-6 order-md-2'>
-                        <h2 className='font'>{project.title}</h2>
+                        <h2 className='font-two'>{project.title}</h2>
                         <p className='py-5'>{project.intro}</p>
-                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient font-two my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
                         <a href={project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                     </div>
                     <div className='col-12 col-md-6 pt-4'>
@@ -63,7 +63,7 @@ const Projects = (props) => {
             <div className='row-layerlabs'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font text-white work-header'>Projects</h1>
+                        <h1 className='font-two text-white work-header'>Projects</h1>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@ const Projects = (props) => {
                 {/* react animation component plug in */}
                 <Fade in>
                     <div className='container-fluid work-description'>
-                    <h2 className='font text-center py-5'>Check out my work below</h2>
+                    <h2 className='font-two text-center py-5'>Check out my work below</h2>
                         <div className='row dark-bg py-5'>
                             <div className='col-12 col-md-8'>
                                 <p className='large-text text-center text-white py-5'>Here are a few projects and websites I have designed and created here at Layerlabs using 
