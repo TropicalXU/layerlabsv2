@@ -12,13 +12,12 @@ import About from './AboutComponent';
 import PersonalProfile from './PersonalProfileComponent';
 import Projects from './ProjectComponent';
 import WorkDetail from './WorkListComponent';
-import { PROJECTS, WORK } from '../shared/projects';
+import { PROJECTS } from '../shared/projects';
 import Contact from './ContactComponent';
 import TermsAndConditions from './termsAndConditions';
 import PrivacyPolicy from './privacyPolicy';
 import CookieConsent, { Cookies } from 'react-cookie-consent';
-import { PACKAGE } from '../shared/packages';
-import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+import { Switch, Route, Redirect, withRouter, NavLink } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { postFeedback } from '../redux/ActionCreators';
 import { actions } from 'react-redux-form';
@@ -43,7 +42,6 @@ class Main extends Component {
         super(props);
         this.state = {
             projects: PROJECTS,
-            packages: PACKAGE
         }
     }
 
@@ -66,24 +64,6 @@ class Main extends Component {
             );
         }
 
-        // const PackageId = ({match}) => {
-        //     return (
-        //         <Packages
-        //         packageId={this.state.packages.filter((packageId) => packageId.id === parseInt(match.params.id))[0]} 
-        //         />
-        //     );
-        // }
-        
-        // const Services = () => {
-        //     return (
-        //         <Services
-        //         customPackage={this.state.packages.filter((package1) => package1.id)[0]} 
-        //         customPlusPackage={this.state.packages.filter((package2) => package2.id)[1]} 
-        //         businessPackage={this.state.packages.filter((package3) => package3.id)[2]} 
-        //         />
-        //     );
-        // }
-
         return (
             <div>
                {/* RENDERING ROUTES */}
@@ -92,7 +72,6 @@ class Main extends Component {
                     <Route exact path='/' component={ HomePage} />
                     <Route path='/home' component={ HomePage } />
                     <Route exact path='/services' component={ () =>  <Services />} />
-                    {/* <Route exact path='/services/:id' component={ PackageId } /> */}
                     <Route exact path='/services/custom-package' component={ () => <CustomPackage /> } />
                     <Route exact path='/services/custom-plus-package' component={ () => <CustomPlusPackage /> } />
                     <Route exact path='/services/business-plus-package' component={ () => <BusinessPackage /> } />
@@ -111,15 +90,30 @@ class Main extends Component {
                     <Redirect to='/' />
                 </Switch>
                 {/* RENDERING COOKIE CONSENT */}
-                {/* <div className='container'>
-                <CookieConsent
-                buttonClasses='btn btn-primary'>
-                    <div className='container'>
-           
-
-                    </div>
-                </CookieConsent>
-                </div> */}
+                <div className='container cookie-consent'>
+                    <CookieConsent 
+                        buttonText='Accept All'
+                        buttonClasses='accept-btn py-2'
+                        containerClasses='container-fluid cookie-consent'
+                        declineButtonText='Decline'
+                        enableDeclineButton
+                        declineButtonClasses=''
+                        declineButtonStyle={{background: 'white', color: 'black', borderRadius: 25, fontWeight: 400, fontSize:14, fontFamily: 'Kanit', border: 1, border: 'solid', borderColor: 'darkgrey', paddingLeft: 20, paddingRight: 20, paddingTop: 6, paddingBottom: 6}}
+                        style={{background: 'white'}} 
+                        className='cookie-consent ml-5'
+                        buttonStyle={{background: '#24a0ed ',color:'white', borderRadius: 25, paddingLeft: 15, paddingRight: 15, fontWeight: 400, fontSize: 14, fontFamily: 'Kanit'}}>
+                        <div className='text-black'>
+                            <div className='row py-1'>
+                                <div className='col-12 col-md-1 py-3'>
+                                    <span className='fa fa-circle-info text-black align-self-center fa-lg'></span>
+                                </div>
+                                <div className='col-11 pt-2'>
+                                    <p className=''>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read more <NavLink to='/privacyPolicy'>Privacy Policy</NavLink></p>
+                                </div>
+                            </div>
+                        </div>
+                    </CookieConsent>
+                </div>
                 <Footer />
             </div>
         );

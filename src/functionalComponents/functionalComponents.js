@@ -249,6 +249,43 @@ export const RenderSteps = () => {
     );
 }
 
+//RENDER INCLUDED -SECTION FOR SERVICES PAGE
+export const RenderIncluded = () => {
+    return (
+        <> 
+            <h1 className='font-two pt-4'>Whats included?</h1>
+            <div className='row thin-text d-flex justify-content-center pt-5 pb-4'>
+                <div className='col-12 col-md-3 home-card py-5 mt-5'>
+                    <img src='/assets/images/front-end.png' className='img-fluid' width='120px' height='120px' />
+                    <h5 className='font-two gradient-text py-5'>BESPOKE WEB DESIGN</h5>
+                </div>
+                <div className='col-12 col-md-3 home-card py-5 mx-5 mt-5'>
+                <img src='/assets/images/application.png' className='img-fluid' width='120px' height='120px' />
+                    <h5 className='font-two gradient-text py-5'>MOBILE OPTIMIZED</h5>
+                </div>
+                <div className='col-12 col-md-3 home-card py-5 mt-5'>
+                <img src='/assets/images/custom-features.png' className='img-fluid' width='120px' height='120px' />
+                    <h5 className='font-two gradient-text py-5'>CUSTOM DEVELOPMENT</h5>
+                </div>
+            </div>
+            <div className='row thin-text d-flex justify-content-center pt-4 pb-5'>
+                <div className='col-12 col-md-3 home-card py-5 mt-5'>
+                <img src='/assets/images/performance.png' className='img-fluid' width='120px' height='120px' />
+                    <h5 className='font-two gradient-text py-5'>SEO INTEGRATION</h5>
+                </div>
+                <div className='col-12 col-md-3 home-card py-5 mx-5 mt-5'>
+                <img src='/assets/images/data-encryption.png' className='img-fluid' width='120px' height='120px' />
+                    <h5 className='font-two gradient-text py-5'>SECURITY</h5>
+                </div>
+                <div className='col-12 col-md-3 home-card py-5 mt-5'>
+                <img src='/assets/images/developer.png' className='img-fluid' width='120px' height='120px' />
+                    <h5 className='font-two gradient-text py-5'>SUPPORT</h5>
+                </div>
+            </div>
+        </>
+    );
+}
+
 //CONTACT COMPONENT-------------------
 export const RenderContact = () => {
     return (

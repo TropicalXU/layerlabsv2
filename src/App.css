@@ -29,6 +29,9 @@
   .about-header h3 {
     font-size: 22px;
   }
+  .row-layerlabs h1 {
+    font-size: 48px;
+  }
   .tag-about h3 {
     font-size: 20px;
   }
@@ -100,8 +103,17 @@ p {
   font-size: 16px;
 }
 
+.thin-text {
+  letter-spacing: .05em;
+  color: rgb(0, 0, 0);
+}
+
 .text-black {
   color: black;
+}
+
+.text-transparent {
+  color: transparent;
 }
 
 .fa-github-work {
@@ -119,6 +131,11 @@ p {
 
 .fa-personal:hover {
   font-size: 30px;
+}
+
+.fa-circle-info {
+  font-size: 30px;
+  color: #24a0ed ;
 }
 
 .home-fa:hover {
@@ -218,7 +235,6 @@ p {
 .navbrand {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 24px;
-  font-weight: 700;
 }
 
 .drop-menu {
@@ -247,7 +263,7 @@ p {
 .home-card {
   padding: 15px;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(228, 228, 228);
+  box-shadow: 0 0 10px rgb(200, 200, 200);
 }
 
 .home-header, .about-header {
@@ -267,6 +283,7 @@ p {
 
 .home-title {
   font-size: 65px;
+  font-weight: 800;
 }
 
 .home-header-text {
@@ -306,26 +323,27 @@ p {
   background-image: linear-gradient(300deg, rgba(91, 173, 255, 0.735), rgba(204, 0, 204, 0.661), rgb(255, 92, 92));
   border: none;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(214, 214, 214);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.429);
 }
 
 .service-cards-bg {
   background-color: rgba(0, 0, 0, 0.142);
   border-radius: 15px;
-  box-shadow: 0 0 10px rgba(249, 249, 249, 0.16);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
 }
 
 .custom-card {
+  background-color: rgba(255, 255, 255, 0.83);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(124, 124, 124);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.424);
 }
 
 .business-card {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.829);
   border: none;
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(106, 106, 106);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.819);
 }
 
 .steps-card {
@@ -333,6 +351,12 @@ p {
   background-color: rgb(29, 38, 45);
   border: 1px solid white;
   border-radius: 15px;
+}
+
+.included-card {
+  margin: 25px;
+  padding: 15px;
+  border: 1px solid lightgrey;
 }
 
 /* services/discover page styling */
@@ -383,12 +407,6 @@ p {
 .row-contact {
   background-image: url("/public/assets/images/layerlabs-bg.jpg");
   background-size: cover;
-}
-
-.contact-card {
-  border-radius: 15px;
-  border: none;
-  box-shadow: 0 0 10px rgb(119, 119, 119);
 }
 
 .contact-quote {
@@ -445,4 +463,15 @@ p {
 .footer-bottom .link {
   font-size: 10px;
 }
+
+/* COOKIE CONSENT */
+.cookie-consent {
+  background-color: white;
+
+  box-shadow: 0 0 10px rgb(190, 190, 190);
+}
+.cookie-consent p {
+  font-size: 12px;
+}
+
 

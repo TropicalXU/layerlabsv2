@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
-import { RenderCardFour, RenderCardFive, RenderCardSix, RenderContact, RenderSteps } from '../functionalComponents/functionalComponents';
+import { RenderCardFour, RenderCardFive, RenderCardSix, RenderContact, RenderIncluded } from '../functionalComponents/functionalComponents';
 
 //SERVICES MAIN PAGE
 class Services extends Component {
@@ -20,19 +20,16 @@ class Services extends Component {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-2'>
+                        <Card className='package-card py-3'>
                             <CardBody className='font-two'>
                                 <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
                                 <h2>Custom</h2>
                                 <p>Pre-built custom website</p>
                                 <hr></hr>
                                 <h5>Choose from...</h5>
-                                <div className='service-cards-bg py-4'>
-                                    <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 1 Page Application</h6>
-                                  
-                                    <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</h6>
-                              
-                                    <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</h6> 
+                                <div className='service-cards-bg p-4'>
+                                   <h6><span className='fa fa-check mr-2'></span>Up to 5 individually designed pages.</h6> 
+                                   <h6><span className='fa fa-check mr-2'></span>Mobile optimized design and development.</h6>
                                 </div>
                                 <NavLink to='/services/custom-package' className='btn btn-black my-3 px-4'>More Detials</NavLink>
                             </CardBody>
@@ -50,16 +47,17 @@ class Services extends Component {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-1'>
+                        <Card className='package-card py-2'>
                             <CardBody className='font-two'>
                                 <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
                                 <h2>Custom <span className='fa fa-plus'></span></h2>
                                 <p>Flexible custom design & features</p>
                                 <hr></hr>
                                 <h5>Choose from...</h5>
-                                <div className='service-cards-bg py-4'>
-                                   <h6>Choose from up to 7 custom pages additional features are provided with this package.</h6>
-                                   <h6>Prices are available on request.</h6>
+                                <div className='service-cards-bg p-4'>
+                                   <h6><span className='fa fa-check mr-2'></span>Up to 10 individual fully custom pages.</h6>
+                                   <h6><span className='fa fa-check mr-2'></span>Collabarative detail and design.</h6>
+                                   <h6><span className='fa fa-check mr-2'></span>Custom website interactivity & animation.</h6>
                                 </div>
                                 <NavLink to='/services/custom-plus-package' className='btn btn-black my-3 px-4'>More Details</NavLink>
                             </CardBody>
@@ -77,18 +75,17 @@ class Services extends Component {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-1'>
+                        <Card className='package-card'>
                             <CardBody className='font-two'>
                                 <img src='/assets/images/shuttle.png' className='img-fluid text-white my-2' width='70px' height='70px'/>
                                 <h2 className='text-black'>Business <span className='fa fa-plus'></span></h2>
                                 <p>Flexible custom design, business features and functionality</p>
                                 <hr></hr>
                                 <h5>Choose from...</h5>
-                                <div className='service-cards-bg py-4'>
-                                    <h6>
-                                        Choose from up to 12 custom pages with your desired features, functionality and design.
-                                        This package is fully flexible to meet your needs. 
-                                    </h6>
+                                <div className='service-cards-bg p-4'>
+                                    <h6><span className='fa fa-check mr-2'></span>Up to 15 individually designed custom pages. </h6>
+                                    <h6><span className='fa fa-check mr-2'></span>Full custom development from the ground up. </h6>
+                                    <h6><span className='fa fa-check mr-2'></span>Advanced UI/UX & SEO integration.</h6>
                                 </div>
                                 <NavLink to='/services/business-plus-package' className='btn btn-black my-3 px-4'>More Details</NavLink>
                             </CardBody>
@@ -153,19 +150,23 @@ class Services extends Component {
                             <RenderPackageThree />
                         </div>
                     </div>
+                    {/* rendering includes section imported from functionalComponent.js */}
+                    <div className='container-fluid text-center py-2 pb-5 mt-5'>
+                        <RenderIncluded />
+                    </div>
                     {/* rendering custom vs template section*/}
-                    <div className='container-fluid'>
-                        <div className='row pt-5'>
+                    <div className='container-fluid pb-4'>
+                        <div className='row'>
                             <div className='col-12'>
                                 <h1 className='font-two text-center py-5'>Custom Websites vs Template Websites</h1>
                             </div>
                         </div>
                         <div className='row pb-5'>
-                                <RenderDifferences />
-                            </div>
+                            <RenderDifferences />
+                        </div>
                     </div>
                     {/* imporing render cards plugin */}
-                    <div className='container'>
+                    {/* <div className='container'>
                         <div className='row pb-5 pt-3'>
                             <div className='col-12 col-md-12 col-lg-4 py-3'>
                                 <RenderCardFour />
@@ -177,6 +178,8 @@ class Services extends Component {
                             <RenderCardSix /> 
                             </div>
                         </div>
+                    </div> */}
+                    <div className='container'>
                         {/* personal/business section */}
                         <div className='row'>
                             <div className='col-12 col-md-6'>

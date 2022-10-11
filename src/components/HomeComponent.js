@@ -107,7 +107,7 @@ class Home extends Component {
                     <div className='home-header d-flex justify-content-center align-items-center my-3'>
                         <div className='row text-center text-white'>
                             <div className='col-12'>
-                                <h1 className='font-two home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
+                                <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
                                 <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
                                 <NavLink className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></NavLink>
                             </div>

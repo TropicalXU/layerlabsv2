@@ -27,7 +27,7 @@ const WorkDetail = (props) => {
                                     <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Projects</span>
                                 </NavLink>
                             </BreadcrumbItem>
-                            <BreadcrumbItem active className='text-white'>{props.project.title}
+                            <BreadcrumbItem active className='gradient-text font-two'>{props.project.title}
                             </BreadcrumbItem>
                         </div>
                     </div>
@@ -43,11 +43,12 @@ const WorkDetail = (props) => {
                     <div className='row py-5 my-3'>
                         <div className='col-12 col-md-6'>
                             <h1 className='font-two'>About the project</h1>
+                            <hr></hr>
                             <p className='py-4'>{props.project.description}</p>
-                            <a href={props.project.url} className='btn btn-black px-4'>Visit Site<span className='fa fa-chevron-right ml-2'></span></a>
+                            <a href={props.project.url} className='btn btn-black font-two px-4'>Visit Site<span className='fa fa-chevron-right ml-2'></span></a>
                             <a href={props.project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                         </div>
-                        <div className='col-12 col-md-6 pt-5'>
+                        <div className='col-12 col-md-6 ml-auto pt-5'>
                                 <img className='img-fluid' src={props.project.image} alt={props.project.title} />
                         </div>  
                     </div>

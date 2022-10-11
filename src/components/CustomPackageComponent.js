@@ -1,13 +1,16 @@
 //importing main links
 import React from 'react';
-import { Card, BreadcrumbItem } from 'reactstrap';
+import { Card, BreadcrumbItem, CardBody } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { NavLink } from 'react-router-dom';
-
+import { RenderCardFive, RenderCardFour, RenderCardSix } from '../functionalComponents/functionalComponents';
 //custom package page
 const CustomPackage = () => {
-    return (
-        <div className='container-fluid row-contact py-5'>
+
+
+    const RenderCustomPackage = () => {
+        return (
+            <div className='container-fluid row-contact py-5'>
             <div className='container'>
                 <div className='row py-3'>
                     <div className='breadcrumb'>
@@ -16,7 +19,7 @@ const CustomPackage = () => {
                                 <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Services</span>
                             </NavLink>
                         </BreadcrumbItem>
-                        <BreadcrumbItem active className='text-white'>Custom
+                        <BreadcrumbItem active className='gradient-text font-two'>Custom
                         </BreadcrumbItem>
                     </div>
                 </div>
@@ -29,12 +32,40 @@ const CustomPackage = () => {
                             <Card className='custom-card py-5'>
                                 <h1 className='font text-center'>Custom</h1>
                                 <hr></hr>
+                                <CardBody className='text-center py-5'>
+                                    <h4 className='font-two'><span className='fa fa-star mr-4'></span>Up to 5 individually designed pages</h4>
+                                    <h4 className='font-two py-4'><span className='fa fa-star mr-4'></span>Mobile first designed approach. Fully optimized for all screen sizes.</h4>
+                                    <h4 className='font-two'><span className='fa fa-star mr-4'></span>Pre built custom modern developed pages built from the ground up.</h4>
+                                    <h4 className='font-two py-4'><span className='fa fa-star mr-4'></span>Standard SEO integration.</h4>
+                                </CardBody>
                             </Card>
                         </FadeTransform>
                     </div>
                 </div>
             </div>
         </div>
+        )
+    }
+    return (
+        <>
+            <RenderCustomPackage />
+            <div className='container-fluid'>
+                {/* imporing render cards plugin */}
+                <div className='container py-4'>
+                    <div className='row pb-5 pt-3'>
+                        <div className='col-12 col-md-12 col-lg-4 py-3'>
+                            <RenderCardFour />
+                        </div>
+                        <div className='col-12 col-md-12 col-lg-4 py-3'>
+                            <RenderCardFive />
+                        </div>
+                        <div className='col-12 col-md-12 col-lg-4 py-3'>
+                            <RenderCardSix /> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 

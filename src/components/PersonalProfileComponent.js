@@ -67,6 +67,7 @@ class PersonalProfile extends Component {
                             <li className='py-3'><span className='fa fa-check mr-2'></span>React components, state, props, lifecycle methods</li>
                             <li><span className='fa fa-check mr-2'></span>Functional components, React Router, React Virtual DOM</li>
                             <li className='py-3'><span className='fa fa-check mr-2'></span>React Forms and Redux</li>
+                            <li className='py-3'><span className='fa fa-check mr-2'></span>React Redux Actions & Redux Thunk</li>
                             <li><span className='fa fa-check mr-2'></span>Fetch, promises and React animations</li>
                             <li className='py-3'><span className='fa fa-check mr-2'></span>REST API with Express, MongoDB and Mongoose</li>
                             <li><span className='fa fa-check mr-2'></span>Backend as a Service(BaaS)</li>
@@ -76,7 +77,7 @@ class PersonalProfile extends Component {
                 <Modal isOpen={this.state.isModalTwoOpen} toggle={this.toggleModalTwo}>
                     <ModalHeader className='modal-header text-white font-two' toggle={this.toggleModalTwo} close={closeBtnTwo}>More Details:</ModalHeader>
                     <ModalBody>
-                        <ul className='list-unstyled'>
+                        <ul className='list-unstyled font-two'>
                             <li><span className='fa fa-check mr-2'></span>Created responsive and accessible layouts</li>
                             <li className='py-3'><span className='fa fa-check mr-2'></span>Used Javascript variables, conditionals, loops, functions, arrays and objects</li>
                             <li><span className='fa fa-check mr-2'></span>Implemented user authentication</li>
@@ -89,7 +90,7 @@ class PersonalProfile extends Component {
                 <Modal isOpen={this.state.isModalThreeOpen} toggle={this.toggleModalThree}>
                     <ModalHeader className='modal-header text-white font-two' toggle={this.toggleModalThree} close={closeBtnThree}>More details:</ModalHeader>
                     <ModalBody>
-                        <ul className='list-unstyled'>
+                        <ul className='list-unstyled font-two'>
                             <li><span className='fa fa-check mr-2'></span>Master React Router</li>
                             <li className='py-3'><span className='fa fa-check mr-2'></span>Common React Router Patterns</li>
                             <li><span className='fa fa-check mr-2'></span>React design patterns and strategies</li>
@@ -121,7 +122,7 @@ class PersonalProfile extends Component {
                                 <a href='/'><span className='fa fa-linkedin fa-personal text-white fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-6 font-two'>
-                                <p>As an individual I am very motivated, positive and goal orientated with a passion to succeed. Over the last 10 years I have acquired valuable practical experience and knowledge in sales, finance, customer service and teamwork allowing me to attain invaluable interpersonal skills, organizational skills and skills allowing me to adapt to new systems processes and environments. I have a great interest for Web Development having so far completed a Full Stack Web Development Bootcamp as well as being currently enrolled in the Full-Stack Web Development with React Specialization an online course provided by The Hong Kong University of Science and Technology. I am very passionate about all aspects of Web Development and I continuously strive to educate myself further. Over the course of my time as a developer I have built many applications and websites. I have gained a great quantity of experience building and creating applications using environments, frameworks and libraries such as HTML, CSS, JavaScript, React, NodeJS, Express.js, MongoDB and Mongoose. In the process I have achieved hands on experience solving problems and managing my workflow in an efficient and timely manner.
+                                <p>As an individual I am very motivated, positive and goal orientated with a passion to succeed. Over the last 10 years I have acquired valuable practical experience and knowledge in sales, finance, customer service and teamwork allowing me to attain invaluable interpersonal skills, organizational skills and skills allowing me to adapt to new systems processes and environments. I have a great interest for Web Development having so far completed the Full-Stack Web Development with React Specialization an online course provided by The Hong Kong University of Science and Technology, as well as an online Full Stack Web Development Bootcamp. I am very passionate about all aspects of Web Development and I continuously strive to educate myself further. Over the course of my time as a developer I have built many applications and websites. I have gained a great quantity of experience building and creating applications including environments, databases, frameworks, libraries and tools such as HTML, CSS, JavaScript, React, NodeJS, Express.js, MongoDB and Mongoose. In the process I have achieved hands on experience solving problems and managing my workflow in an efficient and timely manner.
                                             
                                 </p>
                                 <NavLink to='/contact' className='btn btn-gradient my-4'>Get in touch<span className='fa fa-chevron-right ml-2'></span></NavLink>
