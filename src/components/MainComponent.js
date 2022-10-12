@@ -25,7 +25,7 @@ import { actions } from 'react-redux-form';
 
 const mapStateToProps = state => {
     return {
-      projects: state.projects,
+
     }
 }
 
@@ -48,7 +48,7 @@ class Main extends Component {
     render() {
         //home page - adding in props
         const HomePage = () => {
-            return(
+            return (
                 <Home
                 project1={this.state.projects.filter((project) => project.featured)[0]}
                 project2={this.state.projects.filter((project) => project.featured)[1]}

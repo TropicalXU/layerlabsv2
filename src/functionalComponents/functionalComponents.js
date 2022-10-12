@@ -1,7 +1,7 @@
 //importing main links
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Card, CardBody, CardImg } from 'reactstrap'; 
+import { Card, CardBody, CardImg, CardImgOverlay } from 'reactstrap'; 
 import { FadeTransform } from 'react-animation-components';
 
 //SECTION CARDS-------------------------------
@@ -104,146 +104,29 @@ export const RenderCardSix = () => {
         );
 }
 
-//PACKAGES-------------------------
-export const RenderPackageOne = () => {
-    return (
-        <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
-            {/* react animations component plugin */}
-            <FadeTransform in
-                transformProps={{
-                exitTransform: 'scale(0.3) translateY(-20%)'
-            }}>
-                <Card className='package-card py-2'>
-                    <CardBody className='font-two'>
-                        <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
-                        <h2>Custom</h2>
-                        <p>Pre-built custom website</p>
-                        <hr></hr>
-                        <h5>Choose from...</h5>
-                        <div className='service-cards-bg py-4'>
-                            <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 1 Page Application</h6>
-                          
-                            <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 3 Page Application</h6>
-                      
-                            <h6><span className='fa-solid fa-star fa-md mr-2'></span>Custom 5 Page Application</h6> 
-                        </div>
-                    </CardBody>
-                </Card>
-            </FadeTransform>
-        </div>
-    );
-}
-
-export const RenderPackageTwo = () => {
-    return ( 
-        <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
-             {/* react animations component plugin */}
-            <FadeTransform in
-                transformProps={{
-                exitTransform: 'scale(0.3) translateY(-20%)'
-            }}>
-                <Card className='package-card py-1'>
-                    <CardBody className='font-two'>
-                        <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
-                        <h2>Custom <span className='fa fa-plus'></span></h2>
-                        <p>Flexible custom design & features</p>
-                        <hr></hr>
-                        <h5>Choose from...</h5>
-                        <div className='service-cards-bg py-4'>
-                           <h6>Choose from up to 7 custom pages additional features are provided with this package.</h6>
-                           <h6>Prices are available on request.</h6>
-                        </div>
-                    </CardBody>
-                </Card>
-            </FadeTransform>
-        </div>
-    );
-}
-
-export const RenderPackageThree = () => {
-    return (
-        <div className='col-12 col-md-12 col-lg-12 col-xl-4 py-3'>
-             {/* react animations component plugin */}
-            <FadeTransform in
-                transformProps={{
-                exitTransform: 'scale(0.3) translateY(-20%)'
-            }}>
-                <Card className='package-card py-1'>
-                    <CardBody className='font-two'>
-                        <img src='/assets/images/shuttle.png' className='img-fluid text-white my-2' width='70px' height='70px'/>
-                        <h2 className='text-black'>Business <span className='fa fa-plus'></span></h2>
-                        <p>Flexible custom design, business features and functionality</p>
-                        <hr></hr>
-                        <h5>Choose from...</h5>
-                        <div className='service-cards-bg py-4'>
-                            <h6>
-                                Choose from up to 12 custom pages with your desired features, functionality and design.
-                                This package is fully flexible to meet your needs. 
-                            </h6>
-                        </div>
-                    </CardBody>
-                </Card>
-            </FadeTransform>
-        </div>
-    );
-}
-
-//STEPS SECTION----------------------
-export const RenderSteps = () => {
+//RENDER LAYERLABS SERVICES
+export const RenderServices = () => {
     return (
         <>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
-                <Card className='steps-card'>
-                    <CardBody>
-                        <h3 className='font text-center py-3'>Plan <span className='fa fa-file-lines fa-lg'></span></h3>
-                        <ul>
-                            <li>Create a roadmap</li>
-                            <li>Design a schedule</li>
-                            <li>Gather material</li>
-                            <li>Make a deadline</li>
-                        </ul>
-                    </CardBody>
-                </Card>
-            </div>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
-                <Card className='steps-card'>
-                    <CardBody>
-                        <h3 className='font text-center py-3'>Design <span className="fa-solid fa-object-ungroup fa-lg px-2"></span></h3>
-                        <ul>
-                            <li>Establish a theme</li>
-                            <li>Choose your color palettes</li>
-                            <li>Branding & design</li>
-                            <li>Mapping out the responsive design</li>
-                        </ul>
-                    </CardBody>
-                </Card>
-            </div>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
-                <Card className='steps-card'>
-                    <CardBody>
-                        <h3 className='font text-center py-3'>Develop <span className='fa-solid fa-code fa-lg'></span></h3>
-                        <ul>
-                            <li>Building the framework</li>
-                            <li>Implementing the code</li>
-                            <li>Intergrating top level navigation tools</li>
-                            <li>Administering Search Engine Optimization</li>
-                            <li>Installing high level security</li>
-                        </ul>
-                    </CardBody>
-                </Card>  
-            </div>
-            <div className='col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 py-3'>
-                <Card className='steps-card'>
-                    <CardBody>
-                        <h3 className='font text-center py-3'>Launch <span className='fa-solid fa-cloud-arrow-up fa-lg'></span></h3>
-                        <ul>
-                            <li>Review material</li>
-                            <li>Testing the application</li>
-                            <li>Launching the application</li>
-                            <li>Continue ongoing support</li>
-                        </ul>
-                    </CardBody>
-                </Card>  
+            <div className='row text-center d-flex justify-content-center pb-5'>
+                <div className='col-12 col-md-12 col-lg-4'>
+                    <Card className='bg-gradient home-services-card p-5 mt-5'>
+                        <h3 className='font-two text-white'>Web Design</h3>
+                        <img src='/assets/images/user-experience.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' />
+                    </Card>
+                </div>
+                <div className='col-12 col-md-12 col-lg-4'>
+                    <Card className='bg-gradient home-services-card p-5 mt-5'>
+                        <h3 className='font-two text-white'>SEO Optimization</h3>
+                        <img src='/assets/images/seo-icon.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' />
+                    </Card>
+                </div>
+                <div className='col-12 col-md-12 col-lg-4'>
+                    <Card className='bg-gradient home-services-card p-5 mt-5'>
+                        <h3 className='font-two text-white'>Hosting</h3>
+                        <img src='/assets/images/server.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' />
+                    </Card>
+                </div>
             </div>
         </>
     );
@@ -286,12 +169,70 @@ export const RenderIncluded = () => {
     );
 }
 
+export const RenderPackageProcess = () => {
+    return (
+        <>
+            <h1 className='font-two'>The Process</h1>
+            <div className='row py-5 my-4'>
+                <div className='col-12 col-md-12 col-lg-6'>
+                    <h6 className='thin-text'>PHASE 1</h6>
+                    <h2 className='font-two gradient-text'>Discovery</h2>
+                    <p></p>
+                </div>
+                <div className='col-12 col-md-12 col-lg-6'>
+                    <img src='/assets/images/discovery.jpg' className='process-img img-fluid my-4' width='100%' />
+                </div>
+            </div>
+            <div className='row py-5 my-4'>
+                <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
+                    <h6 className='thin-text'>PHASE 2</h6>
+                    <h2 className='font-two gradient-text'>Wireframing</h2>
+                    <p></p>
+                </div>
+                <div className='col-12 col-md-12 col-lg-6 order-lg-1'>
+                    <img src='/assets/images/wireframe.jpg' className='process-img my-2' width='100%' height='300px' />
+                </div>
+            </div>
+            <div className='row py-5 my-4'>
+                <div className='col-12 col-md-12 col-lg-6'>
+                    <h6 className='thin-text'>PHASE 3</h6>
+                    <h2 className='font-two gradient-text'>Design</h2>
+                    <p></p>
+                </div>
+                <div className='col-12 col-md-12 col-lg-6'>
+                    <img src='/assets/images/design.jpg' className='process-img img-fluid my-2' width='100%' />
+                </div>
+            </div>
+            <div className='row py-5 my-4'>
+                <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
+                    <h6 className='thin-text'>PHASE 4</h6>
+                    <h2 className='font-two gradient-text'>Development</h2>
+                    <p></p>
+                </div>
+                <div className='col-12 col-md-12 col-lg-6 order-lg-1'>
+                    <img src='/assets/images/development.jpg' className='process-img img-fluid my-2' width='100%' /> 
+                </div> 
+            </div>
+            <div className='row py-5 my-4'>
+                <div className='col-12 col-md-12 col-lg-6'>
+                    <h6 className='thin-text'>Phase 5</h6>
+                    <h2 className='font-two gradient-text'>Testing</h2>
+                    <p></p>
+                </div>
+                <div className='col-12 col-md-12 col-lg-6'>
+                    <img src='/assets/images/testing.jpg' className='process-img img-fluid' width='100%' /> 
+                </div>
+            </div>
+        </>
+    );
+}
+
 //CONTACT COMPONENT-------------------
 export const RenderContact = () => {
     return (
         <div className='row dark-bg text-center py-5'>
             <div className='col-12 col-md-2'>
-                <img src='assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail image' />
+                <img src='/assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail image' />
             </div>
             <div className='col-12 col-md-8'>
                 <h2 className='font-two text-white py-5'>Let's create something together!</h2>

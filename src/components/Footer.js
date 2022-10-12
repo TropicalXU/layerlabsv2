@@ -28,19 +28,19 @@ class Footer extends Component {
                             <h5 className='font-two'>Services</h5>
                             <ul className='list-unstyled'>
                                 <li><NavLink className='link' to='/services'>Services</NavLink></li>
-                                <li><NavLink className='link' to='/locations/british-columbia'>Discover</NavLink></li>
-                                <li><NavLink className='link' to='/locations/alberta'>Custom Package</NavLink></li>
-                                <li><NavLink className='link' to='/locations/quebec'>Custom + Package</NavLink></li>
-                                <li><NavLink className='link' to='/locations/quebec'>Busines + Package</NavLink></li>
+                                <li><NavLink className='link' to='/discover'>Discover</NavLink></li>
+                                <li><NavLink className='link' to='/services/custom-package'>Custom Package</NavLink></li>
+                                <li><NavLink className='link' to='/services/custom-plus-package'>Custom + Package</NavLink></li>
+                                <li><NavLink className='link' to='/services/business-plus-package'>Busines + Package</NavLink></li>
                             </ul>
                         </div>
                         <div className='col-6 col-sm-2 pt-5'>
                             <h5 className='font-two'>Work</h5>
                             <ul className='list-unstyled'>
                                 <li><NavLink className='link' to='/about'>Projects</NavLink></li>
-                                <li><NavLink className='link' to='/personal-profile'>Shirleys Studio</NavLink></li>
-                                <li><NavLink className='link' to='/personal-profile'>Vacay</NavLink></li>
-                                <li><NavLink className='link' to='/personal-profile'>Viewpoint Ireland</NavLink></li>
+                                <li><NavLink className='link' to='/projects/0'>Shirleys Studio</NavLink></li>
+                                <li><NavLink className='link' to='/projects/1'>Vacay</NavLink></li>
+                                <li><NavLink className='link' to='/projects/2'>Viewpoint Ireland</NavLink></li>
                             </ul>
                         </div>
                         <div className='col-6 col-sm-2 align-items-center pt-5'>
@@ -57,15 +57,15 @@ class Footer extends Component {
                             <p>© 2022 Layerlabs. All rights reserved.</p>
                         </div>
                         <div className='col-2 col-sm-2'>
-                            <NavLink className='link' to='termsAndConditions'>Terms & Conditions</NavLink>
+                            <NavLink className='link' to='/termsAndConditions'>Terms & Conditions</NavLink>
                         </div>
                         <div className='col-2 col-sm-2'>
-                            <NavLink className='link' to='privacyPolicy'>Privacy Policy</NavLink>
+                            <NavLink className='link' to='/privacyPolicy'>Privacy Policy</NavLink>
                         </div>
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 

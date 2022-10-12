@@ -6,7 +6,7 @@ import { Card, CardBody, CardImg, Carousel, CarouselItem,
     } 
 from 'reactstrap';
 import { FadeTransform, Fade } from 'react-animation-components';
-import { RenderContact, RenderCardOne, RenderCardTwo, RenderCardThree} from '../functionalComponents/functionalComponents';
+import { RenderContact, RenderCardOne, RenderCardTwo, RenderCardThree, RenderServicesAd, RenderServices} from '../functionalComponents/functionalComponents';
 
 //carousel items
 const items = [
@@ -14,19 +14,25 @@ const items = [
         src: 'assets/images/logo.png',
         altText: 'Slide 1',
         caption: 'At Layerlabs I want to bring my own touch giving you the best and most responsive custom website design possible. What you want from a website can vary yet what matters most is the experience yourself and your users have.',
-        header: "Let's get creative!"
+        header: "Let's get creative!",
+        button: '/services',
+        buttonMsg: 'Services'
     },
     {
       src: 'assets/images/me.jpg',
       altText: 'Slide 2',
       caption: 'Founder and creator of Layerlabs. I am a Full Stack Web Developer based in Toronto. I am a very driven and well organized individual with great attention to detail. I am also very creative always thinking outside the box, in search of new ideas and possibilities.',
-      header: 'Sean Hackett'
+      header: 'Sean Hackett',
+      button: '/about',
+      buttonMsg: 'Read More'
     },
     {
       src: 'assets/images/email.png',
       altText: 'Slide 3',
       caption: 'Looking for a fully customizable responsive website? Contact me to get a quote!',
-      header: 'Get in touch!'
+      header: 'Get in touch!',
+      button: '/contact',
+      buttonMsg: 'Get in touch'
     }
   ];
 
@@ -88,9 +94,10 @@ class Home extends Component {
                         </div>
                         <div className='col-12 col-md-5 my-5 align-self-center d-flex justify-content-center'>
                         <Card className='carousel-card'>
-                            <CardBody>
-                                <h2 className='text-center font'>{item.header}</h2>
-                                <p className='text-center'>{item.caption}</p>
+                            <CardBody className='text-center'>
+                                <h2 className='font'>{item.header}</h2>
+                                <p className='font-two mb-4 mt-3'>{item.caption}</p>
+                                <NavLink to={item.button} className='font-two btn-gradient my-5'>{item.buttonMsg}<span className='fa fa-chevron-right ml-2'></span></NavLink>
                             </CardBody>
                         </Card>
                         </div>
@@ -212,11 +219,68 @@ class Home extends Component {
                                 {slides}
                             </Carousel>
                         </div>
-                    </div>`
+                    </div>
                 </div>
+                <div className='container'>
+                <div className='row'>
+                        <div className='col-12'>
+                        <h1 className='font-two pt-5'>Layerlabs services</h1>
+                        </div>
+                    </div>
+                    <RenderServices />
+                    <div className='row'>
+                        <div className='col-12 col-md-6'>
+                                <h2 className='font-two pt-5'>Interested in a personal website?</h2>
+                                <p className='py-4'>
+                                    Showcase your work online with a Personal website just for you. What is a personal website? Well essentialy 
+                                    it's a unique way to showcase your work and provide professional information about you. When deciding on building 
+                                    a personal website you must ask yourself why this is important to you, maybe you already have the answer. By finding 
+                                    a purpose you can start getting to work on what information you would like to share and display for your audience. 
+                                    What are some benefits of having a personal website?
+                                </p>
+                                <ul className='list-unstyled font-two'>
+                                    <li><span className='fa fa-square-check mr-3'></span>Stand out from the crowd</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>Create trust and credibility</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>Showcase your creativity</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>Generate opportunities</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>Expand your network</li>
+                                </ul>
+                            </div>
+                            <div className='col-12 col-md-6 align-self-center'>
+                                <img src='/assets/images/web-design.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
+                            </div>
+                        </div>                 
+                        <div className='row py-5'>
+                            <div className='col-12 col-md-6 order-md-2'>
+                                <h2 className='font-two pt-5'>Interested in a business website?</h2>
+                                <p className='py-4'>
+                                    A website for your business can act as a portal to your customers creating 24/7 on demand awareness to your brand and products. 
+                                    It serves as a window in which you can showcase your marketable skills and connect with a targeted audience. When factoring in the costs, 
+                                    a website may seem like a luxury that may not seem neccessary. However investing in a website for your business can go a long way in setting 
+                                    you up for long-term success. It can be an incredibly important asset with a positive ROI when executed correctly. Word of mouth can only get 
+                                    you so far, having a website acts as advertisement in itself. Lets look at some of the main reasons why you should consider having an online presense for your business.
+                                </p>
+                                <ul className='list-unstyled font-two'>
+                                    <li><span className='fa fa-square-check mr-3'></span>Attract new customers</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>27/7 availability of your products and services</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>Brand visibility and recognition</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>Generate opportunities</li>
+                                    <li><span className='fa fa-square-check mr-3'></span>Online credibility</li>
+                                </ul>
+                            </div>
+                            <div className='col-12 col-md-6 align-self-center'>
+                                <img src='/assets/images/online-business.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Business website'/>  
+                            </div>
+                        </div>
+                
+                </div>
+                <div className='container-fluid py-4'>
+                <RenderServicesAd />
+                </div>
+            
                 {/* rendering work section */}
                 <div className='container'>
-                    <h2 className='font-two text-center pt-3'>Check out some of my work</h2>
+                    <h2 className='font-two text-center pt-5'>Check out some of my work</h2>
                     <hr></hr>
                     <div className='row mb-4 py-5'>
                         <RenderWork item={this.props.project1} />
@@ -230,7 +294,7 @@ class Home extends Component {
                 <div className='container-fluid'>
                     <div className='row mb-4'>
                         <div className='col-12'>
-                            <RenderContact />
+                            {/* <RenderContact /> */}
                         </div>
                     </div>
                 </div>

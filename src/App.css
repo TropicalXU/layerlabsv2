@@ -151,7 +151,7 @@ p {
 }
 
 .bg-gradient {
-  background-image: linear-gradient(300deg, rgb(91, 173, 255), rgb(204, 0, 204), rgb(255, 92, 92));
+  background-image: linear-gradient(300deg, rgba(91, 173, 255, 0.735), rgba(204, 0, 204, 0.661), rgb(255, 92, 92));
 }
 
 /* button styling */
@@ -233,7 +233,8 @@ p {
 }
 
 .navbrand {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 60!important;
   font-size: 24px;
 }
 
@@ -311,6 +312,13 @@ p {
   border-radius: 25px;
 }
 
+.home-services-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.305);
+
+}
+
 .home-projects-card {
   padding: 65px;
   border: 1px solid rgb(205, 205, 205);
@@ -357,6 +365,11 @@ p {
   margin: 25px;
   padding: 15px;
   border: 1px solid lightgrey;
+}
+
+.process-img {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.242);
 }
 
 /* services/discover page styling */
@@ -474,4 +487,7 @@ p {
   font-size: 12px;
 }
 
-
+hr {
+  background-color: white;
+  padding: .05em;
+}

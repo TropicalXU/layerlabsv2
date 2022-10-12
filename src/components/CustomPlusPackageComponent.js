@@ -1,9 +1,9 @@
 //importing main links
 import React from 'react';
-import { Card, BreadcrumbItem } from 'reactstrap';
+import { Card, CardBody, BreadcrumbItem } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { NavLink } from 'react-router-dom';
-import { RenderCardFive, RenderCardFour, RenderCardSix } from '../functionalComponents/functionalComponents';
+import { RenderCardFive, RenderCardFour, RenderCardSix, RenderPackageProcess, RenderContact } from '../functionalComponents/functionalComponents';
 
 //custom plus package page
 const CustomPlusPackage = () => {
@@ -29,9 +29,19 @@ const CustomPlusPackage = () => {
                                 transformProps={{
                                 exitTransform: 'scale(0.3) translateY(-20%)'
                             }}>
-                                <Card className='custom-card py-5'>
+                                <Card className='custom-card p-5'>
                                     <h1 className='font text-center'>Custom <span className='fa fa-plus'></span></h1>
                                     <hr></hr>
+                                    <CardBody className='text-center py-5'>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Up to 10 individually designed high end pages</h4>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Mobile first designed approach. Fully optimized for all screen sizes.</h4>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>UI/UX Wireframing Process: Detailed Wireframes & User Persona</h4>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>High level interactivity & animation</h4>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>In depth SEO integration.</h4>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Site backup & security.</h4>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Contact form & newsletter plugin installation.</h4>
+                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Managed website launch & support.</h4>
+                                    </CardBody>
                                 </Card>
                             </FadeTransform>
                         </div>
@@ -57,6 +67,10 @@ const CustomPlusPackage = () => {
                             <RenderCardSix /> 
                         </div>
                     </div>
+                    <RenderPackageProcess />
+                </div>
+                <div className='container-fluid my-4'>
+                    <RenderContact />
                 </div>
             </div>
         </>

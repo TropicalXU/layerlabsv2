@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
-import { RenderCardFour, RenderCardFive, RenderCardSix, RenderContact, RenderIncluded } from '../functionalComponents/functionalComponents';
+import { RenderCardFour, RenderCardFive, RenderCardSix, RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
 
 //SERVICES MAIN PAGE
 class Services extends Component {
@@ -20,7 +20,7 @@ class Services extends Component {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-3'>
+                        <Card className='package-card py-2'>
                             <CardBody className='font-two'>
                                 <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
                                 <h2>Custom</h2>
@@ -30,6 +30,7 @@ class Services extends Component {
                                 <div className='service-cards-bg p-4'>
                                    <h6><span className='fa fa-check mr-2'></span>Up to 5 individually designed pages.</h6> 
                                    <h6><span className='fa fa-check mr-2'></span>Mobile optimized design and development.</h6>
+                                   <h6><span className='fa fa-check mr-2'></span>Standard SEO integration.</h6>
                                 </div>
                                 <NavLink to='/services/custom-package' className='btn btn-black my-3 px-4'>More Detials</NavLink>
                             </CardBody>
@@ -57,7 +58,7 @@ class Services extends Component {
                                 <div className='service-cards-bg p-4'>
                                    <h6><span className='fa fa-check mr-2'></span>Up to 10 individual fully custom pages.</h6>
                                    <h6><span className='fa fa-check mr-2'></span>Collabarative detail and design.</h6>
-                                   <h6><span className='fa fa-check mr-2'></span>Custom website interactivity & animation.</h6>
+                                   <h6><span className='fa fa-check mr-2'></span>High level interactivity & animation.</h6>
                                 </div>
                                 <NavLink to='/services/custom-plus-package' className='btn btn-black my-3 px-4'>More Details</NavLink>
                             </CardBody>
@@ -84,10 +85,10 @@ class Services extends Component {
                                 <h5>Choose from...</h5>
                                 <div className='service-cards-bg p-4'>
                                     <h6><span className='fa fa-check mr-2'></span>Up to 15 individually designed custom pages. </h6>
-                                    <h6><span className='fa fa-check mr-2'></span>Full custom development from the ground up. </h6>
-                                    <h6><span className='fa fa-check mr-2'></span>Advanced UI/UX & SEO integration.</h6>
+                                    <h6><span className='fa fa-check mr-2'></span>Advanced interactivity and animation. </h6>
+                                    <h6><span className='fa fa-check mr-2'></span>Advanced SEO integration.</h6>
                                 </div>
-                                <NavLink to='/services/business-plus-package' className='btn btn-black my-3 px-4'>More Details</NavLink>
+                                <NavLink to='/services/business-plus-package' className='btn btn-black mt-3 mb-4 px-4'>More Details</NavLink>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -180,51 +181,8 @@ class Services extends Component {
                         </div>
                     </div> */}
                     <div className='container'>
+                        <RenderPackageProcess />
                         {/* personal/business section */}
-                        <div className='row'>
-                            <div className='col-12 col-md-6'>
-                                <h2 className='font-two pt-5'>Interested in a personal website?</h2>
-                                <p className='py-4'>
-                                    Showcase your work online with a Personal website just for you. What is a personal website? Well essentialy 
-                                    it's a unique way to showcase your work and provide professional information about you. When deciding on building 
-                                    a personal website you must ask yourself why this is important to you, maybe you already have the answer. By finding 
-                                    a purpose you can start getting to work on what information you would like to share and display for your audience. 
-                                    What are some benefits of having a personal website?
-                                </p>
-                                <ul className='list-unstyled font-two'>
-                                    <li><span className='fa fa-square-check mr-3'></span>Stand out from the crowd</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Create trust and credibility</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Showcase your creativity</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Generate opportunities</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Expand your network</li>
-                                </ul>
-                            </div>
-                            <div className='col-12 col-md-6 align-self-center'>
-                                <img src='/assets/images/web-design.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
-                            </div>
-                        </div>                 
-                        <div className='row py-5'>
-                            <div className='col-12 col-md-6 order-md-2'>
-                                <h2 className='font-two pt-5'>Interested in a business website?</h2>
-                                <p className='py-4'>
-                                    A website for your business can act as a portal to your customers creating 24/7 on demand awareness to your brand and products. 
-                                    It serves as a window in which you can showcase your marketable skills and connect with a targeted audience. When factoring in the costs, 
-                                    a website may seem like a luxury that may not seem neccessary. However investing in a website for your business can go a long way in setting 
-                                    you up for long-term success. It can be an incredibly important asset with a positive ROI when executed correctly. Word of mouth can only get 
-                                    you so far, having a website acts as advertisement in itself. Lets look at some of the main reasons why you should consider having an online presense for your business.
-                                </p>
-                                <ul className='list-unstyled font-two'>
-                                    <li><span className='fa fa-square-check mr-3'></span>Attract new customers</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>27/7 availability of your products and services</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Brand visibility and recognition</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Generate opportunities</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Online credibility</li>
-                                </ul>
-                            </div>
-                            <div className='col-12 col-md-6 align-self-center'>
-                                <img src='/assets/images/online-business.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Business website'/>  
-                            </div>
-                        </div>
                     </div>
                     {/* importing render contact plugin*/}
                     <div className='container-fluid pb-4'>

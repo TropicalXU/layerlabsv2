@@ -15,7 +15,7 @@ class About extends Component {
                     <div className='about-header d-flex justify-content-center align-items-center my-3'>
                         <div className='row text-center text-white'>
                         <div className='col'>
-                            <h1 className='font-two home-title'>Layerlabs</h1>
+                            <h1 className='font home-title'>Layerlabs</h1>
                             <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
                             </div>
                         </div>
@@ -51,15 +51,6 @@ class About extends Component {
             /* about page header image*/
             <div className='container-fluid'>
                 <AboutHeader />
-                {/* <div className='row tag-about py-5'>
-                    <div className='col-12 py-5'>
-                        <h3 className='font-two text-center'>
-                            <span className='about-tag'>PLAN 
-                            <span className='fa fa-chevron-right ml-4'></span> VISUALIZE  
-                            <span className='fa fa-chevron-right ml-4'></span> DESIGN</span>
-                        </h3>
-                    </div>
-                </div> */}
                 {/* about page content*/}
                 <div className='container py-5'>
                     <div className='row py-5'>
