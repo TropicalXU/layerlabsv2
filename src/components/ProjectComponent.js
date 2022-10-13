@@ -82,7 +82,7 @@ const Projects = (props) => {
                                 </p>
                             </div>
                             <div className='col-12 col-md-4'>
-                                <img src='/assets/images/develop.png' className='img-fluid' width='260px' height='260px' alt='Section'/>
+                                <img src='/assets/images/develop.png' className='img-fluid move-img' width='260px' height='260px' alt='Section'/>
                             </div>
                         </div>
                     </div>
