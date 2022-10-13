@@ -1,13 +1,13 @@
 //importing main links
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Card, CardBody} from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
 
 //SERVICES MAIN PAGE
-class Services extends Component {
-    render() {
+const Services = () => {
+
         //RENDERING PACKAGES
         const RenderPackageOne = () => {
             return (
@@ -189,7 +189,7 @@ class Services extends Component {
             </> 
   
         );
-    }
+
 }
 
 export default Services;
