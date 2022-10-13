@@ -16,7 +16,7 @@ import { PROJECTS } from '../shared/projects';
 import Contact from './ContactComponent';
 import TermsAndConditions from './termsAndConditions';
 import PrivacyPolicy from './privacyPolicy';
-import CookieConsent, { Cookies } from 'react-cookie-consent';
+import CookieConsent from 'react-cookie-consent';
 import { Switch, Route, Redirect, withRouter, NavLink } from 'react-router-dom'
 import { connect } from 'react-redux';
 import { postFeedback } from '../redux/ActionCreators';

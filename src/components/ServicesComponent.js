@@ -7,9 +7,6 @@ import { RenderContact, RenderIncluded, RenderPackageProcess } from '../function
 
 //SERVICES MAIN PAGE
 class Services extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         //RENDERING PACKAGES
         const RenderPackageOne = () => {
@@ -22,7 +19,7 @@ class Services extends Component {
                     }}>
                         <Card className='package-card py-2'>
                             <CardBody className='font-two'>
-                                <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
+                                <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='idea'/>
                                 <h2>Custom</h2>
                                 <p>Pre-built custom website</p>
                                 <hr></hr>
@@ -50,7 +47,7 @@ class Services extends Component {
                     }}>
                         <Card className='package-card py-2'>
                             <CardBody className='font-two'>
-                                <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px'/>
+                                <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='package'/>
                                 <h2>Custom <span className='fa fa-plus'></span></h2>
                                 <p>Flexible custom design & features</p>
                                 <hr></hr>
@@ -78,7 +75,7 @@ class Services extends Component {
                     }}>
                         <Card className='package-card'>
                             <CardBody className='font-two'>
-                                <img src='/assets/images/shuttle.png' className='img-fluid text-white my-2' width='70px' height='70px'/>
+                                <img src='/assets/images/shuttle.png' className='img-fluid text-white my-2' width='70px' height='70px' alt='shuttle'/>
                                 <h2 className='text-black'>Business <span className='fa fa-plus'></span></h2>
                                 <p>Flexible custom design, business features and functionality</p>
                                 <hr></hr>
