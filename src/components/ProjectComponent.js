@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 //main projects page
 // rendering projects with the use of props
 const RenderProjects = ({project}) => {
-    if(project.id % 2 == 0) {
+    if(project.id % 2 === 0) {
 
         return (
             <>
@@ -82,7 +82,7 @@ const Projects = (props) => {
                                 </p>
                             </div>
                             <div className='col-12 col-md-4'>
-                                <img src='/assets/images/develop.png' className='img-fluid ml-5' width='260px' height='260px' alt='Section image'/>
+                                <img src='/assets/images/develop.png' className='img-fluid ml-5' width='260px' height='260px' alt='Section'/>
                             </div>
                         </div>
                     </div>

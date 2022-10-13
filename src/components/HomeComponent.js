@@ -129,7 +129,7 @@ class Home extends Component {
         //home page work section
         //taking in work items from main state as props
         const RenderWork = ({item}) => {
-            if(item.id % 2 == 0 ) {
+            if(item.id % 2 === 0 ) {
                 return(
                     <>  <div className='row align-items-center'>
                             <div className='col-12 col-md-5 py-4'>

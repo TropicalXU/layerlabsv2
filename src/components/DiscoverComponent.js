@@ -7,7 +7,7 @@ import { Fade, Stagger } from 'react-animation-components';
 //discover page
 class Discover extends Component {
     render() {
-        {/*  what matters content function */}
+        /*  what matters content function */
         const RenderList = () => {
             return (
                 <>
@@ -125,7 +125,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-6 col-lg-4 text-center'>
-                            <img src='/assets/images/blocks.png' className='img-fluid move-img' width='320px' height='320px' alt='Building blocks image'/>
+                            <img src='/assets/images/blocks.png' className='img-fluid move-img' width='320px' height='320px' alt='Building blocks'/>
                         </div>
                     </div>
                 </Fade>

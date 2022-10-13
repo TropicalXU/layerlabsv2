@@ -1,7 +1,7 @@
 //importing main links
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem,
-    Dropdown, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown
+DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown
  } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 

@@ -1,7 +1,7 @@
 //importing main links
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button, Card, Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { Fade } from 'react-animation-components';
 
 //PERSONAL PROFILE PAGE

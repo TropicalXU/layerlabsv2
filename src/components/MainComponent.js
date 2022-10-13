@@ -98,7 +98,7 @@ class Main extends Component {
                         declineButtonText='Decline'
                         enableDeclineButton
                         declineButtonClasses=''
-                        declineButtonStyle={{background: 'white', color: 'black', borderRadius: 25, fontWeight: 400, fontSize:14, fontFamily: 'Kanit', border: 1, border: 'solid', borderColor: 'darkgrey', paddingLeft: 20, paddingRight: 20, paddingTop: 6, paddingBottom: 6}}
+                        declineButtonStyle={{background: 'white', color: 'black', borderRadius: 25, fontWeight: 400, fontSize:14, fontFamily: 'Kanit', border: 1, borderColor: 'darkgrey', paddingLeft: 20, paddingRight: 20, paddingTop: 6, paddingBottom: 6}}
                         style={{background: 'white'}} 
                         className='cookie-consent ml-5'
                         buttonStyle={{background: '#24a0ed ',color:'white', borderRadius: 25, paddingLeft: 15, paddingRight: 15, fontWeight: 400, fontSize: 14, fontFamily: 'Kanit'}}>
