@@ -233,7 +233,7 @@ export const RenderPackageProcess = () => {
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <h6 className='thin-text'>Phase 5</h6>
+                    <h6 className='thin-text'>PHASE 5</h6>
                     <h2 className='font-two gradient-text'>Testing</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Testing site performance</li>
