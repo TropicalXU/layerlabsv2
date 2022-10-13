@@ -69,8 +69,7 @@ class Main extends Component {
                {/* RENDERING ROUTES */}
                 <Header />
                 <Switch>
-                    <Route exact path='/' component={ HomePage} />
-                    <Route path='/home' component={ HomePage } />
+                    <Route exact path='/home' component={ HomePage } />
                     <Route exact path='/services' component={ () =>  <Services />} />
                     <Route exact path='/services/custom-package' component={ () => <CustomPackage /> } />
                     <Route exact path='/services/custom-plus-package' component={ () => <CustomPlusPackage /> } />
@@ -87,7 +86,7 @@ class Main extends Component {
                      /> } />
                     <Route exact path='/termsAndConditions' component={ () => <TermsAndConditions /> } />
                     <Route exact path='/privacyPolicy' component={ () => <PrivacyPolicy /> } />
-                    <Redirect to='/' />
+                    <Redirect to='/home' />
                 </Switch>
                 {/* RENDERING COOKIE CONSENT */}
                 <div className='container cookie-consent'>
