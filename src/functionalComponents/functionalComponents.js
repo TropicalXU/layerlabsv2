@@ -1,7 +1,7 @@
 //importing main links
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Card, CardBody, CardImg, CardImgOverlay } from 'reactstrap'; 
+import { Card, CardBody} from 'reactstrap'; 
 import { FadeTransform } from 'react-animation-components';
 
 //SECTION CARDS-------------------------------
@@ -112,19 +112,19 @@ export const RenderServices = () => {
                 <div className='col-12 col-md-12 col-lg-4'>
                     <Card className='bg-gradient home-services-card p-5 mt-5'>
                         <h3 className='font-two text-white'>Web Design</h3>
-                        <img src='/assets/images/user-experience.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' />
+                        <img src='/assets/images/user-experience.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='ux logo' />
                     </Card>
                 </div>
                 <div className='col-12 col-md-12 col-lg-4'>
                     <Card className='bg-gradient home-services-card p-5 mt-5'>
                         <h3 className='font-two text-white'>SEO Optimization</h3>
-                        <img src='/assets/images/seo-icon.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' />
+                        <img src='/assets/images/seo-icon.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='seo logo' />
                     </Card>
                 </div>
                 <div className='col-12 col-md-12 col-lg-4'>
                     <Card className='bg-gradient home-services-card p-5 mt-5'>
                         <h3 className='font-two text-white'>Hosting</h3>
-                        <img src='/assets/images/server.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' />
+                        <img src='/assets/images/server.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='hosting logo' />
                     </Card>
                 </div>
             </div>
@@ -139,29 +139,29 @@ export const RenderIncluded = () => {
             <h1 className='font-two pt-4'>Whats included?</h1>
             <div className='row thin-text d-flex justify-content-center pt-5 pb-4'>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                    <img src='/assets/images/front-end.png' className='img-fluid' width='120px' height='120px' />
+                    <img src='/assets/images/front-end.png' className='img-fluid' width='120px' height='120px' alt='web design logo' />
                     <h5 className='font-two gradient-text py-5'>BESPOKE WEB DESIGN</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mx-5 mt-5'>
-                <img src='/assets/images/application.png' className='img-fluid' width='120px' height='120px' />
+                <img src='/assets/images/application.png' className='img-fluid' width='120px' height='120px' alt='mobile optimization logo' />
                     <h5 className='font-two gradient-text py-5'>MOBILE OPTIMIZED</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                <img src='/assets/images/custom-features.png' className='img-fluid' width='120px' height='120px' />
+                <img src='/assets/images/custom-features.png' className='img-fluid' width='120px' height='120px' alt='custom development logo' />
                     <h5 className='font-two gradient-text py-5'>CUSTOM DEVELOPMENT</h5>
                 </div>
             </div>
             <div className='row thin-text d-flex justify-content-center pt-4 pb-5'>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                <img src='/assets/images/performance.png' className='img-fluid' width='120px' height='120px' />
+                <img src='/assets/images/performance.png' className='img-fluid' width='120px' height='120px' alt='seo logo' />
                     <h5 className='font-two gradient-text py-5'>SEO INTEGRATION</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mx-5 mt-5'>
-                <img src='/assets/images/data-encryption.png' className='img-fluid' width='120px' height='120px' />
+                <img src='/assets/images/data-encryption.png' className='img-fluid' width='120px' height='120px' alt='security logo' />
                     <h5 className='font-two gradient-text py-5'>SECURITY</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                <img src='/assets/images/developer.png' className='img-fluid' width='120px' height='120px' />
+                <img src='/assets/images/developer.png' className='img-fluid' width='120px' height='120px' alt='support logo' />
                     <h5 className='font-two gradient-text py-5'>SUPPORT</h5>
                 </div>
             </div>
@@ -169,6 +169,7 @@ export const RenderIncluded = () => {
     );
 }
 
+//Render packages component
 export const RenderPackageProcess = () => {
     return (
         <>
@@ -177,50 +178,71 @@ export const RenderPackageProcess = () => {
                 <div className='col-12 col-md-12 col-lg-6'>
                     <h6 className='thin-text'>PHASE 1</h6>
                     <h2 className='font-two gradient-text'>Discovery</h2>
-                    <p></p>
+                    <ul className='list-unstyled font-two py-4'>
+                        <li><span className='fa fa-bolt mr-2'></span>Create a roadmap</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Gather material</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Make a deadline</li>
+                    </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/discovery.jpg' className='process-img img-fluid my-4' width='100%' />
+                    <img src='/assets/images/discovery.jpg' className='process-img img-fluid my-4' width='100%' alt='Phase 1' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
                     <h6 className='thin-text'>PHASE 2</h6>
                     <h2 className='font-two gradient-text'>Wireframing</h2>
-                    <p></p>
+                    <ul className='list-unstyled font-two py-4'>
+                        <li><span className='fa fa-bolt mr-2'></span>Identify the goal of the website</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Understand the userflow</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Determine the website wireframe size</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Provide detailed wireframing concepts</li>
+                    </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-1'>
-                    <img src='/assets/images/wireframe.jpg' className='process-img my-2' width='100%' height='300px' />
+                    <img src='/assets/images/wireframe.jpg' className='process-img my-2' width='100%' height='300px' alt='phase 2' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
                     <h6 className='thin-text'>PHASE 3</h6>
                     <h2 className='font-two gradient-text'>Design</h2>
-                    <p></p>
+                    <ul className='list-unstyled font-two py-4'>
+                        <li><span className='fa fa-bolt mr-2'></span>Creating a visual style</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Choosing color palettes</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Designing the user navigation and site flow</li>
+                    </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/design.jpg' className='process-img img-fluid my-2' width='100%' />
+                    <img src='/assets/images/design.jpg' className='process-img img-fluid my-2' width='100%' alt='Phase 3' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
                     <h6 className='thin-text'>PHASE 4</h6>
                     <h2 className='font-two gradient-text'>Development</h2>
-                    <p></p>
+                    <ul className='list-unstyled font-two py-4'>
+                        <li><span className='fa fa-bolt mr-2'></span>Building the framework</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Implementing the code</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Administering SEO</li>
+                    </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-1'>
-                    <img src='/assets/images/development.jpg' className='process-img img-fluid my-2' width='100%' /> 
+                    <img src='/assets/images/development.jpg' className='process-img img-fluid my-2' width='100%' alt='Phase 4' /> 
                 </div> 
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
                     <h6 className='thin-text'>Phase 5</h6>
                     <h2 className='font-two gradient-text'>Testing</h2>
-                    <p></p>
+                    <ul className='list-unstyled font-two py-4'>
+                        <li><span className='fa fa-bolt mr-2'></span>Testing site performance</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Reviewing site responsiveness</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Assessing the application security</li>
+                    </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/testing.jpg' className='process-img img-fluid' width='100%' /> 
+                    <img src='/assets/images/testing.jpg' className='process-img img-fluid' width='100%' alt='Phase 5' /> 
                 </div>
             </div>
         </>
@@ -232,7 +254,7 @@ export const RenderContact = () => {
     return (
         <div className='row dark-bg text-center py-5'>
             <div className='col-12 col-md-2'>
-                <img src='/assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail image' />
+                <img src='/assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail' />
             </div>
             <div className='col-12 col-md-8'>
                 <h2 className='font-two text-white py-5'>Let's create something together!</h2>
@@ -253,18 +275,18 @@ export const RenderInstagram = () => {
             </div>
             <div className='row'>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/layerlabs-insta1.png' className='img-fluid discover-img' />
+                    <img src='/assets/images/layerlabs-insta1.png' className='process-img my-4' width='100%' height='470px' alt='instagram' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/layerlabs-insta.png' className='img-fluid discover-img' />
+                    <img src='/assets/images/layerlabs-insta.png' className='process-img img-fluid my-4' height='370px' alt='instagram' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/layerlabs-insta2.png' className='img-fluid discover-img' />
+                    <img src='/assets/images/layerlabs-insta2.png' className='process-img img-fluid my-4' alt='instagram' />
                 </div>
             </div>
             <div className='row pt-5 font-two'>
                 <div className='col-12 text-center'>
-                    <a className='btn btn-black font-two px-4'>Visit<span className='fa fa-chevron-right ml-2'></span></a>
+                    <a href='https://www.instagram.com/layerlabs.io/' className='btn btn-black font-two px-4'>Visit<span className='fa fa-chevron-right ml-2'></span></a>
                 </div>
             </div>
         </>
@@ -276,7 +298,7 @@ export const RenderServicesAd = () => {
     return (
         <div className='row dark-bg text-center py-5'>
             <div className='col-12 col-md-2 align-self-center'>
-                <img src='/assets/images/package-box.png' width='200' height='200' alt='Box image' />
+                <img src='/assets/images/package-box.png' width='200' height='200' alt='Box' />
             </div>
             <div className='col-12 col-md-8'>
                 <h2 className='font-two text-white py-5'>Interested in your own personal or business website?</h2>

@@ -1,12 +1,9 @@
 //importing main links
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Card, CardBody, CardImg, Carousel, CarouselItem, 
-        CarouselControl, CarouselIndicators, CarouselCaption 
-    } 
-from 'reactstrap';
+import { Card, CardBody, Carousel, CarouselItem, } from 'reactstrap';
 import { FadeTransform, Fade } from 'react-animation-components';
-import { RenderContact, RenderCardOne, RenderCardTwo, RenderCardThree, RenderServicesAd, RenderServices} from '../functionalComponents/functionalComponents';
+import { RenderCardOne, RenderCardTwo, RenderCardThree, RenderServicesAd, RenderServices} from '../functionalComponents/functionalComponents';
 
 //carousel items
 const items = [
@@ -107,7 +104,7 @@ class Home extends Component {
               });
 
 
-        {/* HOMEPAGE HEADER */}
+        /* HOMEPAGE HEADER */
         const HomeHeader = () => {
             return (
                 <Fade in>

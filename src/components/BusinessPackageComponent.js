@@ -33,15 +33,21 @@ const BusinessPackage = () => {
                                     <h1 className='font text-white text-center'>Business <span className='fa fa-plus gradient-text'></span></h1>
                                     <hr></hr>
                                     <CardBody className='text-center py-5'>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Up to 15 individually designed high end pages</h4>
-                                        <h4 className='font-two py-3'><span className='fa circle-check mr-4'></span>Mobile first designed approach. Fully optimized for all screen sizes.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>UI/UX Wireframing Process: Detailed Wireframes & User Persona</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>High level interactivity & animation</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Basic database integration</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Advanced SEO integration.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Site backup & security.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Additional functionality and plugin features.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Managed website launch & support.</h4>
+                                        <div className='row d-flex justify-content-center'>
+                                            <div className='col-md-8'>
+                                                <ul>                                      
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Up to 15 individually designed high end pages</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Mobile first designed approach. Fully optimized for all screen sizes.</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>UI/UX Wireframing Process: Detailed Wireframes & User Persona</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>High level interactivity & animation</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Basic database integration</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Advanced SEO integration.</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Site backup & security.</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Additional functionality and plugin features.</h4>
+                                                    <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Managed website launch & support.</h4>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </CardBody>
                                 </Card>
                             </FadeTransform>

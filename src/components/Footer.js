@@ -9,13 +9,13 @@ class Footer extends Component {
             <div className='footer font-two'>
                 <div className='container-fluid mx-4 py-5'>
                     <div className='row py-5'>
-                        <div className='col-12 col-sm-4 py-5'>
+                        <div className='col-12 col-lg-4 py-5'>
                             <div className='row'>
                                 <img src='/assets/images/logo.png' alt='Logo' height='60' width='61' />
                                 <h4 className='navbrand px-3 pt-3'>Layerlabs</h4>
                             </div>
                         </div>
-                        <div className='col-6 col-sm-2 pt-5'>
+                        <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Layerlabs</h5>
                             <ul className='list-unstyled'>
                                 <li><NavLink className='link' to='/home'>Home</NavLink></li>
@@ -24,7 +24,7 @@ class Footer extends Component {
                                 <li><NavLink className='link' to='/contact'>Contact</NavLink></li>
                             </ul>
                         </div>
-                        <div className='col-6 col-sm-2 pt-5'>
+                        <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Services</h5>
                             <ul className='list-unstyled'>
                                 <li><NavLink className='link' to='/services'>Services</NavLink></li>
@@ -34,7 +34,7 @@ class Footer extends Component {
                                 <li><NavLink className='link' to='/services/business-plus-package'>Busines + Package</NavLink></li>
                             </ul>
                         </div>
-                        <div className='col-6 col-sm-2 pt-5'>
+                        <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Work</h5>
                             <ul className='list-unstyled'>
                                 <li><NavLink className='link' to='/about'>Projects</NavLink></li>
@@ -43,7 +43,7 @@ class Footer extends Component {
                                 <li><NavLink className='link' to='/projects/2'>Viewpoint Ireland</NavLink></li>
                             </ul>
                         </div>
-                        <div className='col-6 col-sm-2 align-items-center pt-5'>
+                        <div className='col-6 col-lg-2 align-items-center pt-5'>
                             <h5 className='font-two py-2'>Socials</h5>
                             <a  href="https://medium.com/@layerlabs.io"><i className="fa-brands fa-medium fa-lg"></i></a>
                             <a  href="https://www.instagram.com/layerlabs.io"><i className="fa-brands fa-instagram fa-lg mx-2"></i></a>
@@ -53,13 +53,13 @@ class Footer extends Component {
                     </div>
                     <hr></hr>
                     <div className='row py-4  footer-bottom'>
-                        <div className='col-8 col-sm-8'>
+                        <div className='col-8 col-lg-8'>
                             <p>© 2022 Layerlabs. All rights reserved.</p>
                         </div>
-                        <div className='col-2 col-sm-2'>
+                        <div className='col-2 col-lg-2'>
                             <NavLink className='link' to='/termsAndConditions'>Terms & Conditions</NavLink>
                         </div>
-                        <div className='col-2 col-sm-2'>
+                        <div className='col-2 col-lg-2'>
                             <NavLink className='link' to='/privacyPolicy'>Privacy Policy</NavLink>
                         </div>
                     </div>

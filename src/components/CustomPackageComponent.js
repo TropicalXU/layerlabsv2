@@ -32,16 +32,24 @@ const CustomPackage = () => {
                                 <Card className='custom-card py-5'>
                                     <h1 className='font text-center'>Custom</h1>
                                     <hr></hr>
-                                    <CardBody className='text-center p-5'>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Up to 5 individually designed pages</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Mobile first designed approach. Fully optimized for all screen sizes.</h4>
-                                        <h4 className='font-two'><span className='fa fa-circle-check mr-4'></span>Subtle interactivity & animation.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Standard SEO integration.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Site backup & security.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Contact form plugin installation.</h4>
-                                        <h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Managed website launch.</h4>
+                                    <CardBody className='p-5'>
+                                        <div className='row d-flex justify-content-center'>
+                                            <div className='col-md-8'>
+                                                <ul className='list-unstyled text-center'>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Up to 5 individually designed pages</h4></li>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Mobile first designed approach</h4></li>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Fully optimized for all screen sizes</h4></li>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Subtle interactivity & animation</h4></li>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Standard SEO integration</h4></li>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Site backup & security</h4></li>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Contact form plugin installation</h4></li>
+                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Managed website launch</h4></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </CardBody>
                                 </Card>
+
                             </FadeTransform>
                         </div>
                     </div>
