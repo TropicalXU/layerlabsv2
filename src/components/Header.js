@@ -27,7 +27,7 @@ class Header extends Component {
             <>  {/* website navbar */}
                 <Navbar light color='white' expand='md'>
                     <div className='container-fluid py-2'>
-                        <NavbarBrand className='mr-auto' href='/'>
+                        <NavbarBrand className='mr-auto' href='/home'>
                         <img src='assets/images/logo.png' height='50' width='51'
                             alt='Layerlabs logo' 
                         />  <span className='navbrand'>Layerlabs</span>
