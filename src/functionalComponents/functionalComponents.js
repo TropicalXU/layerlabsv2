@@ -16,7 +16,7 @@ export const RenderCardOne = () => {
                     <CardBody>
                         <span className='fa fa-cubes fa-lg'></span>
                         <h2 className='font-two py-3'>Pro Custom</h2>
-                        <p className='home-card-text'>Proffesional, fully custom & responsive websites built from scratch</p>
+                        <p className='home-card-text'>Proffesional, fully custom & responsive websites built from scratch.</p>
                     </CardBody>
                 </Card>
             </FadeTransform>
@@ -54,7 +54,7 @@ export const RenderCardThree = () => {
                     <CardBody>
                         <span className='fa fa-square-check fa-lg'></span>
                         <h2 className='font-two py-3'>Support</h2>
-                        <p className='home-card-text'>Establish a theme, choose your color palettes and construct your brand.</p>
+                        <p className='home-card-text'>Continued ongoing guided support and advice.</p>
                     </CardBody>
                 </Card>
             </FadeTransform>
@@ -83,7 +83,7 @@ export const RenderCardFive = () => {
                 <CardBody>
                     <span className='fa fa-wand-magic-sparkles fa-lg'></span>
                     <h2 className='font-two py-3'>Visualize</h2>
-                    <p className='home-card-text'>Gather images and material to help you visualize and plan your website</p>
+                    <p className='home-card-text'>Gather images and material to help you visualize and plan your website.</p>
                 </CardBody>
             </Card>
         </>
