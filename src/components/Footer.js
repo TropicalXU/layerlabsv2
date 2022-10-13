@@ -1,6 +1,6 @@
 //importing main links
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
     render() {
@@ -18,29 +18,29 @@ class Footer extends Component {
                         <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Layerlabs</h5>
                             <ul className='list-unstyled'>
-                                <li><NavLink className='link' to='/home'>Home</NavLink></li>
-                                <li><NavLink className='link' to='/about'>About</NavLink></li>
-                                <li><NavLink className='link' to='/about/personal-profile'>Personal Profile</NavLink></li>
-                                <li><NavLink className='link' to='/contact'>Contact</NavLink></li>
+                                <li><Link className='link' to='/'>Home</Link></li>
+                                <li><Link className='link' to='/about'>About</Link></li>
+                                <li><Link className='link' to='/about/personal-profile'>Personal Profile</Link></li>
+                                <li><Link className='link' to='/contact'>Contact</Link></li>
                             </ul>
                         </div>
                         <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Services</h5>
                             <ul className='list-unstyled'>
-                                <li><NavLink className='link' to='/services'>Services</NavLink></li>
-                                <li><NavLink className='link' to='/discover'>Discover</NavLink></li>
-                                <li><NavLink className='link' to='/services/custom-package'>Custom Package</NavLink></li>
-                                <li><NavLink className='link' to='/services/custom-plus-package'>Custom + Package</NavLink></li>
-                                <li><NavLink className='link' to='/services/business-plus-package'>Busines + Package</NavLink></li>
+                                <li><Link className='link' to='/services'>Services</Link></li>
+                                <li><Link className='link' to='/discover'>Discover</Link></li>
+                                <li><Link className='link' to='/services/custom-package'>Custom Package</Link></li>
+                                <li><Link className='link' to='/services/custom-plus-package'>Custom + Package</Link></li>
+                                <li><Link className='link' to='/services/business-plus-package'>Busines + Package</Link></li>
                             </ul>
                         </div>
                         <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Work</h5>
                             <ul className='list-unstyled'>
-                                <li><NavLink className='link' to='/about'>Projects</NavLink></li>
-                                <li><NavLink className='link' to='/projects/0'>Shirleys Studio</NavLink></li>
-                                <li><NavLink className='link' to='/projects/1'>Vacay</NavLink></li>
-                                <li><NavLink className='link' to='/projects/2'>Viewpoint Ireland</NavLink></li>
+                                <li><Link className='link' to='/about'>Projects</Link></li>
+                                <li><Link className='link' to='/projects/0'>Shirleys Studio</Link></li>
+                                <li><Link className='link' to='/projects/1'>Vacay</Link></li>
+                                <li><Link className='link' to='/projects/2'>Viewpoint Ireland</Link></li>
                             </ul>
                         </div>
                         <div className='col-6 col-lg-2 align-items-center pt-5'>
@@ -53,14 +53,14 @@ class Footer extends Component {
                     </div>
                     <hr></hr>
                     <div className='row py-4  footer-bottom'>
-                        <div className='col-8 col-lg-8'>
+                        <div className='col-12 col-lg-8'>
                             <p>© 2022 Layerlabs. All rights reserved.</p>
                         </div>
-                        <div className='col-2 col-lg-2'>
-                            <NavLink className='link' to='/termsAndConditions'>Terms & Conditions</NavLink>
+                        <div className='col-6 col-md-2 col-lg-2'>
+                            <Link className='link' to='/termsAndConditions'>Terms & Conditions</Link>
                         </div>
-                        <div className='col-2 col-lg-2'>
-                            <NavLink className='link' to='/privacyPolicy'>Privacy Policy</NavLink>
+                        <div className='col-6 col-md-2 col-lg-2'>
+                            <Link className='link' to='/privacyPolicy'>Privacy Policy</Link>
                         </div>
                     </div>
                 </div>

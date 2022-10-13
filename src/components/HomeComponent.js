@@ -1,6 +1,6 @@
 //importing main links
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Card, CardBody, Carousel, CarouselItem, } from 'reactstrap';
 import { FadeTransform, Fade } from 'react-animation-components';
 import { RenderCardOne, RenderCardTwo, RenderCardThree, RenderServicesAd, RenderServices} from '../functionalComponents/functionalComponents';
@@ -94,7 +94,7 @@ class Home extends Component {
                             <CardBody className='text-center'>
                                 <h2 className='font'>{item.header}</h2>
                                 <p className='font-two mb-4 mt-3'>{item.caption}</p>
-                                <NavLink to={item.button} className='font-two btn-gradient my-5'>{item.buttonMsg}<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <Link to={item.button} className='font-two btn-gradient my-5'>{item.buttonMsg}<span className='fa fa-chevron-right ml-2'></span></Link>
                             </CardBody>
                         </Card>
                         </div>
@@ -113,7 +113,7 @@ class Home extends Component {
                             <div className='col-12'>
                                 <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
                                 <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
-                                <NavLink className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <Link className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></Link>
                             </div>
                             <div className='col-12 pt-5'>
                                 <a className="fa-brands fa-medium home-fa fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
@@ -137,7 +137,7 @@ class Home extends Component {
                                 <p>
                                     {item.intro}
                                 </p>
-                                <NavLink to={`/projects/${item.id}`} className='btn btn-gradient font-two my-5'>View <span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <Link to={`/projects/${item.id}`} className='btn btn-gradient font-two my-5'>View <span className='fa fa-chevron-right ml-2'></span></Link>
                                 <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-5 offset-md-2'>
@@ -155,7 +155,7 @@ class Home extends Component {
                                 <p>
                                     {item.intro}
                                 </p>
-                                <NavLink to={`/projects/${item.id}`}className='btn btn-gradient font-two my-5'>View<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <Link to={`/projects/${item.id}`}className='btn btn-gradient font-two my-5'>View<span className='fa fa-chevron-right ml-2'></span></Link>
                                 <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-5 order-md-1'>

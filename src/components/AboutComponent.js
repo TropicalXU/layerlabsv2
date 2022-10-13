@@ -1,6 +1,6 @@
 //importing main links
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Fade } from 'react-animation-components';
 import { RenderInstagram } from '../functionalComponents/functionalComponents';
 
@@ -38,7 +38,7 @@ class About extends Component {
                             full scale custom web application was very evident. I created this
                             website with my love for web development specifically creation & design.
                         </p>
-                        <NavLink to='/about/personal-profile' className='btn btn-black font-two px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <Link to='/about/personal-profile' className='btn btn-black font-two px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></Link>
                     </div>
                     <div className='col-12 col-md-6 mt-4'>
                         <img src='/assets/images/layerlabs-home.png' className='img-fluid move-img' width='560px' height='620px' alt='Layerlabs home page'/>

@@ -17,23 +17,8 @@ import Contact from './ContactComponent';
 import TermsAndConditions from './termsAndConditions';
 import PrivacyPolicy from './privacyPolicy';
 import CookieConsent from 'react-cookie-consent';
-import { Switch, Route, Redirect, withRouter, NavLink } from 'react-router-dom'
-import { connect } from 'react-redux';
-import { postFeedback } from '../redux/ActionCreators';
-import { actions } from 'react-redux-form';
+import { Switch, Route, Redirect, Link } from 'react-router-dom'
 
-
-const mapStateToProps = state => {
-    return {
-
-    }
-}
-
-const mapDispatchToProps = (dispatch) => ({
-    postFeedback: (user_name, user_email, user_message) => dispatch(postFeedback(user_name, user_email, user_message)),
-
-    resetFeedbackForm: () => { dispatch(actions.reset('feedback'))}
-});
 
 //---MAIN COMPONENT --------//
 class Main extends Component {
@@ -81,8 +66,6 @@ class Main extends Component {
                     <Route exact path='/projects/:id' component={ WorkId } />
                     <Route exact path='/contact' component={ () => 
                     <Contact 
-                    resetFeedbackForm={this.props.resetFeedbackForm} 
-                    postFeedback={this.props.postFeedback} 
                      /> } />
                     <Route exact path='/termsAndConditions' component={ () => <TermsAndConditions /> } />
                     <Route exact path='/privacyPolicy' component={ () => <PrivacyPolicy /> } />
@@ -107,7 +90,7 @@ class Main extends Component {
                                     <span className='fa fa-circle-info text-black align-self-center fa-lg'></span>
                                 </div>
                                 <div className='col-11 pt-2'>
-                                    <p className=''>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read more <NavLink to='/privacyPolicy'>Privacy Policy</NavLink></p>
+                                    <p className=''>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies. Read more <Link to='/privacyPolicy'>Privacy Policy</Link></p>
                                 </div>
                             </div>
                         </div>
@@ -118,4 +101,4 @@ class Main extends Component {
         );
     }
 }
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+export default Main;

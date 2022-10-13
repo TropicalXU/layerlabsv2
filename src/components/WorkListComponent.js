@@ -2,7 +2,7 @@
 import React from 'react';
 import { BreadcrumbItem } from 'reactstrap';
 import { RenderServicesAd } from '../functionalComponents/functionalComponents';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //WORK DETAIL PAGE
 const WorkDetail = (props) => {
@@ -23,9 +23,9 @@ const WorkDetail = (props) => {
                     <div className='row pt-3'>
                         <div className='breadcrumb'>
                             <BreadcrumbItem>
-                                <NavLink className='breadcrumb-link text-white' to='/projects'>
+                                <Link className='breadcrumb-link text-white' to='/projects'>
                                     <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Projects</span>
-                                </NavLink>
+                                </Link>
                             </BreadcrumbItem>
                             <BreadcrumbItem active className='gradient-text font-two'>{props.project.title}
                             </BreadcrumbItem>

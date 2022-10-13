@@ -1,6 +1,6 @@
 //importing main links
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Card, CardBody} from 'reactstrap'; 
 import { FadeTransform } from 'react-animation-components';
 
@@ -258,7 +258,7 @@ export const RenderContact = () => {
             </div>
             <div className='col-12 col-md-8'>
                 <h2 className='font-two text-white py-5'>Let's create something together!</h2>
-                <NavLink to='/contact' className='btn btn-gradient font-two'>Get in touch <span className='fa fa-chevron-right ml-2'></span></NavLink>
+                <Link to='/contact' className='btn btn-gradient font-two'>Get in touch <span className='fa fa-chevron-right ml-2'></span></Link>
             </div>
         </div>
     );
@@ -303,7 +303,7 @@ export const RenderServicesAd = () => {
             <div className='col-12 col-md-8'>
                 <h2 className='font-two text-white py-5'>Interested in your own personal or business website?</h2>
                 <h5 className='font-two text-white pb-5'>Check out our service packages.</h5>
-                <NavLink to='/services' className='btn btn-gradient font'>Services<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                <Link to='/services' className='btn btn-gradient font'>Services<span className='fa fa-chevron-right ml-2'></span></Link>
             </div>
         </div>
     );

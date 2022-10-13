@@ -2,7 +2,7 @@
 import React from 'react';
 import { RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { Fade, Stagger} from 'react-animation-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //main projects page
 // rendering projects with the use of props
@@ -15,7 +15,7 @@ const RenderProjects = ({project}) => {
                     <div className='col-12 col-md-6'>
                         <h2 className='font-two'>{project.title}</h2>
                         <p className='py-5'>{project.intro}</p>
-                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient font-two my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <Link to={`/projects/${project.id}`} className='btn btn-gradient font-two my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></Link>
                         <a href={project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                     </div>
                     <div className='col-12 col-md-6 pt-4'>
@@ -31,7 +31,7 @@ const RenderProjects = ({project}) => {
                     <div className='col-12 col-md-6 order-md-2'>
                         <h2 className='font-two'>{project.title}</h2>
                         <p className='py-5'>{project.intro}</p>
-                        <NavLink to={`/projects/${project.id}`} className='btn btn-gradient font-two my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                        <Link to={`/projects/${project.id}`} className='btn btn-gradient font-two my-4'>View Project<span className='fa fa-chevron-right ml-2'></span></Link>
                         <a href={project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                     </div>
                     <div className='col-12 col-md-6 pt-4'>

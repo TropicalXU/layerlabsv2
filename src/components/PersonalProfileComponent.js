@@ -1,6 +1,6 @@
 //importing main links
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { Fade } from 'react-animation-components';
 
@@ -118,14 +118,14 @@ class PersonalProfile extends Component {
                                 <h2 className='py-4'>Full Stack Web Developer</h2>
                                 <h3>Skills:</h3>
                                 <h4 className='gradient-text py-4'>HTML, CSS, Javascript, React, Node.js, Express.js, MongoDB, Mongoose...</h4>
-                                <a href='/'><span className='fa fa-github fa-personal text-white fa-lg'></span></a>
-                                <a href='/'><span className='fa fa-linkedin fa-personal text-white fa-lg ml-3'></span></a>
+                                <a href="https://github.com/TropicalXU"><span className='fa fa-github fa-personal text-white fa-lg'></span></a>
+                                <a href="https://www.linkedin.com/in/seanhackett2022/"><span className='fa fa-linkedin fa-personal text-white fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-6 font-two'>
                                 <p>As an individual I am very motivated, positive and goal orientated with a passion to succeed. Over the last 10 years I have acquired valuable practical experience and knowledge in sales, finance, customer service and teamwork allowing me to attain invaluable interpersonal skills, organizational skills and skills allowing me to adapt to new systems processes and environments. I have a great interest for Web Development having so far completed the Full-Stack Web Development with React Specialization an online course provided by The Hong Kong University of Science and Technology, as well as an online Full Stack Web Development Bootcamp. I am very passionate about all aspects of Web Development and I continuously strive to educate myself further. Over the course of my time as a developer I have built many applications and websites. I have gained a great quantity of experience building and creating applications including environments, databases, frameworks, libraries and tools such as HTML, CSS, JavaScript, React, NodeJS, Express.js, MongoDB and Mongoose. In the process I have achieved hands on experience solving problems and managing my workflow in an efficient and timely manner.
                                             
                                 </p>
-                                <NavLink to='/contact' className='btn btn-gradient my-4'>Get in touch<span className='fa fa-chevron-right ml-2'></span></NavLink>
+                                <Link to='/contact' className='btn btn-gradient my-4'>Get in touch<span className='fa fa-chevron-right ml-2'></span></Link>
                                 {/* <a href='/assets/resume.pdf' className='btn btn-outline-dark ml-3'>Download Resume</a> */}
                             </div>
                         </div>

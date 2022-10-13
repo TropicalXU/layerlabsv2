@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, BreadcrumbItem, CardBody } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { RenderCardFive, RenderCardFour, RenderCardSix, RenderContact, RenderPackageProcess } from '../functionalComponents/functionalComponents';
 //custom package page
 const CustomPackage = () => {
@@ -15,9 +15,9 @@ const CustomPackage = () => {
                     <div className='row py-3'>
                         <div className='breadcrumb'>
                             <BreadcrumbItem>
-                                <NavLink className='breadcrumb-link text-white' to='/services'>
+                                <Link className='breadcrumb-link text-white' to='/services'>
                                     <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Services</span>
-                                </NavLink>
+                                </Link>
                             </BreadcrumbItem>
                             <BreadcrumbItem active className='gradient-text font-two'>Custom
                             </BreadcrumbItem>
