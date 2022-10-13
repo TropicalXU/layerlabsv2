@@ -30,7 +30,7 @@ export const PROJECTS =
             title: 'Viewpoint Ireland',
             intro: 'A list of key scenic locations to view and stay in Ireland. This website features Register and Login options which allow the user to post and upload images alongside a location of their choice. The application also features a built in map so you can view and pinpoint the exact location of each site.',
             description: "Viewpoint Ireland is a web application showcasing Ireland's most popular locations. Within the site you can register and sign up for an account, post locations and write reviews. The website has a built in map on the on the main page as well as a mini map displayed on the locations view page so you can pinpoint the exact location of a site. This was possible using Mapbox. The application also has built in security features so as to secure your personal information as well as passwords. Feel free to try it out!",
-            image: '/assets/images/viewpointIrl.png',
+            image: '/assets/images/ViewpointIrl.png',
             launch: 'July 2022',
             url: 'https://viewpointireland.layerlabs.io/',
             github: 'https://github.com/TropicalXU/viewpointireland'
