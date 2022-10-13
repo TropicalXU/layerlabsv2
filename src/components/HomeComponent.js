@@ -8,7 +8,7 @@ import { RenderCardOne, RenderCardTwo, RenderCardThree, RenderServicesAd, Render
 //carousel items
 const items = [
     {
-        src: 'assets/images/logo.png',
+        src: '/assets/images/logo.png',
         altText: 'Slide 1',
         caption: 'At Layerlabs I want to bring my own touch giving you the best and most responsive custom website design possible. What you want from a website can vary yet what matters most is the experience yourself and your users have.',
         header: "Let's get creative!",
@@ -16,7 +16,7 @@ const items = [
         buttonMsg: 'Services'
     },
     {
-      src: 'assets/images/me.jpg',
+      src: '/assets/images/me.jpg',
       altText: 'Slide 2',
       caption: 'Founder and creator of Layerlabs. I am a Full Stack Web Developer based in Toronto. I am a very driven and well organized individual with great attention to detail. I am also very creative always thinking outside the box, in search of new ideas and possibilities.',
       header: 'Sean Hackett',
@@ -24,7 +24,7 @@ const items = [
       buttonMsg: 'Read More'
     },
     {
-      src: 'assets/images/email.png',
+      src: '/assets/images/email.png',
       altText: 'Slide 3',
       caption: 'Looking for a fully customizable responsive website? Contact me to get a quote!',
       header: 'Get in touch!',

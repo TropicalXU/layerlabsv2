@@ -1,5 +1,5 @@
 //importing main links
-import React, { Component } from 'react';
+import React from 'react';
 import Main from './components/MainComponent';
 import ScrollTop from './functionalComponents/ScrollTop';
 import './App.css';
