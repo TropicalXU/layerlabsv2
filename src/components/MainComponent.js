@@ -87,7 +87,7 @@ class Main extends Component {
                      /> } />
                     <Route exact path='/termsAndConditions' component={ () => <TermsAndConditions /> } />
                     <Route exact path='/privacyPolicy' component={ () => <PrivacyPolicy /> } />
-                    <Redirect to='/' />
+                  
                 </Switch>
                 {/* RENDERING COOKIE CONSENT */}
                 <div className='container cookie-consent'>
