@@ -32,7 +32,7 @@ class Services extends Component {
                                    <h6><span className='fa fa-check mr-2'></span>Mobile optimized design and development.</h6>
                                    <h6><span className='fa fa-check mr-2'></span>Standard SEO integration.</h6>
                                 </div>
-                                <NavLink to='/services/custom-package' className='btn btn-black my-3 px-4'>More Detials</NavLink>
+                                <NavLink to='/services/custom-package' className='nav-link btn btn-black my-3 px-4'>More Detials</NavLink>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -60,7 +60,7 @@ class Services extends Component {
                                    <h6><span className='fa fa-check mr-2'></span>Collabarative detail and design.</h6>
                                    <h6><span className='fa fa-check mr-2'></span>High level interactivity & animation.</h6>
                                 </div>
-                                <NavLink to='/services/custom-plus-package' className='btn btn-black my-3 px-4'>More Details</NavLink>
+                                <NavLink to='/services/custom-plus-package' className='nav-link btn btn-black my-3 px-4'>More Details</NavLink>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -88,7 +88,7 @@ class Services extends Component {
                                     <h6><span className='fa fa-check mr-2'></span>Advanced interactivity and animation. </h6>
                                     <h6><span className='fa fa-check mr-2'></span>Advanced SEO integration.</h6>
                                 </div>
-                                <NavLink to='/services/business-plus-package' className='btn btn-black mt-3 mb-4 px-4'>More Details</NavLink>
+                                <NavLink to='/services/business-plus-package' className='nav-link btn btn-black mt-3 mb-4 px-4'>More Details</NavLink>
                             </CardBody>
                         </Card>
                     </FadeTransform>
