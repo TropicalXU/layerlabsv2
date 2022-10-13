@@ -112,19 +112,19 @@ export const RenderServices = () => {
                 <div className='col-12 col-md-12 col-lg-4'>
                     <Card className='bg-gradient home-services-card p-5 mt-5'>
                         <h3 className='font-two text-white'>Web Design</h3>
-                        <img src='/assets/images/user-experience.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='ux logo' />
+                        <img src='assets/images/user-experience.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='ux logo' />
                     </Card>
                 </div>
                 <div className='col-12 col-md-12 col-lg-4'>
                     <Card className='bg-gradient home-services-card p-5 mt-5'>
                         <h3 className='font-two text-white'>SEO Optimization</h3>
-                        <img src='/assets/images/seo-icon.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='seo logo' />
+                        <img src='assets/images/seo-icon.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='seo logo' />
                     </Card>
                 </div>
                 <div className='col-12 col-md-12 col-lg-4'>
                     <Card className='bg-gradient home-services-card p-5 mt-5'>
                         <h3 className='font-two text-white'>Hosting</h3>
-                        <img src='/assets/images/server.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='hosting logo' />
+                        <img src='assets/images/server.png' className='img-fluid mx-auto mt-3' width='90px' height='90px' alt='hosting logo' />
                     </Card>
                 </div>
             </div>
@@ -139,29 +139,29 @@ export const RenderIncluded = () => {
             <h1 className='font-two pt-4'>Whats included?</h1>
             <div className='row thin-text d-flex justify-content-center pt-5 pb-4'>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                    <img src='/assets/images/front-end.png' className='img-fluid' width='120px' height='120px' alt='web design logo' />
+                    <img src='assets/images/front-end.png' className='img-fluid' width='120px' height='120px' alt='web design logo' />
                     <h5 className='font-two gradient-text py-5'>BESPOKE WEB DESIGN</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mx-5 mt-5'>
-                <img src='/assets/images/application.png' className='img-fluid' width='120px' height='120px' alt='mobile optimization logo' />
+                <img src='assets/images/application.png' className='img-fluid' width='120px' height='120px' alt='mobile optimization logo' />
                     <h5 className='font-two gradient-text py-5'>MOBILE OPTIMIZED</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                <img src='/assets/images/custom-features.png' className='img-fluid' width='120px' height='120px' alt='custom development logo' />
+                <img src='assets/images/custom-features.png' className='img-fluid' width='120px' height='120px' alt='custom development logo' />
                     <h5 className='font-two gradient-text py-5'>CUSTOM DEVELOPMENT</h5>
                 </div>
             </div>
             <div className='row thin-text d-flex justify-content-center pt-4 pb-5'>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                <img src='/assets/images/performance.png' className='img-fluid' width='120px' height='120px' alt='seo logo' />
+                <img src='assets/images/performance.png' className='img-fluid' width='120px' height='120px' alt='seo logo' />
                     <h5 className='font-two gradient-text py-5'>SEO INTEGRATION</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mx-5 mt-5'>
-                <img src='/assets/images/data-encryption.png' className='img-fluid' width='120px' height='120px' alt='security logo' />
+                <img src='assets/images/data-encryption.png' className='img-fluid' width='120px' height='120px' alt='security logo' />
                     <h5 className='font-two gradient-text py-5'>SECURITY</h5>
                 </div>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
-                <img src='/assets/images/developer.png' className='img-fluid' width='120px' height='120px' alt='support logo' />
+                <img src='assets/images/developer.png' className='img-fluid' width='120px' height='120px' alt='support logo' />
                     <h5 className='font-two gradient-text py-5'>SUPPORT</h5>
                 </div>
             </div>
