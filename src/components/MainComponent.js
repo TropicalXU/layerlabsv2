@@ -54,7 +54,7 @@ class Main extends Component {
                {/* RENDERING ROUTES */}
                 <Header />
                 <Switch>
-                    <Route path='/' component={ HomePage } />
+                    <Route exact path='/' component={ HomePage } />
                     <Route exact path='/services' component={ () =>  <Services />} />
                     <Route exact path='/services/custom-package' component={ () => <CustomPackage /> } />
                     <Route exact path='/services/custom-plus-package' component={ () => <CustomPlusPackage /> } />
