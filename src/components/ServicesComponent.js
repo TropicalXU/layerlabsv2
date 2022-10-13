@@ -1,9 +1,9 @@
 //importing main links
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Card, CardBody, CardImg, CardText, CardTitle } from 'reactstrap';
+import { Card, CardBody} from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
-import { RenderCardFour, RenderCardFive, RenderCardSix, RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
+import { RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
 
 //SERVICES MAIN PAGE
 class Services extends Component {
