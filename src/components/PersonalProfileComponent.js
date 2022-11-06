@@ -117,7 +117,7 @@ class PersonalProfile extends Component {
                                 <h1 className='font'>Sean Hackett:</h1>
                                 <h2 className='py-4'>Full Stack Web Developer</h2>
                                 <h3>Skills:</h3>
-                                <h4 className='gradient-text py-4'>HTML, CSS, Javascript, React, Node.js, Express.js, MongoDB, Mongoose...</h4>
+                                <h4 className='gradient-text py-4'>HTML, CSS, Javascript, React, REST API, Express.js, Node.js, MongoDB, Mongoose...</h4>
                                 <a className='my-4' href="https://github.com/TropicalXU"><span className='fa fa-github fa-personal text-white fa-lg'></span></a>
                                 <a className='my-4' href="https://www.linkedin.com/in/seanhackett2022/"><span className='fa fa-linkedin fa-personal text-white fa-lg ml-3'></span></a>
                             </div>

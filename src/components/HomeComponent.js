@@ -224,6 +224,7 @@ class Home extends Component {
                         <h1 className='font-two pt-5'>Layerlabs services</h1>
                         </div>
                     </div>
+                    {/* rendering services section */}
                     <RenderServices />
                     <div className='row'>
                         <div className='col-12 col-md-6'>
@@ -280,6 +281,7 @@ class Home extends Component {
                     <h2 className='font-two text-center pt-5'>Check out some of my work</h2>
                     <hr></hr>
                     <div className='row mb-4 py-5'>
+                        {/* rendering work */}
                         <RenderWork item={this.props.project1} />
                         <RenderWork item={this.props.project2}/>
                         <div className='col-12 text-center'>

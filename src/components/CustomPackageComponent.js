@@ -32,7 +32,7 @@ const CustomPackage = () => {
                                 <Card className='custom-card py-5'>
                                     <h1 className='font text-center'>Custom</h1>
                                     <hr></hr>
-                                    <CardBody className='p-5'>
+                                    <CardBody className=''>
                                         <div className='row d-flex justify-content-center'>
                                             <div className='col-md-8'>
                                                 <ul className='list-unstyled text-center'>
