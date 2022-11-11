@@ -328,7 +328,7 @@ p {
 /* services/package page styling */
 .package-card {
   color: rgb(255, 255, 255);
-  background: linear-gradient(109.6deg, rgb(151, 213, 255) 11.2%, rgb(255, 155, 185) 91.1%);
+  background: linear-gradient(106.4deg, rgb(255, 104, 192) 11.1%, rgb(104, 84, 249) 81.3%);
   border: none;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.429);
