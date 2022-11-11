@@ -187,6 +187,10 @@ p {
   transition: all ease-in-out 1s;
 }
 
+.btn-primary {
+  border-radius: 50px;
+}
+
 .b-link:hover {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.665);
@@ -431,7 +435,7 @@ p {
   padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
-  box-shadow: 0 0 10px rgb(54, 54, 54);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.461);
 }
 
 .course-card {
