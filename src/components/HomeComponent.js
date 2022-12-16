@@ -107,7 +107,7 @@ class Home extends Component {
         /* HOMEPAGE HEADER */
         const HomeHeader = () => {
             return (
-                <Fade in>
+                // <Fade in>
                     <div className='home-header d-flex justify-content-center align-items-center my-3'>
                         <div className='row text-center text-white'>
                             <div className='col-12'>
@@ -122,7 +122,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                </Fade>
+                // </Fade>
             );
         }
 
