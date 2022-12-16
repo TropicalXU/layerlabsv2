@@ -11,7 +11,7 @@ const RenderProjects = ({project}) => {
 
         return (
             <>
-                <div className='row align-items-center py-5'>
+                <div className='row align-items-center py-5 my-5'>
                     <div className='col-12 col-md-6'>
                         <h2 className='font-two'>{project.title}</h2>
                         <p className='py-5'>{project.intro}</p>
@@ -94,7 +94,7 @@ const Projects = (props) => {
                 </Stagger>
                 {/* rendering services ad plugin */}
                 <div className='container-fluid my-4 pt-3'>
-                    <RenderServicesAd project={props.projects} />
+                    {/* <RenderServicesAd project={props.projects} /> */}
                 </div>
             </div>
         </>
