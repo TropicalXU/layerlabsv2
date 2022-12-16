@@ -36,12 +36,12 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar className='justify-content-center ml-auto'>
                                 <NavItem>
-                                    <NavLink className='nav-link' to='/'>
+                                    <NavLink className='nav-link mx-2' to='/'>
                                         <span className='font-two'>Home</span>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className='nav-link' to='/services'>
+                                    <NavLink className='nav-link mx-2' to='/services'>
                                         <span className='font-two'>Services<span className='fa fa-chevron-down ml-2'></span></span>
                                     </NavLink>
                                 </NavItem>
