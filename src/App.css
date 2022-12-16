@@ -144,11 +144,11 @@ p {
 
 /* background styles */
 .dark-bg {
-  background-color: #f8f9fa;
-  color: #adb5bd;
+  background-color: #e9ecef;
+  color: #6c757d;
   padding: 0px 45px;
   border-radius: 25px;
-  box-shadow: 0 0 10px rgb(190, 190, 190);
+  box-shadow: 0 0 10px rgb(216, 216, 216);
 }
 
 .bg-gradient {
@@ -491,7 +491,7 @@ p {
   font-size: 12px;
 }
 
-hr {
+/* hr {
   background-color: white;
   padding: .05em;
-}
+} */
