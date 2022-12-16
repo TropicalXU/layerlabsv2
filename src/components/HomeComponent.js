@@ -141,7 +141,7 @@ class Home extends Component {
                                 <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                             </div>
                             <div className='col-12 col-md-5 offset-md-2'>
-                                <img className='img-fluid discover-img' src={item.image} alt={item.title} />
+                                <img className='img-fluid' src={item.image} alt={item.title} />
                             </div>
                         </div>
                     </>

@@ -19,7 +19,7 @@ const RenderProjects = ({project}) => {
                         <a href={project.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
                     </div>
                     <div className='col-12 col-md-6 pt-4'>
-                        <img className='img-fluid discover-img' src={project.image} alt={project.title} />
+                        <img className='img-fluid' src={project.image} alt={project.title} />
                     </div>
                 </div>
             </>
