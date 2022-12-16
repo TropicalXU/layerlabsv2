@@ -285,7 +285,7 @@ class Home extends Component {
                         <RenderWork item={this.props.project1} />
                         {/* <RenderWork item={this.props.project2}/> */}
                         <div className='col-12 text-center'>
-                            <a href='/projects' className='btn btn-black font-two px-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
+                            <a href='/projects' className='btn btn-black font-two px-4 my-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
                         </div>
                     </div>
                 </div>

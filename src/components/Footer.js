@@ -37,7 +37,7 @@ class Footer extends Component {
                         <div className='col-6 col-lg-2 pt-5'>
                             <h5 className='font-two'>Work</h5>
                             <ul className='list-unstyled'>
-                                <li><Link className='link' to='/about'>Projects</Link></li>
+                                <li><Link className='link' to='/projects'>Projects</Link></li>
                                 <li><Link className='link' to='/projects/0'>Shirleys Studio</Link></li>
                                 {/* <li><Link className='link' to='/projects/1'>Vacay</Link></li>
                                 <li><Link className='link' to='/projects/2'>Viewpoint Ireland</Link></li> */}
