@@ -78,12 +78,6 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-.lab-bg {
-  background-color: white;
-  border-radius: 50px;
-  padding: 16px;
-}
-
 .font {
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -150,7 +144,8 @@ p {
 
 /* background styles */
 .dark-bg {
-  background-color: rgb(29, 38, 45);
+  background-color: #f8f9fa;
+  color: #adb5bd;
   padding: 0px 45px;
   border-radius: 25px;
   box-shadow: 0 0 10px rgb(190, 190, 190);

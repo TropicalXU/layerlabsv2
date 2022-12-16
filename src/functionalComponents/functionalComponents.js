@@ -257,7 +257,7 @@ export const RenderContact = () => {
                 <img src='/assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail' />
             </div>
             <div className='col-12 col-md-8'>
-                <h2 className='font-two text-white py-5'>Let's create something together!</h2>
+                <h2 className='font-two py-5'>Let's create something together!</h2>
                 <Link to='/contact' className='btn btn-gradient font-two'>Get in touch <span className='fa fa-chevron-right ml-2'></span></Link>
             </div>
         </div>
@@ -301,8 +301,8 @@ export const RenderServicesAd = () => {
                 <img src='/assets/images/package-box.png' width='200' height='200' alt='Box' />
             </div>
             <div className='col-12 col-md-8'>
-                <h2 className='font-two text-white py-5'>Interested in your own personal or business website?</h2>
-                <h5 className='font-two text-white pb-5'>Check out our service packages.</h5>
+                <h2 className='font-two py-5'>Interested in your own personal or business website?</h2>
+                <h5 className='font-two pb-5'>Check out our service packages.</h5>
                 <Link to='/services' className='btn btn-gradient font'>Services<span className='fa fa-chevron-right ml-2'></span></Link>
             </div>
         </div>
