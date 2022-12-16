@@ -63,7 +63,7 @@ const Projects = (props) => {
             <div className='row-layerlabs'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font text-white work-header'><span className='gradient-text'>Layerlabs</span> Sites</h1>
+                        <h1 className='font text-white work-header'><span className='gradient-text lab-bg'>Layerlabs</span> Sites</h1>
                     </div>
                 </div>
             </div>
