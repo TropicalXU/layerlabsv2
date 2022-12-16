@@ -26,7 +26,7 @@ class Header extends Component {
         return (
             <>  {/* website navbar */}
                 <Navbar light color='white' expand='md'>
-                    <div className='container-fluid py-2'>
+                    <div className='container-fluid text-center py-2'>
                         <NavbarBrand className='mr-auto' href='/'>
                         <img src='/assets/images/logo.png' height='50' width='51'
                             alt='Layerlabs logo' 

@@ -39,8 +39,8 @@ class Footer extends Component {
                             <ul className='list-unstyled'>
                                 <li><Link className='link' to='/about'>Projects</Link></li>
                                 <li><Link className='link' to='/projects/0'>Shirleys Studio</Link></li>
-                                <li><Link className='link' to='/projects/1'>Vacay</Link></li>
-                                <li><Link className='link' to='/projects/2'>Viewpoint Ireland</Link></li>
+                                {/* <li><Link className='link' to='/projects/1'>Vacay</Link></li>
+                                <li><Link className='link' to='/projects/2'>Viewpoint Ireland</Link></li> */}
                             </ul>
                         </div>
                         <div className='col-6 col-lg-2 align-items-center pt-5'>
