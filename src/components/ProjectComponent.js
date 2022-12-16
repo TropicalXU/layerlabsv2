@@ -75,7 +75,7 @@ const Projects = (props) => {
                     <h2 className='font-two text-center py-5'>Check out my work below</h2>
                         <div className='row dark-bg py-5'>
                             <div className='col-12 col-md-8'>
-                                <p className='large-text text-center py-5'>Here are a few projects and websites I have designed and created here at Layerlabs using 
+                                <p className='large-text text-center text-white py-5'>Here are a few projects and websites I have designed and created here at Layerlabs using 
                                     the knowledge and expertise I have aquired throughout my web development journey. I created these 
                                     applications from the ground up. Each website is intergrated with fully responsive layouts and designs 
                                     for all devices using tools and frameworks such as React, Javascript, CSS and HTML.
