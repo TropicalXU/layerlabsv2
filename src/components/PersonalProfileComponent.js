@@ -182,22 +182,22 @@ class PersonalProfile extends Component {
                         </div>
                         <div className='row course-card py-5'>
                             <div className='col-12 col-md-6 font-two align-self-center'>
-                                <h2 className='text-black py-4'>The Modern React Bootcamp</h2>
-                                <h4>Udemy</h4>
-                                <h6 className='py-4'>July 2022 - Present</h6>
+                                <h2 className='text-black py-4'>Building Modern Node.js Applications on AWS</h2>
+                                <h4>AWS</h4>
+                                <h6 className='py-4'>December 2022 - Present</h6>
                             </div>
                             <div className='col-12 col-md-6 font-two'>
                                 <h4 className='py-5'>Course Content</h4>
                                 <ul className='list-unstyled'>
-                                    <li><span className='fa fa-check mr-2'></span>React Hooks</li>
-                                    <li><span className='fa fa-check mr-2'></span>State Management with useReducer + use Context(Redux Lite)</li>
-                                    <li><span className='fa fa-check mr-2'></span>React State Management Patterns</li>
-                                    <li><span className='fa fa-check mr-2'></span>Writing dynamically styled components with JSS</li>
-                                    <li><span className='fa fa-check mr-2'></span>Integration of UI libraries like Material UI and Bootstrap into React apps</li>
-                                    <li><span className='fa fa-check mr-2'></span>Integrate React with APIs</li>
-                                    <li><span className='fa fa-check mr-2'></span>Forms and complex validations in React</li>
+                                    <li><span className='fa fa-check mr-2'></span>API driven development</li>
+                                    <li><span className='fa fa-check mr-2'></span>AWS Lambada</li>
+                                    <li><span className='fa fa-check mr-2'></span>Asynchronus vs Synchronus responses</li>
+                                    <li><span className='fa fa-check mr-2'></span>Creating serverless workflows</li>
+                                    <li><span className='fa fa-check mr-2'></span>Event driven architectures</li>
+                                    <li><span className='fa fa-check mr-2'></span>API Gateway response caching</li>
+                                    <li><span className='fa fa-check mr-2'></span>API Gateway and Step Function integration</li>
                                 </ul>
-                                <Button onClick={this.toggleModalThree} className='btn btn-black my-3 px-4'>Read More<span className='fa fa-chevron-down ml-2'></span></Button>
+                                {/* <Button onClick={this.toggleModalThree} className='btn btn-black my-3 px-4'>Read More<span className='fa fa-chevron-down ml-2'></span></Button> */}
                             </div>
                         </div>
                     </div>
