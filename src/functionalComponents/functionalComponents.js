@@ -173,7 +173,7 @@ export const RenderIncluded = () => {
 export const RenderPackageProcess = () => {
     return (
         <>
-            <h1 className='font-two'>The Process</h1>
+            <h1 className='font-two'>The Process...</h1>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
                     <h6 className='thin-text'>PHASE 1</h6>

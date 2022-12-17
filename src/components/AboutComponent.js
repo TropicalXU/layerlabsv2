@@ -40,7 +40,7 @@ class About extends Component {
                         </p>
                         <Link to='/about/personal-profile' className='btn btn-black font-two px-4 my-4'>Personal Portfolio<span className='fa fa-chevron-right ml-2'></span></Link>
                     </div>
-                    <div className='col-12 col-md-6 mt-4'>
+                    <div className='col-12 col-md-6 mt-4 text-center'>
                         <img src='/assets/images/layerlabs-home.png' className='img-fluid move-img' width='560px' height='620px' alt='Layerlabs home page'/>
                     </div>
             </>

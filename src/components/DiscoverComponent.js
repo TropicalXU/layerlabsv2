@@ -20,8 +20,8 @@ class Discover extends Component {
                                 we want to make sure the layout responds and adjusts.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 mt-3'>
-                            <img src='/assets/images/web-design.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center'>
+                            <img src='/assets/images/web-design.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -34,8 +34,8 @@ class Discover extends Component {
                                 Two or three primary colors should be more than enough. Lastly you want your brand to create trust. It is essential to keep your website functional and current with up to date content. Thus increasing your brands authority and providing confidence to your users.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3'>
-                            <img src='/assets/images/brand-identity.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center'>
+                            <img src='/assets/images/brand-identity.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -54,8 +54,8 @@ class Discover extends Component {
                                 <li><span className='fa fa-check mr-3'></span>Design for responsive compatibility</li>
                             </ul>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 mt-3'>
-                            <img src='/assets/images/navigator.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Website navigation logo'/>
+                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center'>
+                            <img src='/assets/images/navigator.png' className='img-fluid ml-5' width='320px' height='320px' alt='Website navigation logo'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -68,8 +68,8 @@ class Discover extends Component {
                                 provides inbound links bringing acknowledgement and increasing each individual contents ranking. The more visibility recieved the higher the ranking through each link that is clicked.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3'>
-                            <img src='/assets/images/seo.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center'>
+                            <img src='/assets/images/seo.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -89,8 +89,8 @@ class Discover extends Component {
                                 <li><span className='fa fa-check mr-3'></span>File Inclusion</li>
                             </ul>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 mt-3'>
-                        <img src='/assets/images/cyber-security.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center'>
+                        <img src='/assets/images/cyber-security.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                 </>
@@ -115,13 +115,13 @@ class Discover extends Component {
                 <div className='container-fluid pt-5'>
                 <h1 className='font-two text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
                 <Fade in>
-                    <div className='row card-discover py-5 mt-5'>
+                    <div className='row card-discover py-5 mt-5 dark-bg'>
                         <div className='col-12 col-md-6 col-lg-8'>
-                           <p class="large-text text-white my-5">Well lets take a look at some key components when considering building a successful website. 
+                           <p class="large-text text-white my-5"><b>Well lets take a look at some key components when considering building a successful website. 
                                 Intergrating a clean, simple and responsive design is what provides great user experience along with implementing easy to navigate web pages. 
                                 Creating familirarity and awareness by designing a respectable brand model. Administering effective
                                 Search Engine Optimization to bring visibility within the search engine ecosystem thus allowing users to easily find you. Lastly making sure your website is
-                                intergrated with end to end encryption and proper security measures so that your data and user data is fully secure preventing any third party access.
+                                intergrated with end to end encryption and proper security measures so that your data and user data is fully secure preventing any third party access.</b>
                             </p>
                         </div>
                         <div className='col-12 col-md-6 col-lg-4 text-center'>
