@@ -244,7 +244,7 @@ class Home extends Component {
                                     <li><span className='fa fa-square-check mr-3'></span>Expand your network</li>
                                 </ul>
                             </div>
-                            <div className='col-12 col-md-6 align-self-center'>
+                            <div className='col-12 col-md-6 align-self-center text-center'>
                                 <img src='/assets/images/web-design.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
                             </div>
                         </div>                 
@@ -266,7 +266,7 @@ class Home extends Component {
                                     <li><span className='fa fa-square-check mr-3'></span>Online credibility</li>
                                 </ul>
                             </div>
-                            <div className='col-12 col-md-6 align-self-center'>
+                            <div className='col-12 col-md-6 align-self-center text-center'>
                                 <img src='/assets/images/online-business.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Business website'/>  
                             </div>
                         </div>
