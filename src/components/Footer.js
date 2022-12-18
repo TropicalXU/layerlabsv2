@@ -51,7 +51,9 @@ class Footer extends Component {
                             <a  href="https://www.linkedin.com/in/seanhackett2022/"><i className="fa-brands fa-linkedin fa-lg mx-2"></i></a>
                         </div>
                     </div>
-                    <hr></hr>
+                    <div className='container'>
+                        <hr></hr>
+                    </div>
                     <div className='row py-4  footer-bottom'>
                         <div className='col-12 col-lg-8'>
                             <p>© 2022 Layerlabs. All rights reserved.</p>
