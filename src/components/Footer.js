@@ -51,7 +51,7 @@ class Footer extends Component {
                             <a  href="https://www.linkedin.com/in/seanhackett2022/"><i className="fa-brands fa-linkedin fa-lg mx-2"></i></a>
                         </div>
                     </div>
-                    <div className='container'>
+                    <div className='container-fluid'>
                         <hr></hr>
                     </div>
                     <div className='row py-4  footer-bottom'>
