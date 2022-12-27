@@ -25,7 +25,7 @@ class Header extends Component {
     render() {
         return (
             <>  {/* website navbar */}
-                <Navbar light color='white' expand='md'>
+                <Navbar className='' light expand='md'>
                     <div className='container-fluid text-center py-2'>
                         <NavbarBrand className='mr-auto' href='/'>
                         <img src='/assets/images/logo.png' height='50' width='51'
@@ -42,7 +42,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className='nav-link mx-2' to='/services'>
-                                        <span className='font-two'>Services<span className='fa fa-chevron-down ml-2'></span></span>
+                                        <span className='font-two'>Services</span>
                                     </NavLink>
                                 </NavItem>
                             </Nav>

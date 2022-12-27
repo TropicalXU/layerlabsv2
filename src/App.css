@@ -513,7 +513,6 @@ p {
   font-size: 12px;
 }
 
-/* hr {
-  background-color: white;
-  padding: .05em;
-} */
+.nav-dark {
+  background-color: #183055;
+}
