@@ -163,7 +163,7 @@ p {
 
 /* background styles */
 .dark-bg {
-  background-color: rgb(29, 38, 45);
+  background-color: #0a2540;
   padding: 0px 45px;
   border-radius: 25px;
   box-shadow: 0 0 10px rgb(190, 190, 190);
@@ -327,7 +327,7 @@ p {
 }
 
 .carousel-content {
-  background-color: rgb(29, 38, 45);
+  background-color: #0a2540;
   border-radius: 25px;
   box-shadow: 0 0 10px rgb(190, 190, 190);
 }
@@ -383,7 +383,7 @@ p {
 
 .steps-card {
   color: white;
-  background-color: rgb(29, 38, 45);
+  background-color: #0a2540;
   border: 1px solid white;
   border-radius: 15px;
 }
@@ -401,7 +401,6 @@ p {
 
 /* services/discover page styling */
 .card-discover {
-  background-color: rgb(29, 38, 45);
   border: 1px solid rgb(192, 192, 192);
   border-radius: 15px;
   padding: 25px;

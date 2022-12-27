@@ -70,7 +70,7 @@ const Projects = (props) => {
             {/* projects page header */}
             <div className='container-fluid'>
                 {/* react animation component plug in */}
-                <Fade in>
+                {/* <Fade in>
                     <div className='container-fluid work-description'>
                     <h2 className='font-two text-center py-5'>Check out my work below</h2>
                         <div className='row dark-bg py-5'>
@@ -86,7 +86,7 @@ const Projects = (props) => {
                             </div>
                         </div>
                     </div>
-                </Fade>
+                </Fade> */}
                 {/* react animations component plugin */}
                 <Stagger in>
                     {/* passing in project items list */}

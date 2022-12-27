@@ -115,8 +115,8 @@ class Discover extends Component {
                 <div className='container-fluid pt-5'>
                 <h1 className='font-two text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
                 <Fade in>
-                    <div className='row card-discover py-5 mt-5 dark-bg'>
-                        <div className='col-12 col-md-6 col-lg-8'>
+                    <div className='row card-discover p-5 mt-5 dark-bg'>
+                        <div className='col-12 col-md-6 col-lg-8 px-5'>
                            <p class="large-text text-white my-5"><b>Well lets take a look at some key components when considering building a successful website. 
                                 Intergrating a clean, simple and responsive design is what provides great user experience along with implementing easy to navigate web pages. 
                                 Creating familirarity and awareness by designing a respectable brand model. Administering effective
@@ -125,7 +125,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-6 col-lg-4 text-center'>
-                            <img src='/assets/images/blocks.png' className='img-fluid move-img' width='320px' height='320px' alt='Building blocks'/>
+                            <img src='/assets/images/blocks.png' className='img-fluid move-img' width='280px' height='280px' alt='Building blocks'/>
                         </div>
                     </div>
                 </Fade>
