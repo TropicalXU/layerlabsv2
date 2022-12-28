@@ -54,7 +54,7 @@ class Contact extends Component {
                 <div className='row align-items-center contact-section py-5'>
                     <div className='col-12 col-md-12 col-lg-6 pb-5'>
                         <h1 className='font-two text-white'>Interested in your own personal or business website?</h1>
-                        <h2 className='font py-4 thin-text'><span className='white-bg'><span className='gradient-text'>Contact for a quote.</span></span></h2>
+                        <h2 className='font py-4 thin-text'><span className='white-bg'><span className='text-white'>Contact for a quote.</span></span></h2>
                     </div>
                     <div className='col-12 col-md-12 col-lg-6'>
                         <Card className='custom-card font-two'>
@@ -125,7 +125,7 @@ class Contact extends Component {
                     </div>
                 </div>
                 {/* rendering contact form */}
-                <div className='container-fluid row-contact'>
+                <div className='container-fluid gradient-background-contact'>
                     <RenderContactForm />
                 </div>
             </div>

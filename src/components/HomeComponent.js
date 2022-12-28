@@ -108,7 +108,7 @@ class Home extends Component {
         const HomeHeader = () => {
             return (
                 // <Fade in>
-                    <div className='home-header d-flex justify-content-center align-items-center my-3'>
+                    <div className='gradient-background d-flex justify-content-center align-items-center my-3'>
                         <div className='row text-center text-white'>
                             <div className='col-12'>
                                 <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>

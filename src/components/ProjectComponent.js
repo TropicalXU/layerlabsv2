@@ -60,10 +60,10 @@ const Projects = (props) => {
     return (
         <>
             {/* projexts header image */}
-            <div className='row-layerlabs'>
+            <div className='gradient-background-work'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font text-white work-header'>Layerlabs Sites</h1>
+                        <h1 className='font work-header'><span className='gradient-text'>Layerlabs</span> <span className='text-white'>Websites<span className='gradient-text'> .</span></span></h1>
                     </div>
                 </div>
             </div>
