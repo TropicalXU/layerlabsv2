@@ -297,15 +297,15 @@ class Home extends Component {
                                     What are some benefits of having a personal website?
                                 </p>
                                 <ul className='list-unstyled font-two'>
-                                    <li><span className='fa fa-square-check mr-3'></span>Stand out from the crowd</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Create trust and credibility</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Showcase your creativity</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Generate opportunities</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Expand your network</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Stand out from the crowd</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Create trust and credibility</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Showcase your creativity</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Generate opportunities</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Expand your network</li>
                                 </ul>
                             </div>
                             <div className='col-12 col-md-6 text-center align-self-center'>
-                                <img src='/assets/images/advertising.png' className='img-fluid move-img ml-5' width='290px' height='290px' alt='Personal website'/>
+                                <img src='/assets/images/advertising.png' className='img-fluid move-img ml-5 my-4' width='290px' height='290px' alt='Personal website'/>
                             </div>
                         </div>                 
                         <div className='row personal-business py-5'>
@@ -319,15 +319,15 @@ class Home extends Component {
                                     you so far, having a website acts as advertisement in itself. Lets look at some of the main reasons why you should consider having an online presense for your business.
                                 </p>
                                 <ul className='list-unstyled font-two'>
-                                    <li><span className='fa fa-square-check mr-3'></span>Attract new customers</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>27/7 availability of your products and services</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Brand visibility and recognition</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Generate opportunities</li>
-                                    <li><span className='fa fa-square-check mr-3'></span>Online credibility</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Attract new customers</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>27/7 availability of your products and services</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Brand visibility and recognition</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Generate opportunities</li>
+                                    <li><span className='fa fa-square-check gradient-text mr-3'></span>Online credibility</li>
                                 </ul>
                             </div>
                             <div className='col-12 col-md-6 text-center align-self-center'>
-                                <img src='/assets/images/ecommerce.png' className='img-fluid move-img ml-5' width='290px' height='290px' alt='Business website'/>  
+                                <img src='/assets/images/ecommerce.png' className='img-fluid move-img ml-5 my-4' width='290px' height='290px' alt='Business website'/>  
                             </div>
                         </div>
                 

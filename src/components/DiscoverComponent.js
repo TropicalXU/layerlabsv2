@@ -13,7 +13,7 @@ class Discover extends Component {
                 <>
                     <div className='row my-3 py-5'>
                         <div className='col-12 col-md-12 col-lg-6'>
-                            <h2 className='font-two'><span className='number'>01.</span>Clean & Responsive Design</h2>
+                            <h2 className='font-two'><span className='number gradient-text'>01.</span>Clean & Responsive Design</h2>
                             <p className='pt-3'>Having a responsive design not only looks good but is essential for optimal user experience.
                                 Responsive means the adaptation of the layout whatever device the user is on. Allowing the webpage to adapt to the screen is crutial in most if not all modern websites.
                                 Whether its for mobile, tablet, laptops and larger displays a responsive design is flexible to the ratio of the screen. When screens are minimized
@@ -26,7 +26,7 @@ class Discover extends Component {
                     </div>
                     <div className='row mb-3 py-5'>
                         <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
-                            <h2 className='font-two'><span className='number'>02.</span>Branding</h2>
+                            <h2 className='font-two'><span className='number gradient-text'>02.</span>Branding</h2>
                             <p class="pt-3">
                                 Your brand is your identity, it tells a story of who you are and what you stand for. Having a brand provides a sense of familirarity to your users. It gives your website it's own personality bringing your
                                 ideas and products to life. There are many things to consider when creating your brand. Your logo which stands as your identity. A clean and simple logo is important to establish, it brings with it a sense of recognition and awareness. 
@@ -40,7 +40,7 @@ class Discover extends Component {
                     </div>
                     <div className='row mb-3 py-5'>
                         <div className='col-12 col-md-12 col-lg-6'>
-                            <h2 className='font-two'><span className='number'>03.</span>Navigation</h2>
+                            <h2 className='font-two'><span className='number gradient-text'>03.</span>Navigation</h2>
                             <p class="pt-3">
                                 Implementing and organizing the navigation structure of your website is crutial when planning the layout of your site. Think of yourself as the user, have you ever clicked on a website and found yourself lost and overwhelmed? Well
                                 at times you can simply get frustrated and leave, especially if there is a lot of content to sift through. This is one thing you cannot fall short on when planning a website. Like yourself you want your users to have a seemless experience when 
@@ -48,10 +48,10 @@ class Discover extends Component {
                                 section of your content is paramount allowing your users to easily maneuver throughout the website. To accomplish this lets consider these rules:
                             </p>
                             <ul className='list-unstyled font-two'>
-                                <li><span className='fa fa-check mr-3'></span>Prioritize consistency</li>
-                                <li><span className='fa fa-check mr-3'></span>Design clear interactions</li>
-                                <li><span className='fa fa-check mr-3'></span>Avoid deep navigation</li>
-                                <li><span className='fa fa-check mr-3'></span>Design for responsive compatibility</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>Prioritize consistency</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>Design clear interactions</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>Avoid deep navigation</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>Design for responsive compatibility</li>
                             </ul>
                         </div>
                         <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
@@ -60,7 +60,7 @@ class Discover extends Component {
                     </div>
                     <div className='row mb-3 py-5'>
                         <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
-                            <h2 className='font-two'><span className='number'>04.</span>Search Engine Optimization</h2>
+                            <h2 className='font-two'><span className='number gradient-text'>04.</span>Search Engine Optimization</h2>
                             <p class="pt-3">
                                 The job of a search engine is quite simple which is to provide users with the most relevent information. It does this by analyzing information using search algorithms. The goal of Search Engine Optimization(SEO) is to expand the visibility of your website bringing more visitors
                                 through search results. Essentially it allows your website to scale up through the rankings. Having an SEO strategy in place
@@ -74,7 +74,7 @@ class Discover extends Component {
                     </div>
                     <div className='row mb-3 py-5'>
                         <div className='col-12 col-md-12 col-lg-6'>
-                            <h2 className='font-two'><span className='number'>05.</span>Security</h2>
+                            <h2 className='font-two'><span className='number gradient-text'>05.</span>Security</h2>
                             <p class="pt-3">
                                 Security should be a top priority when it comes to building a website. Website security provides protection not only to your data but also your users data against any type of malicious attack. Cyber attacks
                                 can not just effect your privacy and data but also the functionality of your website. Additionally it can also have lasting negative effects to your brands identity. For users this can significantly destroy
@@ -82,11 +82,11 @@ class Discover extends Component {
                                 Here is a list of some of these potential risks:
                             </p>
                             <ul className='list-unstyled font-two'>
-                                <li><span className='fa fa-check mr-3'></span>Cross Site Scripting(XSS)</li>
-                                <li><span className='fa fa-check mr-3'></span>SQL Injecting</li>
-                                <li><span className='fa fa-check mr-3'></span>Cross-Site Request Forgery(CSRF)</li>
-                                <li><span className='fa fa-check mr-3'></span>Denial of Service(DOS)</li>
-                                <li><span className='fa fa-check mr-3'></span>File Inclusion</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>Cross Site Scripting(XSS)</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>SQL Injecting</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>Cross-Site Request Forgery(CSRF)</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>Denial of Service(DOS)</li>
+                                <li><span className='fa fa-check gradient-text mr-3'></span>File Inclusion</li>
                             </ul>
                         </div>
                         <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
