@@ -4,23 +4,89 @@ import { Link } from 'react-router-dom';
 import { Fade } from 'react-animation-components';
 import { Header, RenderInstagram } from '../functionalComponents/functionalComponents';
 
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem,
+    DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown
+     } from 'reactstrap';
+    import { NavLink } from 'react-router-dom';
+
 //About page component
 class About extends Component {
     
+    constructor(props) {
+        super(props);
+        this.state = {
+            isNavOpen: false,
+        };
+        this.toggleNav = this.toggleNav.bind(this);
+   
+    }
+
+    toggleNav() {
+        this.setState({
+            isNavOpen: !this.state.isNavOpen
+        });
+    }
+
     render() {
         //about header image
         const AboutHeader = () => {
             return (
-                <Fade in>
-                    <div className='about-header d-flex justify-content-center align-items-center my-3'>
+                    <div className='about-header d-flex justify-content-center my-3'>
                         <div className='row text-center text-white'>
-                        <div className='col'>
-                            <h1 className='font home-title'>Layerlabs</h1>
-                            <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
+                            <div className='col-12'>
+                            <Navbar light expand='md'>
+                                    <div className='container-fluid text-center py-2'>
+                                        <NavbarBrand className='mr-auto' href='/'>
+                                        <img src='/assets/images/logo.png' height='50' width='51'
+                                            alt='Layerlabs logo'
+                                        />  <span className='navbrand-main text-white'>Layerlabs</span>
+                                        </NavbarBrand>
+                                        <NavbarToggler onClick={this.toggleNav} />
+                                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                                            <Nav navbar className='justify-content-center ml-auto'>
+                                                <NavItem>
+                                                    <NavLink className='nav-link mx-2' to='/'>
+                                                        <span className='font-two text-white mx-4'>Home</span>
+                                                    </NavLink>
+                                                </NavItem>
+                                                <NavItem>
+                                                    <NavLink className='nav-link mx-2' to='/services'>
+                                                        <span className='font-two text-white'>Services</span>
+                                                    </NavLink>
+                                                </NavItem>
+                                            </Nav>
+                                            {/* dropdown nav-link - about */}
+                                            <Nav navbar className='ml-auto'>
+                                                <UncontrolledDropdown nav>
+                                                    <DropdownToggle nav className='font-two text-white mx-2'>Info<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>
+                                                    <DropdownMenu className='drop-menu mt-2' top>
+                                                        <DropdownItem className='drop-item'>
+                                                            <NavLink to='/about' className='font-two py-2'><span className='fa fa-info mr-2'></span>About</NavLink>
+                                                        </DropdownItem>
+                                                        <DropdownItem className='drop-item'>
+                                                            <NavLink to='/projects' className='font-two'><span className='fa fa-folder mr-2'></span>Work</NavLink>
+                                                        </DropdownItem>
+                                                        <DropdownItem className='drop-item'>
+                                                            <NavLink to='/about/personal-profile' className='font-two py-2'><span className='fa fa-user mr-2'></span>Personal Profile</NavLink>
+                                                        </DropdownItem>
+                                                    </DropdownMenu>
+                                                </UncontrolledDropdown>
+                                                <NavItem>
+                                                    <NavLink className='nav-link' to='/contact'>
+                                                    <span className='font-two clear-btn text-white px-4'>Request a quote</span>
+                                                    </NavLink>
+                                                </NavItem>
+                                            </Nav>
+                                        </Collapse>
+                                    </div>
+                                </Navbar> 
                             </div>
-                        </div>
+                            <div className='col'>
+                                <h1 className='font home-title'>Layerlabs</h1>
+                                <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
+                                </div>
+                            </div>
                     </div>
-                </Fade>
             );
         }
         //main about page header
@@ -49,8 +115,6 @@ class About extends Component {
 
         return (
             <>
-                <Header />
-            
                 <div className='container-fluid'>
                     <AboutHeader />
                     {/* about page content*/}
@@ -60,10 +124,12 @@ class About extends Component {
                         </div>
                     </div>
                     {/* about page content */}
-                    <div className='container-fluid'>
+                    <div className='container-fluid header'>
                         <div className='row dark-bg py-5'>
+                            <div className='col-12'>
+                            <h1 className='font-two large-text-header text-center text-white pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
+                            </div>
                             <div className='col-12 col-md-8 about-text text-white py-5'>
-                                <h1 className='font-two text-center pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
                                 <p className='large-text-two'><b>At Layerlabs I want to bring my own touch
                                     giving you the best and most responsive custom
                                     website design possible. What you want from a website can vary yet
@@ -73,8 +139,8 @@ class About extends Component {
                                     reference.</b>
                                 </p>
                             </div>
-                            <div className='col-12 col-md-4 pl-5 py-5'>
-                                <img src='/assets/images/logo.png' className='img-fluid' width='260px' height='260px' alt='computer'/>
+                            <div className='col-12 col-md-4 pl-5 py-5 align-self-center'>
+                                <img src='/assets/images/logo.png' className='img-fluid align-self-center' width='260px' height='260px' alt='computer'/>
                             </div>
                         </div>
                     </div>

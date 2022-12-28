@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, CardBody, BreadcrumbItem } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { Link } from 'react-router-dom';
-import { RenderCardFive, RenderCardFour, RenderCardSix, RenderPackageProcess, RenderContact, Header } from '../functionalComponents/functionalComponents';
+import { RenderCardFive, RenderCardFour, RenderCardSix, RenderPackageProcess, RenderContact, Header, HeaderDark } from '../functionalComponents/functionalComponents';
 
 //business package page
 const BusinessPackage = () => {
@@ -62,7 +62,7 @@ const BusinessPackage = () => {
     }
     return (
         <>
-            <Header />
+            <HeaderDark />
             <RenderBusinessPackage />
             <div className='container-fluid'>
                 {/* imporing render cards plugin */}

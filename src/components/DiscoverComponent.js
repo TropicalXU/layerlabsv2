@@ -1,6 +1,6 @@
 //importing main links
 import React, { Component } from 'react';
-import { Header, RenderInstagram, RenderServicesAd } from '../functionalComponents/functionalComponents';
+import { HeaderDark, RenderInstagram, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { Link } from 'react-router-dom';
 import { Fade, Stagger } from 'react-animation-components';
 
@@ -100,13 +100,13 @@ class Discover extends Component {
 
         return (
             <>
-                <Header />
-                <div className='container-fluid discover-page py-5'>
+                <HeaderDark />
+                <div className='container-fluid bkg-dark discover-page py-5'>
                     <div className='container'>
                         <div className='row d-flex justify-content-center'>
                             <div className='col-12 col-md-6 text-center'>
                                 {/* discover page links tab */}
-                                <div className='btn-services-tab'>
+                                <div className='clear-btn'>
                                     <Link to='/services' className='btn btn-services font-two'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
                                     <Link to='/discover' className='btn btn-services-active font-two active ml-2'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></Link>
                                 </div>
@@ -114,24 +114,32 @@ class Discover extends Component {
                         </div>
                     </div>
                     {/* main discover page content*/}
-                    <div className='container-fluid pt-5'>
-                    <h1 className='font-two text-center pt-5'>What <i className='gradient-text'>really</i> matters?</h1> 
-                    <Fade in>
-                        <div className='row card-discover p-5 mt-5 dark-bg'>
-                            <div className='col-12 col-md-6 col-lg-8'>
-                            <p class="large-text text-white my-5"><b>Well lets take a look at some key components when considering building a successful website. 
-                                    Intergrating a clean, simple and responsive design is what provides great user experience along with implementing easy to navigate web pages. 
-                                    Creating familirarity and awareness by designing a respectable brand model. Administering effective
-                                    Search Engine Optimization to bring visibility within the search engine ecosystem thus allowing users to easily find you. Lastly making sure your website is
-                                    intergrated with end to end encryption and proper security measures so that your data and user data is fully secure preventing any third party access.</b>
-                                </p>
-                            </div>
-                            <div className='col-12 col-md-6 col-lg-4 text-center'>
-                                <img src='/assets/images/blocks.png' className='img-fluid move-img' width='280px' height='280px' alt='Building blocks'/>
+                    <div className='container-fluid header pt-5'>
+                        <div className='container'>
+                            <div className='col-12 text-center'>
+                                <Fade in>
+                                    <h1 className='font-two pt-5 text-white large-text-header'>What <i className='gradient-text'>really</i> matters?</h1> 
+                                </Fade>
                             </div>
                         </div>
-                    </Fade>
+                        <div className='container'>
+                            <div className='row p-5 mt-5 bkg-dark'>
+                                <div className='col-12 col-lg-8'>
+                                <p class="large-text-two text-white my-5"><b>Well lets take a look at some key components when considering building a successful website. 
+                                        Intergrating a clean, simple and responsive design is what provides great user experience along with implementing easy to navigate web pages. 
+                                        Creating familirarity and awareness by designing a respectable brand model. Administering effective
+                                        Search Engine Optimization to bring visibility within the search engine ecosystem thus allowing users to easily find you. Lastly making sure your website is
+                                        intergrated with end to end encryption and proper security measures so that your data and user data is fully secure preventing any third party access.</b>
+                                    </p>
+                                </div>
+                                <div className='col-12 col-lg-4 text-center align-self-center pt-5'>
+                                    <img src='/assets/images/discover1.png' className='img-fluid align-self-center' width='260px' height='260px' alt='Building blocks'/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div className='container-fluid'>
                     {/* rendering list */}
                     <div className='container personal-business py-4'>
                         <Stagger in>

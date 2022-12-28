@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardBody} from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
-import { Header, RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
+import { Header, HeaderDark, RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
 
 //SERVICES MAIN PAGE
 const Services = () => {
@@ -128,13 +128,13 @@ const Services = () => {
 
         return (
             <>  
-                <Header />
-                <div className='container-fluid'>
+                <HeaderDark />
+                <div className='container-fluid bkg-dark'>
                     {/* service page tabs navigation */}
                     <div className='container tabs'>
                         <div className='row d-flex justify-content-center py-5'>
                             <div className='col-12 col-md-6 text-center'>
-                                <div className='btn-services-tab'>
+                                <div className='clear-btn'>
                                     <Link to='/services' className='btn btn-services-active font-two active'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
                                     <Link to='/discover' className='btn btn-services font-two ml-1'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></Link>
                                 </div>
@@ -142,13 +142,15 @@ const Services = () => {
                         </div>
                     </div>
                     {/* rendering packages*/}
-                    <div className='container'>
-                        <div className='row d-flex justify-content-center text-center pt-5'>
+                    <div className='container pb-5'>
+                        <div className='row d-flex justify-content-center text-center py-5'>
                             <RenderPackageOne />
                             <RenderPackageTwo />
                             <RenderPackageThree />
                         </div>
                     </div>
+                </div>
+                <div className='container-fluid'>
                     {/* rendering includes section imported from functionalComponent.js */}
                     <div className='container-fluid text-center py-2 pb-5 mt-5'>
                         <RenderIncluded />

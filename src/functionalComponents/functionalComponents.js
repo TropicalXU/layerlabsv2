@@ -383,3 +383,73 @@ export class Header extends Component {
         );
     }
 }
+
+export class HeaderDark extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isNavOpen: false,
+        };
+        this.toggleNav = this.toggleNav.bind(this);
+   
+    }
+
+    toggleNav() {
+        this.setState({
+            isNavOpen: !this.state.isNavOpen
+        });
+    }
+   
+    render() {
+        return (
+            <>  {/* website navbar */}
+                <Navbar className='navbar-dark bkg-dark' light expand='md'>
+                    <div className='container-fluid text-center py-2'>
+                        <NavbarBrand className='mr-auto' href='/'>
+                        <img src='/assets/images/logo.png' height='50' width='51'
+                            alt='Layerlabs logo' 
+                        />  <span className='navbrand-main text-white'>Layerlabs</span>
+                        </NavbarBrand>
+                        <NavbarToggler onClick={this.toggleNav} />
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav navbar className='justify-content-center ml-auto'>
+                                <NavItem>
+                                    <NavLink className='nav-link mx-2' to='/'>
+                                        <span className='font-two mx-4 text-white'>Home</span>
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className='nav-link mx-2' to='/services'>
+                                        <span className='font-two text-white'>Services</span>
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                            {/* dropdown nav-link - about */}
+                            <Nav navbar className='ml-auto'>
+                                <UncontrolledDropdown nav>
+                                    <DropdownToggle nav className='font-two text-white'>Info<span className='fa fa-chevron-down ml-2'></span></DropdownToggle>
+                                    <DropdownMenu className='drop-menu mt-2' top>
+                                        <DropdownItem className='drop-item'>
+                                            <NavLink to='/about' className='font-two py-2'><span className='fa fa-info mr-2'></span>About</NavLink>
+                                        </DropdownItem>
+                                        <DropdownItem className='drop-item'>
+                                            <NavLink to='/projects' className='font-two'><span className='fa fa-folder mr-2'></span>Work</NavLink>
+                                        </DropdownItem>
+                                        <DropdownItem className='drop-item'>
+                                            <NavLink to='/about/personal-profile' className='font-two py-2'><span className='fa fa-user mr-2'></span>Personal Profile</NavLink>
+                                        </DropdownItem>
+                                    </DropdownMenu>
+                                </UncontrolledDropdown>
+                                <NavItem>
+                                    <NavLink className='nav-link' to='/contact'>
+                                       <span className='font-two clear-btn px-4'>Request a quote</span>
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+                    </div>
+                </Navbar>
+            </>
+        );
+    }
+}

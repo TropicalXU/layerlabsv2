@@ -104,7 +104,7 @@ class PersonalProfile extends Component {
                     </ModalBody>
                 </Modal>
                 {/* personal profile main */}
-                <div className='container-fluid gradient-background-contact'>
+                <div className='container-fluid bkg-dark pb-5'>
                     {/* personal profile header*/}
                     <div className='row py-5'>
                         <div className='col-12'>
