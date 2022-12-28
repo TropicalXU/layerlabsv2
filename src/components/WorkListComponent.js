@@ -1,9 +1,8 @@
 //importing main links
 import React from 'react';
 import { BreadcrumbItem } from 'reactstrap';
-import { RenderServicesAd } from '../functionalComponents/functionalComponents';
+import { Header, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { Link } from 'react-router-dom';
-import Header from './Header';
 
 //WORK DETAIL PAGE
 const WorkDetail = (props) => {

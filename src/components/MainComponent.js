@@ -1,6 +1,5 @@
 //importing main links
 import React, { Component } from 'react';
-import Header from './Header';
 import Footer from './Footer';
 import Home from './HomeComponent';
 import Services from './ServicesComponent';
