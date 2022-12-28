@@ -248,7 +248,7 @@ class Home extends Component {
                                 <img src='/assets/images/web-design.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
                             </div>
                         </div>                 
-                        <div className='row py-5'>
+                        <div className='row personal-business py-5'>
                             <div className='col-12 col-md-6 order-md-2'>
                                 <h2 className='font-two pt-5'>Interested in a business website?</h2>
                                 <p className='py-4'>
