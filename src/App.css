@@ -115,8 +115,17 @@ p {
 
 .gradient-text {
   background-color: #f3ec78;
-  background-image: linear-gradient(106.4deg, rgb(255, 104, 192) 11.1%, rgb(104, 84, 249) 81.3%);
+  background: radial-gradient(circle at 10% 20%, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 90%);
  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-text-two {
+  background-color: #f3ec78;
+  background-image: linear-gradient(106.4deg, rgb(255, 104, 192) 11.1%, rgb(104, 84, 249) 81.3%);
+  -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-text-fill-color: transparent;
@@ -206,7 +215,7 @@ p {
 
 .btn-gradient {
   color: white;
-  background-image: linear-gradient(106.4deg, rgb(255, 104, 192) 11.1%, rgb(104, 84, 249) 81.3%);
+  background: radial-gradient(circle at 10% 20%, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 90%);
   border-radius: 50px;
   border: none;
   padding: 8px 24px 8px 24px;
@@ -214,9 +223,8 @@ p {
 
 .btn-gradient:hover {
   color: rgb(255, 255, 255);
-  font-weight: 700;
   border: none;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.476);
   background-image: none;
   transition: all ease-in-out 1s;
 }
@@ -389,7 +397,7 @@ p {
 }
 
 .custom-card {
-  background-color: rgba(255, 255, 255, 0.83);
+  background-color: rgba(255, 255, 255, 0.632);
   border: none;
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.424);
@@ -472,6 +480,13 @@ p {
 .contact-quote {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800;
+}
+
+.contact-input {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
 }
 /* personal profile page styling */
 .profile-card {

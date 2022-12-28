@@ -182,7 +182,7 @@ export const RenderPackageProcess = () => {
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
                     <h6 className='thin-text'>PHASE 1</h6>
-                    <h2 className='font-two gradient-text'>Discovery</h2>
+                    <h2 className='font-two gradient-text-two'>Discovery</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Create a roadmap</li>
                         <li className='my-2'><span className='fa fa-bolt mr-2'></span>Gather material</li>
@@ -211,7 +211,7 @@ export const RenderPackageProcess = () => {
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
                     <h6 className='thin-text'>PHASE 3</h6>
-                    <h2 className='font-two gradient-text'>Design</h2>
+                    <h2 className='font-two gradient-text-two'>Design</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Creating a visual style</li>
                         <li className='my-2'><span className='fa fa-bolt mr-2'></span>Choosing color palettes</li>
@@ -239,7 +239,7 @@ export const RenderPackageProcess = () => {
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
                     <h6 className='thin-text'>PHASE 5</h6>
-                    <h2 className='font-two gradient-text'>Testing</h2>
+                    <h2 className='font-two gradient-text-two'>Testing</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Testing site performance</li>
                         <li className='my-2'><span className='fa fa-bolt mr-2'></span>Reviewing site responsiveness</li>

@@ -286,7 +286,7 @@ class Home extends Component {
                     </div>
                     {/* rendering services section */}
                     <RenderServices />
-                    <div className='row personal-business'>
+                    <div className='row personal-business my-5'>
                         <div className='col-12 col-md-6'>
                                 <h2 className='font-two pt-5'>Interested in a personal website?</h2>
                                 <p className='py-4'>
@@ -304,8 +304,8 @@ class Home extends Component {
                                     <li><span className='fa fa-square-check mr-3'></span>Expand your network</li>
                                 </ul>
                             </div>
-                            <div className='col-12 col-md-6 text-center'>
-                                <img src='/assets/images/web-design.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Personal website'/>
+                            <div className='col-12 col-md-6 text-center align-self-center'>
+                                <img src='/assets/images/advertising.png' className='img-fluid move-img ml-5' width='290px' height='290px' alt='Personal website'/>
                             </div>
                         </div>                 
                         <div className='row personal-business py-5'>
@@ -326,8 +326,8 @@ class Home extends Component {
                                     <li><span className='fa fa-square-check mr-3'></span>Online credibility</li>
                                 </ul>
                             </div>
-                            <div className='col-12 col-md-6 text-center'>
-                                <img src='/assets/images/online-business.png' className='img-fluid move-img ml-5' width='320px' height='320px' alt='Business website'/>  
+                            <div className='col-12 col-md-6 text-center align-self-center'>
+                                <img src='/assets/images/ecommerce.png' className='img-fluid move-img ml-5' width='290px' height='290px' alt='Business website'/>  
                             </div>
                         </div>
                 

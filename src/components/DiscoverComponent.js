@@ -20,8 +20,8 @@ class Discover extends Component {
                                 we want to make sure the layout responds and adjusts.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center'>
-                            <img src='/assets/images/web-design.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
+                            <img src='/assets/images/advertising.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -34,8 +34,8 @@ class Discover extends Component {
                                 Two or three primary colors should be more than enough. Lastly you want your brand to create trust. It is essential to keep your website functional and current with up to date content. Thus increasing your brands authority and providing confidence to your users.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center'>
-                            <img src='/assets/images/brand-identity.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center align-self-center'>
+                            <img src='/assets/images/rating.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -54,8 +54,8 @@ class Discover extends Component {
                                 <li><span className='fa fa-check mr-3'></span>Design for responsive compatibility</li>
                             </ul>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center'>
-                            <img src='/assets/images/navigator.png' className='img-fluid ml-5' width='320px' height='320px' alt='Website navigation logo'/>
+                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
+                            <img src='/assets/images/location.png' className='img-fluid ml-5' width='260px' height='260px' alt='Website navigation logo'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -68,8 +68,8 @@ class Discover extends Component {
                                 provides inbound links bringing acknowledgement and increasing each individual contents ranking. The more visibility recieved the higher the ranking through each link that is clicked.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center'>
-                            <img src='/assets/images/seo.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center align-self-center'>
+                            <img src='/assets/images/optimizing.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -89,8 +89,8 @@ class Discover extends Component {
                                 <li><span className='fa fa-check mr-3'></span>File Inclusion</li>
                             </ul>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center'>
-                        <img src='/assets/images/cyber-security.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
+                        <img src='/assets/images/security.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                 </>
@@ -107,7 +107,7 @@ class Discover extends Component {
                             <div className='col-12 col-md-6 text-center'>
                                 {/* discover page links tab */}
                                 <div className='btn-services-tab'>
-                                    <Link to='/services' className='btn btn-services font-two'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
+                                    <Link to='/services' className='btn btn-services font-two mx-2'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
                                     <Link to='/discover' className='btn btn-services-active font-two active ml-2'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></Link>
                                 </div>
                             </div>

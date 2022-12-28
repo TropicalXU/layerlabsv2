@@ -66,8 +66,9 @@ class Contact extends Component {
                             </div>
                                 <Form className='p-4' onSubmit={handleOnSubmit}>
                                     <FormGroup>
-                                        <Label htmlFor='user_email'><span className='fa fa-envelope mr-2'></span><b>Email<span className='text-danger'> *</span></b></Label>
+                                        <Label htmlFor='user_email'><span className='fa fa-envelope mr-2'></span>Email<span className='text-danger'> *</span></Label>
                                         <Input
+                                        className='contact-input'
                                         type='email'
                                         id='user_email'
                                         innerRef={(input) => this.user_email = input}
@@ -77,8 +78,9 @@ class Contact extends Component {
                                         />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label htmlFor='user_name'><span className='fa fa-user mr-2'></span><b>Full Name<span className='text-danger'> *</span></b></Label>
+                                        <Label htmlFor='user_name'><span className='fa fa-user mr-2'></span>Full Name<span className='text-danger'> *</span></Label>
                                         <Input
+                                        className='contact-input'
                                         type='text'
                                         id='user_name'
                                         innerRef={(input) => this.user_name = input}
@@ -88,8 +90,9 @@ class Contact extends Component {
                                         />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label htmlFor='user_message'><span className='fa-solid fa-message mr-2'></span><b>Message<span className='text-danger'> *</span></b></Label>
+                                        <Label htmlFor='user_message'><span className='fa-solid fa-message mr-2'></span>Message<span className='text-danger'> *</span></Label>
                                         <Input
+                                        className='contact-input'                                        
                                         type='textarea'
                                         id='user_message'
                                         name='user_message'

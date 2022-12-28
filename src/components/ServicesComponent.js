@@ -29,7 +29,7 @@ const Services = () => {
                                    <h6><span className='fa fa-check mr-2'></span>Mobile optimized design and development.</h6>
                                    <h6><span className='fa fa-check mr-2'></span>Standard SEO integration.</h6>
                                 </div>
-                                <Link to='/services/custom-package' className='nav-link btn btn-black my-3 px-4'>More Detials</Link>
+                                <Link to='/services/custom-package' className='nav-link btn btn-black my-3 px-4'>More Detials<span className='fa fa-chevron-right ml-2'></span></Link>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -57,7 +57,7 @@ const Services = () => {
                                    <h6><span className='fa fa-check mr-2'></span>Collabarative detail and design.</h6>
                                    <h6><span className='fa fa-check mr-2'></span>High level interactivity & animation.</h6>
                                 </div>
-                                <Link to='/services/custom-plus-package' className='nav-link btn btn-black my-3 px-4'>More Details</Link>
+                                <Link to='/services/custom-plus-package' className='nav-link btn btn-black my-3 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -85,7 +85,7 @@ const Services = () => {
                                     <h6><span className='fa fa-check mr-2'></span>Advanced interactivity and animation. </h6>
                                     <h6><span className='fa fa-check mr-2'></span>Advanced SEO integration.</h6>
                                 </div>
-                                <Link to='/services/business-plus-package' className='nav-link btn btn-black mt-3 mb-4 px-4'>More Details</Link>
+                                <Link to='/services/business-plus-package' className='nav-link btn btn-black mt-3 mb-4 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
                             </CardBody>
                         </Card>
                     </FadeTransform>
@@ -135,7 +135,7 @@ const Services = () => {
                         <div className='row d-flex justify-content-center py-5'>
                             <div className='col-12 col-md-6 text-center'>
                                 <div className='btn-services-tab'>
-                                    <Link to='/services' className='btn btn-services-active font-two active'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
+                                    <Link to='/services' className='btn btn-services-active font-two active mx-2'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
                                     <Link to='/discover' className='btn btn-services font-two ml-1'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></Link>
                                 </div>
                             </div>
