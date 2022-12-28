@@ -104,7 +104,7 @@ class PersonalProfile extends Component {
                     </ModalBody>
                 </Modal>
                 {/* personal profile main */}
-                <div className='container-fluid row-contact'>
+                <div className='container-fluid gradient-background-contact'>
                     {/* personal profile header*/}
                     <div className='row py-5'>
                         <div className='col-12'>
@@ -115,7 +115,7 @@ class PersonalProfile extends Component {
                         {/* using react animation components*/}
                         <Fade in>
                         {/* personal profile card */}
-                        <div className='row profile-card py-5'>
+                        <div className='row custom-card p-5'>
                             <div className='col-12 col-md-6 font-two'>
                                 <h1 className='font'>Sean Hackett:</h1>
                                 <h2 className='py-4'>Full Stack Web Developer</h2>
@@ -128,7 +128,7 @@ class PersonalProfile extends Component {
                                 <p className='font-two'>As an individual I am very motivated, positive and goal orientated with a passion to succeed. Over the last 10 years I have acquired valuable practical experience and knowledge in sales, finance, customer service and teamwork allowing me to attain invaluable interpersonal skills, organizational skills and skills allowing me to adapt to new systems processes and environments. I have a great interest for Web Development having so far completed the Full-Stack Web Development with React Specialization an online course provided by The Hong Kong University of Science and Technology, as well as an online Full Stack Web Development Bootcamp. I am very passionate about all aspects of Web Development and I continuously strive to educate myself further. Over the course of my time as a developer I have built many applications and websites. I have gained a great quantity of experience building and creating applications including environments, databases, frameworks, libraries and tools such as HTML, CSS, JavaScript, React, NodeJS, Express.js, MongoDB and Mongoose. In the process I have achieved hands on experience solving problems and managing my workflow in an efficient and timely manner.
                                             
                                 </p>
-                                <Link to='/contact' className='btn btn-primary my-4 px-4'>Get in touch<span className='fa fa-chevron-right ml-2'></span></Link>
+                                <Link to='/contact' className='btn btn-black my-4 px-4'>Get in touch<span className='fa fa-chevron-right ml-2'></span></Link>
                                 {/* <a href='/assets/resume.pdf' className='btn btn-outline-dark ml-3'>Download Resume</a> */}
                             </div>
                         </div>
