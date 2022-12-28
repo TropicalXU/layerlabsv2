@@ -20,8 +20,8 @@ class Discover extends Component {
                                 we want to make sure the layout responds and adjusts.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 mt-3 text-center'>
-                            <img src='/assets/images/web-design.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 mt-3'>
+                            <img src='/assets/images/web-design.png' className='img-fluid' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -34,8 +34,8 @@ class Discover extends Component {
                                 Two or three primary colors should be more than enough. Lastly you want your brand to create trust. It is essential to keep your website functional and current with up to date content. Thus increasing your brands authority and providing confidence to your users.
                             </p>
                         </div>
-                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center'>
-                            <img src='/assets/images/brand-identity.png' className='img-fluid ml-5' width='320px' height='320px' alt='Personal website'/>
+                        <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3'>
+                            <img src='/assets/images/brand-identity.png' className='img-fluid' width='320px' height='320px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>

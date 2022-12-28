@@ -64,7 +64,7 @@ class Header extends Component {
                                 </UncontrolledDropdown>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/contact'>
-                                       <span className='font-two btn-black px-4'>Request a quote</span>
+                                       <span className='font-two btn-gradient px-4'>Request a quote</span>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
