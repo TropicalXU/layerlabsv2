@@ -107,7 +107,7 @@ class Discover extends Component {
                             <div className='col-12 col-md-6 text-center'>
                                 {/* discover page links tab */}
                                 <div className='btn-services-tab'>
-                                    <Link to='/services' className='btn btn-services font-two mx-2'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
+                                    <Link to='/services' className='btn btn-services font-two'><span className='fa fa-box mr-2'></span>Packages <span className='fa fa-chevron-down'></span></Link>
                                     <Link to='/discover' className='btn btn-services-active font-two active ml-2'><span className='fa-solid fa-globe mr-2'></span>Discover <span className='fa fa-chevron-down'></span></Link>
                                 </div>
                             </div>
