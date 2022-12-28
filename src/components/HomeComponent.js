@@ -305,7 +305,7 @@ class Home extends Component {
                                 </ul>
                             </div>
                             <div className='col-12 col-md-6 text-center align-self-center'>
-                                <img src='/assets/images/advertising.png' className='img-fluid move-img ml-5 my-4' width='290px' height='290px' alt='Personal website'/>
+                                <img src='/assets/images/advertising.png' className='img-fluid move-img my-4' width='290px' height='290px' alt='Personal website'/>
                             </div>
                         </div>                 
                         <div className='row personal-business py-5'>
@@ -327,7 +327,7 @@ class Home extends Component {
                                 </ul>
                             </div>
                             <div className='col-12 col-md-6 text-center align-self-center'>
-                                <img src='/assets/images/ecommerce.png' className='img-fluid move-img ml-5 my-4' width='290px' height='290px' alt='Business website'/>  
+                                <img src='/assets/images/ecommerce.png' className='img-fluid move-img my-4' width='290px' height='290px' alt='Business website'/>  
                             </div>
                         </div>
                 
