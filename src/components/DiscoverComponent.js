@@ -21,7 +21,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
-                            <img src='/assets/images/advertising.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
+                            <img src='/assets/images/advertising.png' className='img-fluid move-img ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -35,7 +35,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center align-self-center'>
-                            <img src='/assets/images/rating.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
+                            <img src='/assets/images/rating.png' className='img-fluid move-img ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -55,7 +55,7 @@ class Discover extends Component {
                             </ul>
                         </div>
                         <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
-                            <img src='/assets/images/location.png' className='img-fluid ml-5' width='260px' height='260px' alt='Website navigation logo'/>
+                            <img src='/assets/images/location.png' className='img-fluid move-img ml-5' width='260px' height='260px' alt='Website navigation logo'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -69,7 +69,7 @@ class Discover extends Component {
                             </p>
                         </div>
                         <div className='col-12 col-md-12 col-lg-6 order-lg-1 mt-3 text-center align-self-center'>
-                            <img src='/assets/images/optimizing.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
+                            <img src='/assets/images/optimizing.png' className='img-fluid move-img ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                     <div className='row mb-3 py-5'>
@@ -90,7 +90,7 @@ class Discover extends Component {
                             </ul>
                         </div>
                         <div className='col-12 col-md-12 col-lg-6 mt-3 text-center align-self-center'>
-                        <img src='/assets/images/security.png' className='img-fluid ml-5' width='260px' height='260px' alt='Personal website'/>
+                        <img src='/assets/images/security.png' className='img-fluid move-img ml-5' width='260px' height='260px' alt='Personal website'/>
                         </div>
                     </div>
                 </>
