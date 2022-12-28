@@ -523,7 +523,6 @@ p {
 }
 
 .gradient-background-contact {
-  height: 800px;
   background: linear-gradient(95deg, rgb(0, 186, 217) -4.3%, rgb(121, 134, 204) 14.1%, rgb(150, 117, 206) 34.7%, rgb(186, 105, 200) 53%, rgb(240, 71, 112) 74.7%, rgb(239, 162, 92) 95.6%);
      animation: gradient 10s ease infinite; 
       background-size: 400% 400%;
