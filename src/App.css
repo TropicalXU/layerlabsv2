@@ -47,6 +47,10 @@
   .contact-section h2 {
     font-size: 22px;
   }
+  .personal-business .img-fluid {
+    width: 220px;
+    height: 220px;
+  }
   
 }
 

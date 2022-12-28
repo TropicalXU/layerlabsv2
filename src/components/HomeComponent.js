@@ -226,7 +226,7 @@ class Home extends Component {
                     </div>
                     {/* rendering services section */}
                     <RenderServices />
-                    <div className='row'>
+                    <div className='row personal-business'>
                         <div className='col-12 col-md-6'>
                                 <h2 className='font-two pt-5'>Interested in a personal website?</h2>
                                 <p className='py-4'>
