@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, BreadcrumbItem, CardBody } from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
 import { Link } from 'react-router-dom';
-import { RenderCardFive, RenderCardFour, RenderCardSix, RenderContact, RenderPackageProcess } from '../functionalComponents/functionalComponents';
+import { Header, RenderCardFive, RenderCardFour, RenderCardSix, RenderContact, RenderPackageProcess } from '../functionalComponents/functionalComponents';
 //custom package page
 const CustomPackage = () => {
 
@@ -59,6 +59,7 @@ const CustomPackage = () => {
     }
     return (
         <>
+            <Header />
             <RenderCustomPackage />
             <div className='container-fluid'>
                 {/* imporing render cards plugin */}
