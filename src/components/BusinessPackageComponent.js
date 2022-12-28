@@ -10,8 +10,8 @@ const BusinessPackage = () => {
 
     const RenderBusinessPackage = () => {
         return (
-            <div className='container-fluid text-white row-contact py-5'>
-                <div className='container'>
+            <div className='container-fluid text-white bkg-dark py-5'>
+                <div className='container mb-5'>
                     <div className='row py-3'>
                         <div className='breadcrumb'>
                             <BreadcrumbItem>
@@ -24,33 +24,36 @@ const BusinessPackage = () => {
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='col-12'>
+                        <div className='col-12 col-lg-6'>
                             <FadeTransform in
                                 transformProps={{
                                 exitTransform: 'scale(0.3) translateY(-20%)'
                             }}>
-                                <Card className='business-card p-5'>
+                                <div className='py-5'>
                                     <h1 className='font text-white text-center'>Business <span className='fa fa-plus gradient-text'></span></h1>
                                     <hr></hr>
                                     <CardBody className=''>
                                         <div className='row d-flex justify-content-center'>
-                                            <div className='col-md-8'>
-                                                <ul className='list-unstyled text-center'>                                      
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Up to 15 individually designed high end pages</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Mobile first designed approach. Fully optimized for all screen sizes.</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>UI/UX Wireframing Process: Detailed Wireframes & User Persona</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>High level interactivity & animation</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Basic database integration</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Advanced SEO integration.</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Site backup & security.</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Additional functionality and plugin features.</h4></li>
-                                                    <li><h4 className='font-two py-3'><span className='fa fa-circle-check mr-4'></span>Managed website launch & support.</h4></li>
+                                            <div className='col-md-12'>
+                                                <ul className='list-unstyled'>                                      
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Up to 15 individually designed high end pages</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Mobile first designed approach. Fully optimized for all screen sizes.</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>UI/UX Wireframing Process: Detailed Wireframes & User Persona</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>High level interactivity & animation</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Basic database integration</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Advanced SEO integration.</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Site backup & security.</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Additional functionality and plugin features.</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Managed website launch & support.</h5></li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </CardBody>
-                                </Card>
+                                </div>
                             </FadeTransform>
+                        </div>
+                        <div className='col-12 col-lg-6 align-self-center'>
+                            <img src='/assets/images/business-package.jpg' className='img-fluid custom-image move-img' width='560px' height='620px' alt='Layerlabs home page'/>
                         </div>
                     </div>
                 </div>
