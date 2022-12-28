@@ -14,10 +14,10 @@
 
 @media (max-width: 500px) {
   .wrapper {width:100%;  margin: 0 auto; }
-  .home-header h1 {
+  .gradient-background h1 {
     font-size: 38px;
   }
-  .home-header h3 {
+  .gradient-background h3 {
     font-size: 20px;
   }
   .discover-page p {
@@ -29,7 +29,7 @@
   .about-header h3 {
     font-size: 22px;
   }
-  .row-layerlabs h1 {
+  .gradient-background-work h1 {
     font-size: 48px;
   }
   .tag-about h3 {
@@ -301,7 +301,6 @@ p {
   border-radius: 15px;
   box-shadow: 0 0 10px rgb(190, 190, 190);
   margin: auto;
-  animation: moveIt 20s linear infinite; 
 }
 
 .home-header {
