@@ -1,6 +1,6 @@
 //importing main links
 import React from 'react';
-import { RenderServicesAd } from '../functionalComponents/functionalComponents';
+import { Header, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { Fade, Stagger} from 'react-animation-components';
 import { Link } from 'react-router-dom';
 
@@ -58,7 +58,8 @@ const Projects = (props) => {
         );
     })
     return (
-        <>
+        <>  
+            <Header />
             {/* projexts header image */}
             <div className='gradient-background-work'>
                 <div className='row text-center py-5'>

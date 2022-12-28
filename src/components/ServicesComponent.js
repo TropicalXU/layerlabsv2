@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardBody} from 'reactstrap';
 import { FadeTransform } from 'react-animation-components';
-import { RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
+import { Header, RenderContact, RenderIncluded, RenderPackageProcess } from '../functionalComponents/functionalComponents';
 
 //SERVICES MAIN PAGE
 const Services = () => {
@@ -127,7 +127,8 @@ const Services = () => {
         }
 
         return (
-            <>
+            <>  
+                <Header />
                 <div className='container-fluid'>
                     {/* service page tabs navigation */}
                     <div className='container tabs'>

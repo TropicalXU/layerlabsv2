@@ -52,7 +52,6 @@ class Main extends Component {
         return (
             <div>
                {/* RENDERING ROUTES */}
-                <Header />
                 <Switch>
                     <Route exact path='/' component={ HomePage } />
                     <Route exact path='/services' component={ () =>  <Services />} />

@@ -3,14 +3,16 @@ import React from 'react';
 import { BreadcrumbItem } from 'reactstrap';
 import { RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { Link } from 'react-router-dom';
+import Header from './Header';
 
 //WORK DETAIL PAGE
 const WorkDetail = (props) => {
 
     return (
         <>
+            <Header />
             {/* work detail page header image */}
-            <div className='row-layerlabs mb-3'>
+            <div className='gradient-background-work mb-3'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
                         <h1 className='font text-white work-header'>{props.project.title}</h1>

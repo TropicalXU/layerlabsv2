@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-animation-components';
-import { RenderInstagram } from '../functionalComponents/functionalComponents';
+import { Header, RenderInstagram } from '../functionalComponents/functionalComponents';
 
 //About page component
 class About extends Component {
@@ -48,39 +48,42 @@ class About extends Component {
         }
 
         return (
-            /* about page header image*/
-            <div className='container-fluid'>
-                <AboutHeader />
-                {/* about page content*/}
-                <div className='container py-5'>
-                    <div className='row py-5'>
-                        <AboutPage />
-                    </div>
-                </div>
-                {/* about page content */}
+            <>
+                <Header />
+            
                 <div className='container-fluid'>
-                    <div className='row dark-bg py-5'>
-                        <div className='col-12 col-md-8 about-text text-white py-5'>
-                            <h1 className='font-two text-center pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
-                            <p className='large-text-two'><b>At Layerlabs I want to bring my own touch
-                                giving you the best and most responsive custom
-                                website design possible. What you want from a website can vary yet
-                                what matters most is the experience yourself and your users have. A clean, cutting edge design
-                                is what we aim to achieve. Whether you're looking for a personal website, portfolio, or business I've got it handled. Every detail matters, from layout and design to
-                                color palettes, security and much more I am with you every step of the way. Check out the discover page to get inspired or view my previous work for
-                                reference.</b>
-                            </p>
-                        </div>
-                        <div className='col-12 col-md-4 pl-5 py-5'>
-                            <img src='/assets/images/logo.png' className='img-fluid' width='260px' height='260px' alt='computer'/>
+                    <AboutHeader />
+                    {/* about page content*/}
+                    <div className='container py-5'>
+                        <div className='row py-5'>
+                            <AboutPage />
                         </div>
                     </div>
+                    {/* about page content */}
+                    <div className='container-fluid'>
+                        <div className='row dark-bg py-5'>
+                            <div className='col-12 col-md-8 about-text text-white py-5'>
+                                <h1 className='font-two text-center pb-5'>Why <span className='gradient-text'>Layerlabs?</span></h1>
+                                <p className='large-text-two'><b>At Layerlabs I want to bring my own touch
+                                    giving you the best and most responsive custom
+                                    website design possible. What you want from a website can vary yet
+                                    what matters most is the experience yourself and your users have. A clean, cutting edge design
+                                    is what we aim to achieve. Whether you're looking for a personal website, portfolio, or business I've got it handled. Every detail matters, from layout and design to
+                                    color palettes, security and much more I am with you every step of the way. Check out the discover page to get inspired or view my previous work for
+                                    reference.</b>
+                                </p>
+                            </div>
+                            <div className='col-12 col-md-4 pl-5 py-5'>
+                                <img src='/assets/images/logo.png' className='img-fluid' width='260px' height='260px' alt='computer'/>
+                            </div>
+                        </div>
+                    </div>
+                    {/* render instagram plugin */}
+                    <div className='container py-5'>
+                        <RenderInstagram />
+                    </div>
                 </div>
-                {/* render instagram plugin */}
-                <div className='container py-5'>
-                    <RenderInstagram />
-                </div>
-            </div>
+            </>
         );
     }
 }

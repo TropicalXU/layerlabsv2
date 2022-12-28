@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Card, CardBody, FormGroup, Label, Form, Input, Button  } from 'reactstrap';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
-import { RenderCardOne ,RenderCardTwo , RenderCardThree } from '../functionalComponents/functionalComponents';
+import { RenderCardOne ,RenderCardTwo , RenderCardThree, Header } from '../functionalComponents/functionalComponents';
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -109,26 +109,29 @@ class Contact extends Component {
         }
 
         return (
-            <div>
-                {/* importing render cards from functional components */}
-                <div className='container my-5'>
-                    <div className='row py-5'>
-                        <div className='col-12 col-md-12 col-lg-4 py-3'>
-                            <RenderCardOne />
-                        </div>
-                        <div className='col-12 col-md-12 col-lg-4 py-3'>
-                            <RenderCardTwo />
-                        </div>
-                        <div className='col-12 col-md-12 col-lg-4 py-3'>
-                            <RenderCardThree />
+            <>
+            <Header />
+                <div>
+                    {/* importing render cards from functional components */}
+                    <div className='container my-5'>
+                        <div className='row py-5'>
+                            <div className='col-12 col-md-12 col-lg-4 py-3'>
+                                <RenderCardOne />
+                            </div>
+                            <div className='col-12 col-md-12 col-lg-4 py-3'>
+                                <RenderCardTwo />
+                            </div>
+                            <div className='col-12 col-md-12 col-lg-4 py-3'>
+                                <RenderCardThree />
+                            </div>
                         </div>
                     </div>
+                    {/* rendering contact form */}
+                    <div className='container-fluid gradient-background-contact'>
+                        <RenderContactForm />
+                    </div>
                 </div>
-                {/* rendering contact form */}
-                <div className='container-fluid gradient-background-contact'>
-                    <RenderContactForm />
-                </div>
-            </div>
+            </>
         );
         }
 }
