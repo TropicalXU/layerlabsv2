@@ -419,7 +419,7 @@ export class HeaderDark extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className='nav-link mx-2' to='/services'>
+                                    <NavLink className='nav-link mx-2 px-4' to='/services'>
                                         <span className='font-two text-white'>Services</span>
                                     </NavLink>
                                 </NavItem>
