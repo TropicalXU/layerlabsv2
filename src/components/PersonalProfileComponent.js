@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { Fade } from 'react-animation-components';
-import { Header } from '../functionalComponents/functionalComponents';
+import { Header, HeaderDark } from '../functionalComponents/functionalComponents';
 
 //PERSONAL PROFILE PAGE
 class PersonalProfile extends Component {
@@ -60,7 +60,7 @@ class PersonalProfile extends Component {
         
         return (
             <>  
-                <Header />
+                <HeaderDark />
                 {/* rendering modals */}
                 <Modal isOpen={this.state.isModalOneOpen} toggle={this.toggleModalOne}>
                     <ModalHeader className='modal-header text-white font-two' toggle={this.toggleModalOne} close={closeBtn}>More Details:</ModalHeader>
