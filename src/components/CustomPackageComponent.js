@@ -19,7 +19,7 @@ const CustomPackage = () => {
                                     <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Services</span>
                                 </Link>
                             </BreadcrumbItem>
-                            <BreadcrumbItem active className='gradient-text font-two'>Custom
+                            <BreadcrumbItem active className='gradient-text font-two'>Standard
                             </BreadcrumbItem>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const CustomPackage = () => {
                                 exitTransform: 'scale(0.3) translateY(-20%)'
                             }}>
                                 <div className='py-5'>
-                                    <h1 className='font text-center text-white'>Custom</h1>
+                                    <h1 className='font text-center text-white'>Standard</h1>
                                     <hr></hr>
                                     <CardBody className=''>
                                         <div className='row d-flex justify-content-center'>

@@ -43,7 +43,7 @@ const BusinessPackage = () => {
                                                     <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Basic database integration</h5></li>
                                                     <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Advanced SEO integration.</h5></li>
                                                     <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Site backup & security.</h5></li>
-                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Additional functionality and plugin features.</h5></li>
+                                                    <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Additional business functionality and plugin features.</h5></li>
                                                     <li><h5 className='font-two py-3'><span className='fa fa-circle-check gradient-text mr-4'></span>Managed website launch & support.</h5></li>
                                                 </ul>
                                             </div>

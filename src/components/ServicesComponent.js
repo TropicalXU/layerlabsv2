@@ -20,7 +20,7 @@ const Services = () => {
                         <Card className='package-card py-2'>
                             <CardBody className='font-two'>
                                 <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='idea'/>
-                                <h2>Custom</h2>
+                                <h2>Standard</h2>
                                 <p>Pre-built custom website</p>
                                 <hr></hr>
                                 <h5>Choose from...</h5>
@@ -48,7 +48,7 @@ const Services = () => {
                         <Card className='package-card py-2'>
                             <CardBody className='font-two'>
                                 <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='package'/>
-                                <h2>Custom <span className='fa fa-plus'></span></h2>
+                                <h2>Advanced</h2>
                                 <p>Flexible custom design & features</p>
                                 <hr></hr>
                                 <h5>Choose from...</h5>

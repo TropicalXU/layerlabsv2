@@ -29,9 +29,9 @@ class Footer extends Component {
                             <ul className='list-unstyled'>
                                 <li><Link className='link' to='/services'>Services</Link></li>
                                 <li><Link className='link' to='/discover'>Discover</Link></li>
-                                <li><Link className='link' to='/services/custom-package'>Custom Package</Link></li>
-                                <li><Link className='link' to='/services/custom-plus-package'>Custom + Package</Link></li>
-                                <li><Link className='link' to='/services/business-plus-package'>Busines + Package</Link></li>
+                                <li><Link className='link' to='/services/custom-package'>Standard Package</Link></li>
+                                <li><Link className='link' to='/services/custom-plus-package'>Advanced Package</Link></li>
+                                <li><Link className='link' to='/services/business-plus-package'>Business + Package</Link></li>
                             </ul>
                         </div>
                         <div className='col-6 col-lg-2 pt-5'>

@@ -19,7 +19,7 @@ const CustomPlusPackage = () => {
                                     <span className='fa fa-chevron-left mr-2'></span> <span className='b-link text-white font-two'>Services</span>
                                 </Link>
                             </BreadcrumbItem>
-                            <BreadcrumbItem active className='font-two gradient-text'>Custom <span className='fa fa-plus'></span>
+                            <BreadcrumbItem active className='font-two gradient-text'>Advanced
                             </BreadcrumbItem>
                         </div>
                     </div>
@@ -30,7 +30,7 @@ const CustomPlusPackage = () => {
                                 exitTransform: 'scale(0.3) translateY(-20%)'
                             }}>
                                 <div className='py-5'>
-                                    <h1 className='font text-center text-white'>Custom <span className='fa fa-plus gradient-text'></span></h1>
+                                    <h1 className='font text-center text-white'>Advanced</h1>
                                     <hr></hr>
                                     <CardBody className=''>
                                         <div className='row d-flex justify-content-center'>
