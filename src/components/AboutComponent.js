@@ -31,7 +31,7 @@ class About extends Component {
         //about header image
         const AboutHeader = () => {
             return (
-                    <div className='about-header d-flex justify-content-center my-3'>
+                    <div className='about-header  my-3'>
                         <div className='row text-center text-white'>
                             <div className='col-12'>
                             <Navbar light expand='md'>
@@ -81,7 +81,7 @@ class About extends Component {
                                     </div>
                                 </Navbar> 
                             </div>
-                            <div className='col'>
+                            <div className='col-12 mt-5 pt-5'>
                                 <h1 className='font home-title'>Layerlabs</h1>
                                 <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
                                 </div>
