@@ -338,8 +338,8 @@ class Home extends Component {
             
                 {/* rendering work section */}
                 <div className='container'>
-                    <h2 className='font-two text-center pt-5'>Check out some of my work</h2>
-                    <hr></hr>
+                    <h2 className='font-two text-center pt-5'>Check out some of my work <i class="fa-solid fa-circle-arrow-down gradient-text fa-md ml-2"></i></h2>
+                    {/* <hr></hr> */}
                     <div className='row mb-4 py-5'>
                         {/* rendering work */}
                         <RenderWork item={this.props.project1} />
