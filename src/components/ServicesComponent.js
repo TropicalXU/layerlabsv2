@@ -142,29 +142,37 @@ const Services = () => {
                         </div>
                     </div>
                     {/* rendering packages*/}
-                    <div className='container pb-5'>
+                    <div className='container'>
                         <div className='row d-flex justify-content-center text-center py-5'>
                             <RenderPackageOne />
                             <RenderPackageTwo />
                             <RenderPackageThree />
                         </div>
                     </div>
-                </div>
-                <div className='container-fluid'>
-                    {/* rendering includes section imported from functionalComponent.js */}
                     <div className='container-fluid text-center py-2 pb-5 mt-5'>
+                        {/* rendering includes section imported from functionalComponent.js */}
                         <RenderIncluded />
-                    </div>
-                    {/* rendering custom vs template section*/}
-                    <div className='container-fluid pb-4'>
-                        <div className='row'>
+                        <div className='row pt-5'>
                             <div className='col-12'>
-                                <h1 className='font-two text-center dark-text py-5'>Custom Websites vs Template Websites</h1>
+                                <h1 className='font-two text-center text-white py-5'>Custom Websites vs Template Websites</h1>
                             </div>
                         </div>
                         <div className='row pb-5'>
                             <RenderDifferences />
                         </div>
+                    </div>
+                </div>
+                <div className='container-fluid row-grey'>
+                    {/* rendering custom vs template section*/}
+                    <div className='container-fluid pb-4'>
+                        {/* <div className='row'>
+                            <div className='col-12'>
+                                <h1 className='font-two text-center dark-text py-5'>Custom Websites vs Template Websites</h1>
+                            </div>
+                        </div> */}
+                        {/* <div className='row pb-5'>
+                            <RenderDifferences />
+                        </div> */}
                     </div>
                     {/* imporing render cards plugin */}
                     {/* <div className='container'>
@@ -180,7 +188,7 @@ const Services = () => {
                             </div>
                         </div>
                     </div> */}
-                    <div className='container'>
+                    <div className='container pt-5'>
                         <RenderPackageProcess />
                         {/* personal/business section */}
                     </div>

@@ -141,7 +141,7 @@ export const RenderServices = () => {
 export const RenderIncluded = () => {
     return (
         <> 
-            <h1 className='font-two dark-text pt-4'>Whats included?</h1>
+            <h1 className='font-two text-white'>Whats included?</h1>
             <div className='row thin-text d-flex justify-content-center pt-5 pb-4'>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
                     <img src='/assets/images/front-end.png' className='img-fluid' width='120px' height='120px' alt='web design logo' />
