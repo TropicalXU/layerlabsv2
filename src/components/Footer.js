@@ -38,7 +38,7 @@ class Footer extends Component {
                             <h5 className='font-two'>Work</h5>
                             <ul className='list-unstyled'>
                                 <li><Link className='link' to='/projects'>Projects</Link></li>
-                                <li><Link className='link' to='/projects/0'>Shirleys Studio</Link></li>
+                                <li><Link className='link' to='/projects/0'>Shirleys Art Studio</Link></li>
                                 {/* <li><Link className='link' to='/projects/1'>Vacay</Link></li>
                                 <li><Link className='link' to='/projects/2'>Viewpoint Ireland</Link></li> */}
                             </ul>
@@ -56,7 +56,7 @@ class Footer extends Component {
                     </div>
                     <div className='row py-4  footer-bottom'>
                         <div className='col-12 col-lg-8'>
-                            <p>© 2022 Layerlabs. All rights reserved.</p>
+                            <p>© 2023 Layerlabs. All rights reserved.</p>
                         </div>
                         <div className='col-6 col-md-2 col-lg-2'>
                             <Link className='link' to='/termsAndConditions'>Terms & Conditions</Link>
