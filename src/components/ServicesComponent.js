@@ -162,32 +162,10 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
+                <div className='bkg-horizontal py-4'>
+
+                </div>
                 <div className='container-fluid row-grey'>
-                    {/* rendering custom vs template section*/}
-                    <div className='container-fluid pb-4'>
-                        {/* <div className='row'>
-                            <div className='col-12'>
-                                <h1 className='font-two text-center dark-text py-5'>Custom Websites vs Template Websites</h1>
-                            </div>
-                        </div> */}
-                        {/* <div className='row pb-5'>
-                            <RenderDifferences />
-                        </div> */}
-                    </div>
-                    {/* imporing render cards plugin */}
-                    {/* <div className='container'>
-                        <div className='row pb-5 pt-3'>
-                            <div className='col-12 col-md-12 col-lg-4 py-3'>
-                                <RenderCardFour />
-                            </div>
-                            <div className='col-12 col-md-12 col-lg-4 py-3'>
-                                <RenderCardFive />
-                            </div>
-                            <div className='col-12 col-md-12 col-lg-4 py-3'>
-                            <RenderCardSix /> 
-                            </div>
-                        </div>
-                    </div> */}
                     <div className='container pt-5'>
                         <RenderPackageProcess />
                         {/* personal/business section */}

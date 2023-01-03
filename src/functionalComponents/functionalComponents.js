@@ -184,9 +184,9 @@ export const RenderPackageProcess = () => {
                     <h6 className='thin-text'>PHASE 1</h6>
                     <h2 className='font-two gradient-text-two'>Discovery</h2>
                     <ul className='list-unstyled font-two py-4'>
-                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Create a roadmap</li>
-                        <li className='my-2'><span className='fa fa-bolt gradient-text mr-2'></span>Gather material</li>
-                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Make a deadline</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Create a roadmap</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Gather material</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Make a deadline</li>
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
@@ -198,10 +198,10 @@ export const RenderPackageProcess = () => {
                     <h6 className='thin-text'>PHASE 2</h6>
                     <h2 className='font-two gradient-text'>Wireframing</h2>
                     <ul className='list-unstyled font-two py-4'>
-                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Identify the goal of the website</li>
-                        <li className='my-2'><span className='fa fa-bolt gradient-text mr-2'></span>Understand the userflow</li>
-                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Determine the website wireframe size</li>
-                        <li className='my-2'><span className='fa fa-bolt gradient-text mr-2'></span>Provide detailed wireframing concepts</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Identify the goal of the website</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Understand the userflow</li>
+                        <li><span className='fa fa-bolt mr-2'></span>Determine the website wireframe size</li>
+                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Provide detailed wireframing concepts</li>
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-1'>
