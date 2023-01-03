@@ -442,7 +442,7 @@ export class HeaderDark extends Component {
                                 </UncontrolledDropdown>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/contact'>
-                                       <span className='font-two clear-btn px-4'>Request a quote</span>
+                                       <span className='font-two clear-btn-dark px-4'>Request a quote</span>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
