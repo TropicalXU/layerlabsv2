@@ -17,21 +17,23 @@ const Services = () => {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-2'>
-                            <CardBody className='font-two'>
-                                <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='idea'/>
-                                <h2>Standard</h2>
-                                <p>Pre-built custom website</p>
-                                <hr></hr>
-                                <h5>Choose from...</h5>
-                                <div className='service-cards-bg p-4'>
-                                   <h6><span className='fa fa-check mr-2'></span>Up to 5 individually designed pages.</h6> 
-                                   <h6><span className='fa fa-check mr-2'></span>Mobile optimized design and development.</h6>
-                                   <h6><span className='fa fa-check mr-2'></span>Standard SEO integration.</h6>
-                                </div>
-                                <Link to='/services/custom-package' className='nav-link btn btn-black my-3 px-4'>More Detials<span className='fa fa-chevron-right ml-2'></span></Link>
-                            </CardBody>
-                        </Card>
+                        <Link to='/services/custom-package'>
+                            <Card className='package-card py-2'>
+                                <CardBody className='font-two'>
+                                    <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='idea'/>
+                                    <h2>Standard</h2>
+                                    <p>Pre-built custom website</p>
+                                    <hr></hr>
+                                    <h5>Choose from...</h5>
+                                    <div className='service-cards-bg p-4'>
+                                    <h6><span className='fa fa-check mr-2'></span>Up to 5 individually designed pages.</h6> 
+                                    <h6><span className='fa fa-check mr-2'></span>Mobile optimized design and development.</h6>
+                                    <h6><span className='fa fa-check mr-2'></span>Standard SEO integration.</h6>
+                                    </div>
+                                    <Link to='/services/custom-package' className='nav-link btn btn-black my-3 px-4'>More Detials<span className='fa fa-chevron-right ml-2'></span></Link>
+                                </CardBody>
+                            </Card>
+                        </Link>
                     </FadeTransform>
                 </div>
             );
@@ -45,21 +47,23 @@ const Services = () => {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card py-2'>
-                            <CardBody className='font-two'>
-                                <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='package'/>
-                                <h2>Advanced</h2>
-                                <p>Flexible custom design & features</p>
-                                <hr></hr>
-                                <h5>Choose from...</h5>
-                                <div className='service-cards-bg p-4'>
-                                   <h6><span className='fa fa-check mr-2'></span>Up to 10 individual fully custom pages.</h6>
-                                   <h6><span className='fa fa-check mr-2'></span>Collabarative detail and design.</h6>
-                                   <h6><span className='fa fa-check mr-2'></span>High level interactivity & animation.</h6>
-                                </div>
-                                <Link to='/services/custom-plus-package' className='nav-link btn btn-black my-3 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
-                            </CardBody>
-                        </Card>
+                        <Link to='/services/custom-plus-package'>
+                            <Card className='package-card py-2'>
+                                <CardBody className='font-two'>
+                                    <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='package'/>
+                                    <h2>Advanced</h2>
+                                    <p>Flexible custom design & features</p>
+                                    <hr></hr>
+                                    <h5>Choose from...</h5>
+                                    <div className='service-cards-bg p-4'>
+                                    <h6><span className='fa fa-check mr-2'></span>Up to 10 individual fully custom pages.</h6>
+                                    <h6><span className='fa fa-check mr-2'></span>Collabarative detail and design.</h6>
+                                    <h6><span className='fa fa-check mr-2'></span>High level interactivity & animation.</h6>
+                                    </div>
+                                    <Link to='/services/custom-plus-package' className='nav-link btn btn-black my-3 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
+                                </CardBody>
+                            </Card>
+                        </Link>
                     </FadeTransform>
                 </div>
             );
@@ -73,21 +77,23 @@ const Services = () => {
                         transformProps={{
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
-                        <Card className='package-card'>
-                            <CardBody className='font-two'>
-                                <img src='/assets/images/shuttle.png' className='img-fluid text-white my-2' width='70px' height='70px' alt='shuttle'/>
-                                <h2 className='text-black'>Business <span className='fa fa-plus'></span></h2>
-                                <p>Flexible custom design, business features and functionality</p>
-                                <hr></hr>
-                                <h5>Choose from...</h5>
-                                <div className='service-cards-bg p-4'>
-                                    <h6><span className='fa fa-check mr-2'></span>Up to 15 individually designed custom pages. </h6>
-                                    <h6><span className='fa fa-check mr-2'></span>Advanced interactivity and animation. </h6>
-                                    <h6><span className='fa fa-check mr-2'></span>Advanced SEO integration.</h6>
-                                </div>
-                                <Link to='/services/business-plus-package' className='nav-link btn btn-black mt-3 mb-4 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
-                            </CardBody>
-                        </Card>
+                        <Link to='/services/business-plus-package'>
+                            <Card className='package-card'>
+                                <CardBody className='font-two'>
+                                    <img src='/assets/images/shuttle.png' className='img-fluid text-white my-2' width='70px' height='70px' alt='shuttle'/>
+                                    <h2 className='text-black'>Business <span className='fa fa-plus'></span></h2>
+                                    <p>Flexible custom design, business features and functionality</p>
+                                    <hr></hr>
+                                    <h5>Choose from...</h5>
+                                    <div className='service-cards-bg p-4'>
+                                        <h6><span className='fa fa-check mr-2'></span>Up to 15 individually designed custom pages. </h6>
+                                        <h6><span className='fa fa-check mr-2'></span>Advanced interactivity and animation. </h6>
+                                        <h6><span className='fa fa-check mr-2'></span>Advanced SEO integration.</h6>
+                                    </div>
+                                    <Link to='/services/business-plus-package' className='nav-link btn btn-black mt-3 mb-4 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
+                                </CardBody>
+                            </Card>
+                        </Link>
                     </FadeTransform>
                 </div>
             );

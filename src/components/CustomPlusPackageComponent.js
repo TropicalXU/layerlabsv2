@@ -15,8 +15,8 @@ const CustomPlusPackage = () => {
                     <div className='row py-3'>
                         <div className='breadcrumb'>
                             <BreadcrumbItem>
-                                <Link className='breadcrumb-link text-white' to='/services'>
-                                    <span className='fa fa-chevron-left mr-2'></span> <span className='b-link text-white font-two'>Services</span>
+                                <Link className='breadcrumb-link dark-text' to='/services'>
+                                    <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Services</span>
                                 </Link>
                             </BreadcrumbItem>
                             <BreadcrumbItem active className='font-two gradient-text'>Advanced

@@ -15,7 +15,7 @@ const BusinessPackage = () => {
                     <div className='row py-3'>
                         <div className='breadcrumb'>
                             <BreadcrumbItem>
-                                <Link className='breadcrumb-link text-white' to='/services'>
+                                <Link className='breadcrumb-link dark-text' to='/services'>
                                     <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Services</span>
                                 </Link>
                             </BreadcrumbItem>
