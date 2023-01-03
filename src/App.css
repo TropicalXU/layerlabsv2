@@ -315,6 +315,12 @@ p {
   box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.242);
 }
 
+.breadcrumb-light {
+  background-color: #0a2540;
+  border-radius: 50px;
+  box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.155);
+}
+
 /* navbar styles */
 .navbar-main {
   box-shadow: 0 0 10px rgb(202, 202, 202);

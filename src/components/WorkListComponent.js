@@ -22,10 +22,10 @@ const WorkDetail = (props) => {
             <div className='container-fluid'>
                 <div className='container'>
                     <div className='row pt-5'>
-                        <div className='breadcrumb'>
+                        <div className='breadcrumb breadcrumb-light'>
                             <BreadcrumbItem>
                                 <Link className='breadcrumb-link text-white' to='/projects'>
-                                    <span className='fa fa-chevron-left mr-2'></span> <span className='b-link font-two'>Projects</span>
+                                    <span className='fa fa-chevron-left mr-2'></span> <span className='b-link-light font-two'>Projects</span>
                                 </Link>
                             </BreadcrumbItem>
                             <BreadcrumbItem active className='gradient-text font-two'>{props.project.title}
