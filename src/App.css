@@ -134,6 +134,14 @@ p {
   -moz-text-fill-color: transparent;
 }
 
+.dark-text {
+  color: #0a2540;
+}
+
+.grey-text {
+  color: #6c757d;
+}
+
 .large-text {
   font-size: 18px;
 }

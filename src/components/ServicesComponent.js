@@ -159,7 +159,7 @@ const Services = () => {
                     <div className='container-fluid pb-4'>
                         <div className='row'>
                             <div className='col-12'>
-                                <h1 className='font-two text-center py-5'>Custom Websites vs Template Websites</h1>
+                                <h1 className='font-two text-center dark-text py-5'>Custom Websites vs Template Websites</h1>
                             </div>
                         </div>
                         <div className='row pb-5'>

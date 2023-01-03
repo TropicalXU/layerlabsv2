@@ -141,7 +141,7 @@ export const RenderServices = () => {
 export const RenderIncluded = () => {
     return (
         <> 
-            <h1 className='font-two pt-4'>Whats included?</h1>
+            <h1 className='font-two dark-text pt-4'>Whats included?</h1>
             <div className='row thin-text d-flex justify-content-center pt-5 pb-4'>
                 <div className='col-12 col-md-3 home-card py-5 mt-5'>
                     <img src='/assets/images/front-end.png' className='img-fluid' width='120px' height='120px' alt='web design logo' />
@@ -184,9 +184,9 @@ export const RenderPackageProcess = () => {
                     <h6 className='thin-text'>PHASE 1</h6>
                     <h2 className='font-two gradient-text-two'>Discovery</h2>
                     <ul className='list-unstyled font-two py-4'>
-                        <li><span className='fa fa-bolt mr-2'></span>Create a roadmap</li>
-                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Gather material</li>
-                        <li><span className='fa fa-bolt mr-2'></span>Make a deadline</li>
+                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Create a roadmap</li>
+                        <li className='my-2'><span className='fa fa-bolt gradient-text mr-2'></span>Gather material</li>
+                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Make a deadline</li>
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
@@ -198,10 +198,10 @@ export const RenderPackageProcess = () => {
                     <h6 className='thin-text'>PHASE 2</h6>
                     <h2 className='font-two gradient-text'>Wireframing</h2>
                     <ul className='list-unstyled font-two py-4'>
-                        <li><span className='fa fa-bolt mr-2'></span>Identify the goal of the website</li>
-                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Understand the userflow</li>
-                        <li><span className='fa fa-bolt mr-2'></span>Determine the website wireframe size</li>
-                        <li className='my-2'><span className='fa fa-bolt mr-2'></span>Provide detailed wireframing concepts</li>
+                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Identify the goal of the website</li>
+                        <li className='my-2'><span className='fa fa-bolt gradient-text mr-2'></span>Understand the userflow</li>
+                        <li><span className='fa fa-bolt gradient-text mr-2'></span>Determine the website wireframe size</li>
+                        <li className='my-2'><span className='fa fa-bolt gradient-text mr-2'></span>Provide detailed wireframing concepts</li>
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-1'>

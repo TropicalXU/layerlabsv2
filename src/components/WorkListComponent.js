@@ -1,7 +1,7 @@
 //importing main links
 import React from 'react';
 import { BreadcrumbItem } from 'reactstrap';
-import { Header, RenderServicesAd } from '../functionalComponents/functionalComponents';
+import { Header, HeaderDark, RenderServicesAd } from '../functionalComponents/functionalComponents';
 import { Link } from 'react-router-dom';
 
 //WORK DETAIL PAGE
@@ -9,19 +9,19 @@ const WorkDetail = (props) => {
 
     return (
         <>
-            <Header />
+            <HeaderDark />
             {/* work detail page header image */}
-            <div className='gradient-background-work mb-3'>
+            <div className='bkg-dark mb-3'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font text-white work-header'>{props.project.title}</h1>
+                        <h1 className='font text-white work-header'>{props.project.title}<span className='gradient-text'> .</span></h1>
                     </div>
                 </div>
             </div>
             {/* breadcrumb section */}
             <div className='container-fluid'>
                 <div className='container'>
-                    <div className='row pt-3'>
+                    <div className='row pt-5'>
                         <div className='breadcrumb'>
                             <BreadcrumbItem>
                                 <Link className='breadcrumb-link text-white' to='/projects'>
