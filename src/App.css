@@ -346,10 +346,10 @@ p {
 
 /* homepage styles */ 
 .home-card {
-  background-color: #14447130;
   padding: 15px;
+  border: .5px solid lightgrey;
   border-radius: 15px;
-  box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.173);
+  box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.087);
 }
 
 .home-header, .about-header {
