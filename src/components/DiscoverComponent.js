@@ -133,7 +133,7 @@ class Discover extends Component {
                                     </p>
                                 </div>
                                 <div className='col-12 col-lg-4 text-center align-self-center pt-5'>
-                                    <img src='/assets/images/discover1.png' className='img-fluid align-self-center' width='260px' height='260px' alt='Building blocks'/>
+                                    <img src='/assets/images/programmer.png' className='img-fluid align-self-center' width='260px' height='260px' alt='Building blocks'/>
                                 </div>
                             </div>
                         </div>
