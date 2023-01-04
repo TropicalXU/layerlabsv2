@@ -195,7 +195,7 @@ class Home extends Component {
                             <div className='col-12 col-md-6 py-4'>
                                 <h2 className="font-two py-5">{item.title}</h2>
                                 <p>
-                                   <b> {item.intro} </b>
+                                  {item.intro} 
                                 </p>
                                 <Link to={`/projects/${item.id}`} className='btn btn-gradient font-two my-5'>View <span className='fa fa-chevron-right ml-2'></span></Link>
                                 <a href={item.github}><span className='fa fa-github fa-github-work text-white fa-lg ml-3'></span></a>
@@ -342,28 +342,22 @@ class Home extends Component {
                 </div>
              */}
                 {/* rendering work section */}
-            <div className='bkg-dark'>
-                <div className='container text-white mt-5 py-5 header'>
-                    <h1 className='font text-white large-text-header-2 text-white pt-5'>Check out some of my work <span className='gradient-text'>.</span></h1>
-                    {/* <hr></hr> */}
-                    <div className='row py-5'>
-                        {/* rendering work */}
-                        <RenderWork item={this.props.project1} />
-                        {/* <RenderWork item={this.props.project2}/> */}
-                        <div className='col-12 text-center'>
-                            <a href='/projects' className='btn clear-btn-dark font-two px-4 my-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
+                <div className='bkg-dark px-3'>
+                    <div className='container'>
+                        <div className='text-white mt-5 py-5 header'>
+                            <h1 className='font text-white large-text-header-2 text-white pt-5'>Check out some of my work <span className='gradient-text'>.</span></h1>
+                            {/* <hr></hr> */}
+                            <div className='row py-5'>
+                                {/* rendering work */}
+                                <RenderWork item={this.props.project1} />
+                                {/* <RenderWork item={this.props.project2}/> */}
+                                <div className='col-12 text-center'>
+                                    <a href='/projects' className='btn clear-btn-dark font-two px-4 my-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                {/* rendering contact plugin */}
-                <div className='container-fluid'>
-                    <div className='row'>
-                        <div className='col-12'>
-                            {/* <RenderContact /> */}
-                        </div>
-                    </div>
-                </div>
-            </div>
             </>
         );
     }
