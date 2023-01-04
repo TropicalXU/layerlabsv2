@@ -290,7 +290,7 @@ class Home extends Component {
                                     <h1 className='font-two text-center'><span className='grey-text-lite'>Layerlabs services</span></h1>
                                 </div>
                             </div>
-                            <div className='col-12 bkg-white mb-4'>
+                            <div className='col-12 mb-4'>
                                 <RenderServices />
                             </div>
                         </div>

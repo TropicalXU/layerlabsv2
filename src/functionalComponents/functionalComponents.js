@@ -190,7 +190,7 @@ export const RenderPackageProcess = () => {
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/discover.jpg' className='process-img img-fluid my-4' width='100%' alt='Phase 1' />
+                    <img src='/assets/images/discover.jpg' className='process-img my-4' width='100%' height='340px' alt='Phase 1' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
@@ -219,7 +219,7 @@ export const RenderPackageProcess = () => {
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/web-design.jpg' className='process-img img-fluid my-2' width='100%' alt='Phase 3' />
+                    <img src='/assets/images/web-design.jpg' className='process-img my-2' width='100%' height='340px' alt='Phase 3' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
@@ -247,7 +247,7 @@ export const RenderPackageProcess = () => {
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/testing.jpg' className='process-img img-fluid' width='100%' alt='Phase 5' /> 
+                    <img src='/assets/images/testing.jpg' className='process-img' width='100%' height='340px' alt='Phase 5' /> 
                 </div>
             </div>
         </>
