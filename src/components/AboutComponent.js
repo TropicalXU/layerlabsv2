@@ -124,7 +124,7 @@ class About extends Component {
                         </div>
                     </div>
                     {/* about page content */}
-                    <div className='personal-business py-5'>
+                    <div className='personal-business about py-5'>
                         <div className='container header pb-5'>
                             <div className='row py-5'>
                                 <div className='col-12'>

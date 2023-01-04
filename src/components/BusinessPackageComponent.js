@@ -64,7 +64,7 @@ const BusinessPackage = () => {
     const BusinessPackageDetails = () => {
         return (
             <>
-                <div className='row'>
+                <div className='row packages'>
                     <div className='col-12 col-lg-4'>
                         <Card className='p-4 my-3'>
                             <img src='/assets/images/wireframing.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
@@ -90,7 +90,7 @@ const BusinessPackage = () => {
                         </Card>
                     </div>
                 </div>
-                <div className='row py-4'>
+                <div className='row packages py-4'>
                 <div className='col-12 col-lg-4'>
                     <Card className='p-4 my-3'>
                         <img src='/assets/images/database.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />

@@ -64,7 +64,7 @@ const CustomPlusPackage = () => {
     const AdvancedPackageDetails = () => {
         return (
             <>
-                <div className='row'>
+                <div className='row packages'>
                     <div className='col-12 col-lg-4'>
                         <Card className='p-4 my-3'>
                             <img src='/assets/images/web-page.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
@@ -90,7 +90,7 @@ const CustomPlusPackage = () => {
                         </Card>
                     </div>
                 </div>
-                <div className='row py-4'>
+                <div className='row packages py-4'>
                 <div className='col-12 col-lg-4'>
                     <Card className='p-4 my-3'>
                         <img src='/assets/images/seo.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
@@ -139,7 +139,7 @@ const CustomPlusPackage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='container-fluid personal-business my-4 pt-5'>
+                <div className='personal-business my-4 pt-5'>
                     <div className='bkg-white py-5'>
                         <div className='row'>
                             <div className='col-12'>
