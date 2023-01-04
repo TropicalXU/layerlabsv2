@@ -53,7 +53,7 @@ class Contact extends Component {
             <div className='container'>
                 <div className='row align-items-center contact-section py-5'>
                     <div className='col-12 col-md-12 col-lg-6 pb-5'>
-                        <h1 className='font-two text-white'>Interested in your own personal or business website?</h1>
+                        <h1 className='font-two large-text-header-small text-white'>Interested in your own personal or business website?</h1>
                         <h2 className='font py-4 thin-text my-4'><span className=''><span className='gradient-text'>Contact for a quote.</span></span></h2>
                     </div>
                     <div className='col-12 col-md-12 col-lg-6'>
