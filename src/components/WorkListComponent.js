@@ -38,7 +38,7 @@ const WorkDetail = (props) => {
                     <div className='row'>
                         <div className='col-12'>
                             <h1 className='font-two'>Website Launch Date</h1>
-                            <h1 className='font-two'>{props.project.launch}</h1>
+                            <h2 className='font-two grey-text'>{props.project.launch}</h2>
                         </div>
                     </div>
                     <div className='row py-5 my-3'>

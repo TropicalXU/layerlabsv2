@@ -192,16 +192,16 @@ class Home extends Component {
             if(item.id % 2 === 0 ) {
                 return(
                     <>  <div className='row align-items-center'>
-                            <div className='col-12 col-md-5 py-4'>
+                            <div className='col-12 col-md-6 py-4'>
                                 <h2 className="font-two py-5">{item.title}</h2>
                                 <p>
-                                    {item.intro}
+                                   <b> {item.intro} </b>
                                 </p>
                                 <Link to={`/projects/${item.id}`} className='btn btn-gradient font-two my-5'>View <span className='fa fa-chevron-right ml-2'></span></Link>
-                                <a href={item.github}><span className='fa fa-github fa-github-work fa-lg ml-3'></span></a>
+                                <a href={item.github}><span className='fa fa-github fa-github-work text-white fa-lg ml-3'></span></a>
                             </div>
-                            <div className='col-12 col-md-5 offset-md-2'>
-                                <img className='img-fluid' src={item.image} alt={item.title} />
+                            <div className='col-12 col-md-6'>
+                                <img className='img-fluid custom-image' src={item.image} alt={item.title} />
                             </div>
                         </div>
                     </>
@@ -230,9 +230,11 @@ class Home extends Component {
 
 
         return (
-            <div className='container-fluid'>
-                {/* rendering home page header */}
-                <HomeHeader />
+            <>
+                <div className='container-fluid'>
+                    {/* rendering home page header */}
+                    <HomeHeader />
+                </div>
                 {/* rendering home page cards */}
                 <div className='container mt-5 pb-5'>
                     <h2 className='font-two'>Bring your visions to life with Layerlabs..</h2>
@@ -263,9 +265,15 @@ class Home extends Component {
                             </FadeTransform>
                         </div>
                     </div>
+                    <div className='row'>
+                        <div className='col-12'>
+                            <h1 className='font-two pt-5'>Layerlabs services</h1>
+                        </div>
+                    </div>
+                    <RenderServices />
                 </div>
                 {/* rendering homepage carousel */}
-                <div className='container-fluid'>
+                {/* <div className='container-fluid'>
                     <div className='row pb-5'>
                         <div className='col-12'>
                             <Carousel className='carousel-content'
@@ -277,18 +285,13 @@ class Home extends Component {
                             </Carousel>
                         </div>
                     </div>
-                </div>
-                <div className='container'>
-                <div className='row'>
-                        <div className='col-12'>
-                        <h1 className='font-two pt-5'>Layerlabs services</h1>
-                        </div>
-                    </div>
+                </div> */}
+                <div className='container personal-business mb-5 pb-5'>
                     {/* rendering services section */}
-                    <RenderServices />
-                    <div className='row personal-business my-5'>
-                        <div className='col-12 col-md-6'>
-                                <h2 className='font-two pt-5'>Interested in a personal website?</h2>
+
+                    <div className='row header'>
+                        <div className='col-12 col-md-6 p-5'>
+                                <h2 className='font-two large-text-header-2 gradient-text pt-3'>Interested in a personal website?</h2>
                                 <p className='py-4'>
                                     Showcase your work online with a Personal website just for you. What is a personal website? Well essentialy 
                                     it's a unique way to showcase your work and provide professional information about you. When deciding on building 
@@ -305,12 +308,12 @@ class Home extends Component {
                                 </ul>
                             </div>
                             <div className='col-12 col-md-6 text-center align-self-center'>
-                                <img src='/assets/images/advertising.png' className='img-fluid move-img my-4' width='290px' height='290px' alt='Personal website'/>
+                                <img src='/assets/images/personal-app.png' className='custom-img img-fluid move-img my-4' width='290px' height='450px' alt='Personal website'/>
                             </div>
                         </div>                 
-                        <div className='row personal-business py-5'>
-                            <div className='col-12 col-md-6 order-md-2'>
-                                <h2 className='font-two pt-5'>Interested in a business website?</h2>
+                        <div className='row header'>
+                            <div className='col-12 col-md-6 order-md-2 p-5'>
+                                <h2 className='font-two large-text-header-2 gradient-text'>Interested in a business website?</h2>
                                 <p className='py-4'>
                                     A website for your business can act as a portal to your customers creating 24/7 on demand awareness to your brand and products. 
                                     It serves as a window in which you can showcase your marketable skills and connect with a targeted audience. When factoring in the costs, 
@@ -327,37 +330,39 @@ class Home extends Component {
                                 </ul>
                             </div>
                             <div className='col-12 col-md-6 text-center align-self-center'>
-                                <img src='/assets/images/ecommerce.png' className='img-fluid move-img my-4' width='290px' height='290px' alt='Business website'/>  
+                            <img src='/assets/images/business-app.png' className='img-fluid custom-img move-img my-4' width='290px' height='420px' alt='Personal website'/>
                             </div>
                         </div>
                 
                 </div>
-                <div className='container-fluid py-4'>
+                {/* <div className='container-fluid py-4'>
                 <RenderServicesAd />
                 </div>
-            
+             */}
                 {/* rendering work section */}
-                <div className='container'>
-                    <h2 className='font-two text-center pt-5'>Check out some of my work <i class="fa-solid fa-circle-arrow-down gradient-text fa-md ml-2"></i></h2>
+            <div className='bkg-dark'>
+                <div className='container text-white mt-5 py-5 header'>
+                    <h1 className='font text-white large-text-header-2 text-white pt-5'>Check out some of my work <span className='gradient-text'>.</span></h1>
                     {/* <hr></hr> */}
-                    <div className='row mb-4 py-5'>
+                    <div className='row py-5'>
                         {/* rendering work */}
                         <RenderWork item={this.props.project1} />
                         {/* <RenderWork item={this.props.project2}/> */}
                         <div className='col-12 text-center'>
-                            <a href='/projects' className='btn btn-black font-two px-4 my-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
+                            <a href='/projects' className='btn clear-btn-dark font-two px-4 my-4'>View All<span className='fa fa-chevron-right ml-2'></span></a>
                         </div>
                     </div>
                 </div>
                 {/* rendering contact plugin */}
                 <div className='container-fluid'>
-                    <div className='row mb-4'>
+                    <div className='row'>
                         <div className='col-12'>
                             {/* <RenderContact /> */}
                         </div>
                     </div>
                 </div>
             </div>
+            </>
         );
     }
 }

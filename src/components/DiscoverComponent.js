@@ -141,7 +141,7 @@ class Discover extends Component {
                 </div>
                 <div className='container-fluid'>
                     {/* rendering list */}
-                    <div className='container personal-business py-4'>
+                    <div className='container py-4'>
                         <Stagger in>
                             <Fade in>
                                 <RenderList />

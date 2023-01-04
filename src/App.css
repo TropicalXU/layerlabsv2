@@ -49,10 +49,14 @@
   }
   .personal-business .img-fluid {
     width: 190px;
-    height: 190px;
+    height: 310px;
   }
   .header .large-text-header {
     font-size: 54px;
+  }
+
+  .header .large-text-header-2 {
+    font-size: 48px;
   }
   
 }
@@ -148,6 +152,10 @@ p {
 
 .large-text-header {
   font-size: 90px;
+}
+
+.large-text-header-2 {
+  font-size: 75px;
 }
 
 .large-text-two {
@@ -371,8 +379,13 @@ p {
 }
 
 /* homepage styles */ 
+.custom-img {
+  border: 6px solid rgb(255, 255, 255);
+  border-radius: 25px;
+  box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.235);
+}
 .home-card-2 {
-  background-color: #14447130;
+  background-color: #14447163;
   padding: 15px;
   border-radius: 15px;
   box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.235);
@@ -441,6 +454,12 @@ p {
   padding: 65px;
   border: 1px solid rgb(205, 205, 205);
   border-radius: 15px;
+}
+
+.personal-business {
+  background-color: #e9ecef41;
+  border-radius: 12px;
+  /* box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.081); */
 }
 
 /* services/package page styling */
