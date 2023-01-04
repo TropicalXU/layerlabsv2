@@ -237,7 +237,7 @@ class Home extends Component {
                 </div>
                 {/* rendering home page cards */}
                 <div className='container mt-5 pb-5'>
-                    <h2 className='font grey-text-lite large-text-header-small'>Bring your visions to life with <span className='gradient-text'>Layerlabs..</span></h2>
+                    <h2 className='font grey-text-lite large-text-header-small px-5'>Bring your visions to life with <span className='gradient-text'>Layerlabs..</span></h2>
                     <div className='row py-5'>
                         <div className='col-12 col-md-12 col-lg-4 py-3'>
                             {/* using react animation components */}

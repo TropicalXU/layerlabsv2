@@ -113,7 +113,7 @@ export const RenderCardSix = () => {
 export const RenderServices = () => {
     return (
         <>
-            <div className='row text-center d-flex justify-content-center pb-5'>
+            <div className='row services text-center d-flex justify-content-center pb-5'>
                 <div className='col-12 col-md-12 col-lg-4'>
                     <Card className='bg-gradient home-services-card p-5 mt-5'>
                         <h3 className='font-two text-white'>Web Design</h3>
