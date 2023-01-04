@@ -162,7 +162,7 @@ class Home extends Component {
                                                 </UncontrolledDropdown>
                                                 <NavItem>
                                                     <NavLink className='nav-link' to='/contact'>
-                                                    <span className='font-two clear-btn text-white px-4'>Request a quote</span>
+                                                    <span className='font-two clear-btn text-white px-4'>Get in touch<i class="fa-solid fa-message ml-2"></i></span>
                                                     </NavLink>
                                                 </NavItem>
                                             </Nav>
@@ -179,6 +179,9 @@ class Home extends Component {
                                 <a className="fa-brands fa-medium home-fa fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
                                 <a className="fa-brands fa-instagram home-fa fa-2xl text-white px-2" href="https://www.instagram.com/layerlabs.io"></a>
                                 <a className="fa-brands fa-github fa-2xl home-fa text-white px-2" href="https://github.com/TropicalXU"></a>
+                            </div>
+                            <div className='col-12'>
+                                <h6 className='font'>layerlabs.io@gmail.com</h6>
                             </div>
                         </div>
                     </div>

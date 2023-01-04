@@ -18,7 +18,7 @@ const Services = () => {
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
                         <Link to='/services/custom-package'>
-                            <Card className='package-card py-2'>
+                            <Card className='package-card pt-2'>
                                 <CardBody className='font-two'>
                                     <img src='/assets/images/idea.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='idea'/>
                                     <h2>Standard</h2>
@@ -31,6 +31,7 @@ const Services = () => {
                                     <h6><span className='fa fa-check mr-2'></span>Standard SEO integration.</h6>
                                     </div>
                                     <Link to='/services/custom-package' className='nav-link btn btn-black my-3 px-4'>More Detials<span className='fa fa-chevron-right ml-2'></span></Link>
+                                    <p className='font-two text-white pt-2'>Starts from $599</p>
                                 </CardBody>
                             </Card>
                         </Link>
@@ -48,7 +49,7 @@ const Services = () => {
                         exitTransform: 'scale(0.3) translateY(-20%)'
                     }}>
                         <Link to='/services/custom-plus-package'>
-                            <Card className='package-card py-2'>
+                            <Card className='package-card pt-2'>
                                 <CardBody className='font-two'>
                                     <img src='/assets/images/package.png' className='img-fluid text-white my-2' width='80px' height='80px' alt='package'/>
                                     <h2>Advanced</h2>
@@ -61,6 +62,7 @@ const Services = () => {
                                     <h6><span className='fa fa-check mr-2'></span>High level interactivity & animation.</h6>
                                     </div>
                                     <Link to='/services/custom-plus-package' className='nav-link btn btn-black my-3 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
+                                    <p className='font-two text-white pt-2'>Starts from $1099</p>
                                 </CardBody>
                             </Card>
                         </Link>
@@ -90,7 +92,8 @@ const Services = () => {
                                         <h6><span className='fa fa-check mr-2'></span>Advanced interactivity and animation. </h6>
                                         <h6><span className='fa fa-check mr-2'></span>Advanced SEO integration.</h6>
                                     </div>
-                                    <Link to='/services/business-plus-package' className='nav-link btn btn-black mt-3 mb-4 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
+                                    <Link to='/services/business-plus-package' className='nav-link btn btn-black mt-3 mb-3 px-4'>More Details<span className='fa fa-chevron-right ml-2'></span></Link>
+                                    <p className='font-two text-white pt-2'>Starts from $2499</p>
                                 </CardBody>
                             </Card>
                         </Link>
@@ -149,7 +152,7 @@ const Services = () => {
                     </div>
                     {/* rendering packages*/}
                     <div className='container'>
-                        <div className='row d-flex justify-content-center text-center py-5'>
+                        <div className='row d-flex justify-content-center text-center pt-5 pb-3'>
                             <RenderPackageOne />
                             <RenderPackageTwo />
                             <RenderPackageThree />

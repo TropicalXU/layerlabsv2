@@ -372,7 +372,7 @@ export class Header extends Component {
                                 </UncontrolledDropdown>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/contact'>
-                                       <span className='font-two btn-gradient px-4'>Request a quote</span>
+                                       <span className='font-two btn-gradient px-4'>Get in touch<i class="fa-solid fa-message ml-2"></i></span>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -442,7 +442,7 @@ export class HeaderDark extends Component {
                                 </UncontrolledDropdown>
                                 <NavItem>
                                     <NavLink className='nav-link' to='/contact'>
-                                       <span className='font-two clear-btn-dark px-4'>Request a quote</span>
+                                       <span className='font-two clear-btn-dark px-4'>Request a quote<i class="fa-solid fa-message ml-2"></i></span>
                                     </NavLink>
                                 </NavItem>
                             </Nav>

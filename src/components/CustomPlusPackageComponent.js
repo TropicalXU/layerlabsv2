@@ -60,6 +60,66 @@ const CustomPlusPackage = () => {
             </div>
         );
     }
+
+    const AdvancedPackageDetails = () => {
+        return (
+            <>
+                <div className='row'>
+                    <div className='col-12 col-lg-4'>
+                        <Card className='p-4 my-3'>
+                            <img src='/assets/images/web-page.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                            <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
+                                <li>Choose from 1-10 individual custom designed pages.</li>
+                            </ul>
+                        </Card>
+                    </div>
+                    <div className='col-12 col-lg-4'>
+                        <Card className='p-4 my-3'>
+                            <img src='/assets/images/packages-pages.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                            <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
+                                <li>Mobile first designed approach for the latest devices and screen sizes.</li>
+                            </ul>
+                        </Card>
+                    </div>
+                    <div className='col-12 col-lg-4'>
+                        <Card className='p-4 my-3'>
+                            <img src='/assets/images/wireframing1.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                            <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
+                                <li>A responsive web design to adjust to all screen sizes including mobile, tablet and large monitors.</li>
+                            </ul>
+                        </Card>
+                    </div>
+                </div>
+                <div className='row py-4'>
+                <div className='col-12 col-lg-4'>
+                    <Card className='p-4 my-3'>
+                        <img src='/assets/images/seo.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                        <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
+                            <li>In depth Search Engine Optimization improving the quality and quantity of website traffic to your website in search engines.</li>
+                        </ul>
+                    </Card>
+                </div>
+                <div className='col-12 col-lg-4'>
+                    <Card className='p-4 my-3'>
+                        <img src='/assets/images/protection.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                        <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
+                            <li>Including advanced website security to ensure the protection against unauthorized access and safeguarding user data.</li>
+                        </ul>
+                    </Card>
+                </div>
+                <div className='col-12 col-lg-4'>
+                    <Card className='p-4 my-3'>
+                        <img src='/assets/images/web-launch.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                        <ul className='list-unstyled text-center font-two grey-text-lite pt-3 pb-4'>
+                            <li>Managed website launch and standard testing to ensure a seemless experience.</li>
+                        </ul>
+                    </Card>
+                </div>
+            </div>
+        </>
+        );
+    }
+
     return (
         <>
             <HeaderDark />
@@ -78,10 +138,23 @@ const CustomPlusPackage = () => {
                             <RenderCardSix /> 
                         </div>
                     </div>
-                    <RenderPackageProcess />
                 </div>
-                <div className='container-fluid my-4'>
-                    <RenderContact />
+                <div className='container-fluid personal-business my-4 pt-5'>
+                    <div className='bkg-white py-5'>
+                        <div className='row'>
+                            <div className='col-12'>
+                                <h1 className='font-two grey-text-lite py-4'>Advanced Package Details</h1>
+                            </div>
+                        </div>
+                        <AdvancedPackageDetails />
+                    </div>
+                    <div className='mt-5 py-5'>
+                        <div className='container'>
+                            <div className='bkg-white'>
+                            <RenderContact />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
