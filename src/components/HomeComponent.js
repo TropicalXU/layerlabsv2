@@ -330,8 +330,8 @@ class Home extends Component {
                         </div>
                         <div className='container'>
                 <div className='row'>
-                            <div className='col-12 pb-3'>
-                                <h1 className='font-two text-center pt-5'><span className='bkg-white grey-text-lite'>Layerlabs services</span></h1>
+                            <div className='col-12 pt-5 pb-3'>
+                                <h1 className='font-two text-center pt-5'><span className='grey-text-lite'>Layerlabs services</span></h1>
                             </div>
                         </div>
                         <div className='col-12'>

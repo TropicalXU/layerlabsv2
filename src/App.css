@@ -220,9 +220,8 @@ p {
 .bkg-white {
   background-color: rgb(255, 255, 255);
   padding: 8px 42px 8px 42px;
-  border-radius: 50px;
-  border: none;
-  box-shadow: 6px 18px 18px rgba(227, 227, 227, 0.641);
+  border-radius: 15px;
+  box-shadow: 6px 18px 18px rgba(0, 0, 0, 0.063);
 }
 
 .bkg-dark {
