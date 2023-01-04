@@ -51,24 +51,24 @@ class Contact extends Component {
         return (
 
             <div className='container'>
-                <div className='row align-items-center contact-section py-5'>
+                <div className='row align-items-center contact-section py-4'>
                     <div className='col-12 col-md-12 col-lg-6 pb-5'>
                         <h1 className='font-two large-text-header-small text-white'>Interested in your own personal or business website?</h1>
                         <h2 className='font py-4 thin-text my-4'><span className=''><span className='gradient-text'>Contact for a quote.</span></span></h2>
                     </div>
                     <div className='col-12 col-md-12 col-lg-6'>
-                        <Card className='custom-card font-two'>
+                        <Card className='home-card font-two my-4'>
                             <CardBody>
-                            <div className='row pt-4'>
+                            <div className='row'>
                                 <div className='col-12 text-center'>
                                     <img src='/assets/images/contact-msg.png' className='messageImg' width='120' height='120' alt='cart' />
                                 </div>
                             </div>
-                                <Form className='p-4' onSubmit={handleOnSubmit}>
+                                <Form className='p-2' onSubmit={handleOnSubmit}>
                                     <FormGroup>
                                         <Label htmlFor='user_email'><span className='fa fa-envelope mr-2'></span>Email<span className='text-danger'> *</span></Label>
                                         <Input
-                                        className='contact-input'
+                                        className='contact-input p-4'
                                         type='email'
                                         id='user_email'
                                         innerRef={(input) => this.user_email = input}
@@ -80,7 +80,7 @@ class Contact extends Component {
                                     <FormGroup>
                                         <Label htmlFor='user_name'><span className='fa fa-user mr-2'></span>Full Name<span className='text-danger'> *</span></Label>
                                         <Input
-                                        className='contact-input'
+                                        className='contact-input p-4'
                                         type='text'
                                         id='user_name'
                                         innerRef={(input) => this.user_name = input}
@@ -101,7 +101,7 @@ class Contact extends Component {
                                         required
                                         />
                                     </FormGroup>
-                                    <Button type='submit' className='btn btn-black btn-block px-4'>Submit</Button>
+                                    <Button type='submit' className='btn btn-black btn-block px-4 mt-4'>Submit</Button>
                                 </Form>
                             </CardBody>
                         </Card>

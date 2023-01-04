@@ -563,12 +563,6 @@ p {
 }
 
 /* about page styles */
-/* .row-layerlabs {
-  background-image: url('/public/assets/images/layerlabs-bg.jpg');
-  background-size: cover;
-  height: 300px;
-} */
-
 .about-tag {
   border: 1px solid rgb(213, 213, 213);
   border-radius: 50px;
@@ -594,7 +588,7 @@ p {
 }
 
 .contact-input {
-  background-color: rgb(255, 255, 255);
+  background-color: #8d99ae23;
   border: none;
   border-radius: 15px;
   padding: 10px;
