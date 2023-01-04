@@ -178,10 +178,10 @@ export const RenderIncluded = () => {
 export const RenderPackageProcess = () => {
     return (
         <>
-            <h1 className='font-two'>The Process...</h1>
+            <h1 className='font-two large-text-header-small'>The Process...</h1>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <h6 className='thin-text'>PHASE 1</h6>
+                    <h5 className='thin-text grey-text-lite'>PHASE 1</h5>
                     <h2 className='font-two gradient-text-two'>Discovery</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Create a roadmap</li>
@@ -190,12 +190,12 @@ export const RenderPackageProcess = () => {
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/discovery.jpg' className='process-img img-fluid my-4' width='100%' alt='Phase 1' />
+                    <img src='/assets/images/discover.jpg' className='process-img img-fluid my-4' width='100%' alt='Phase 1' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
-                    <h6 className='thin-text'>PHASE 2</h6>
+                    <h5 className='thin-text grey-text-lite'>PHASE 2</h5>
                     <h2 className='font-two gradient-text'>Wireframing</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Identify the goal of the website</li>
@@ -205,12 +205,12 @@ export const RenderPackageProcess = () => {
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-1'>
-                    <img src='/assets/images/wireframe.jpg' className='process-img my-2' width='100%' height='300px' alt='phase 2' />
+                    <img src='/assets/images/wireframing.jpg' className='process-img my-2' width='100%' height='340px' alt='phase 2' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <h6 className='thin-text'>PHASE 3</h6>
+                    <h5 className='thin-text grey-text-lite'>PHASE 3</h5>
                     <h2 className='font-two gradient-text-two'>Design</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Creating a visual style</li>
@@ -219,12 +219,12 @@ export const RenderPackageProcess = () => {
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <img src='/assets/images/design.jpg' className='process-img img-fluid my-2' width='100%' alt='Phase 3' />
+                    <img src='/assets/images/web-design.jpg' className='process-img img-fluid my-2' width='100%' alt='Phase 3' />
                 </div>
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-2'>
-                    <h6 className='thin-text'>PHASE 4</h6>
+                    <h5 className='thin-text grey-text-lite'>PHASE 4</h5>
                     <h2 className='font-two gradient-text'>Development</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Building the framework</li>
@@ -233,12 +233,12 @@ export const RenderPackageProcess = () => {
                     </ul>
                 </div>
                 <div className='col-12 col-md-12 col-lg-6 order-lg-1'>
-                    <img src='/assets/images/development.jpg' className='process-img img-fluid my-2' width='100%' alt='Phase 4' /> 
+                    <img src='/assets/images/develop.jpg' className='process-img my-2' width='100%' height='340px' alt='Phase 4' /> 
                 </div> 
             </div>
             <div className='row py-5 my-4'>
                 <div className='col-12 col-md-12 col-lg-6'>
-                    <h6 className='thin-text'>PHASE 5</h6>
+                    <h5 className='thin-text grey-text-lite'>PHASE 5</h5>
                     <h2 className='font-two gradient-text-two'>Testing</h2>
                     <ul className='list-unstyled font-two py-4'>
                         <li><span className='fa fa-bolt mr-2'></span>Testing site performance</li>
@@ -257,12 +257,12 @@ export const RenderPackageProcess = () => {
 //CONTACT COMPONENT-------------------
 export const RenderContact = () => {
     return (
-        <div className='row dark-bg text-center py-5'>
+        <div className='row text-center py-5'>
             <div className='col-12 col-md-2'>
                 <img src='/assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail' />
             </div>
             <div className='col-12 col-md-8'>
-                <h2 className='font-two text-white py-5'>Let's create something together!</h2>
+                <h2 className='font-two dark-text py-5'>Let's create something together!</h2>
                 <Link to='/contact' className='btn btn-gradient font-two'>Get in touch <span className='fa fa-chevron-right ml-2'></span></Link>
             </div>
         </div>
@@ -301,13 +301,13 @@ export const RenderInstagram = () => {
 //SERVICES AD COMPONENT--------------------
 export const RenderServicesAd = () => {
     return (
-        <div className='row dark-bg text-center py-5'>
+        <div className='row text-center py-5'>
             <div className='col-12 col-md-2 align-self-center'>
                 <img src='/assets/images/package-box.png' width='200' height='200' alt='Box' />
             </div>
-            <div className='col-12 col-md-8'>
-                <h2 className='font-two text-white py-5'>Interested in your own personal or business website?</h2>
-                <h5 className='font-two text-white pb-5'>Check out our service packages.</h5>
+            <div className='col-12 col-md-8 dark-text'>
+                <h2 className='font-two py-5'>Interested in your own personal or business website?</h2>
+                <h5 className='font-two pb-5'>Check out our service packages.</h5>
                 <Link to='/services' className='btn btn-gradient font'>Services<span className='fa fa-chevron-right ml-2'></span></Link>
             </div>
         </div>

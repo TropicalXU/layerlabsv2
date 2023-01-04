@@ -149,8 +149,10 @@ class Discover extends Component {
                         </Stagger>
                     </div>
                     {/* rendering instagram plugin */}
-                    <div className='container-fluid'>
-                        <RenderServicesAd />
+                    <div className='container'>
+                        <div className='bkg-white'>
+                            <RenderServicesAd />
+                        </div>
                     </div>
                     <div className='container py-5'>
                         <RenderInstagram />

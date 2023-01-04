@@ -12,7 +12,7 @@ class Footer extends Component {
                         <div className='col-12 col-lg-4 py-5'>
                             <div className='row'>
                                 <img src='/assets/images/logo.png' alt='Logo' height='60' width='61' />
-                                <h4 className='navbrand px-3 pt-3'>Layerlabs</h4>
+                                <h4 className='font-two grey-text-lite px-3 pt-3'>Layerlabs</h4>
                             </div>
                         </div>
                         <div className='col-6 col-lg-2 pt-5'>
@@ -54,9 +54,9 @@ class Footer extends Component {
                     <div className='container-fluid'>
                         <hr></hr>
                     </div>
-                    <div className='row py-4  footer-bottom'>
+                    <div className='row py-4 footer-bottom'>
                         <div className='col-12 col-lg-8'>
-                            <p>© 2023 Layerlabs. All rights reserved.</p>
+                            <p className='grey-text-lite'>© 2023 Layerlabs. All rights reserved.</p>
                         </div>
                         <div className='col-6 col-md-2 col-lg-2'>
                             <Link className='link' to='/termsAndConditions'>Terms & Conditions</Link>

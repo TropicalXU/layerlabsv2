@@ -103,9 +103,9 @@ const Services = () => {
             return (
                 <>
                     <div className='col-12 col-sm-12 col-md-6 py-3'>
-                        <Card className='steps-card text-center'>
+                        <Card className='home-card text-center'>
                             <CardBody>
-                                <h1 className='font-two py-3'>Custom</h1>
+                                <h1 className='font-two dark-text py-3'>Custom</h1>
                                 <ul className='list-unstyled py-4'>
                                     <li><span className='fa fa-check mr-2'></span>Flexibility to choose your own design and functionality</li>
                                     <li className='py-3'><span className='fa fa-check mr-2'></span>Higher security built in</li>
@@ -116,9 +116,9 @@ const Services = () => {
                         </Card>
                     </div>
                     <div className='col-12 col-sm-12 col-md-6 py-3'>
-                        <Card className='steps-card text-center'>
+                        <Card className='home-card text-center'>
                             <CardBody>
-                                <h1 className='font-two py-3'>Template</h1>
+                                <h1 className='font-two dark-text py-3'>Template</h1>
                                 <ul className='list-unstyled py-4'>
                                     <li><span className='fa fa-circle-xmark mr-2'></span>Limited options for design & functionality</li>
                                     <li className='py-3'><span className='fa fa-circle-xmark mr-2'></span>Slower site speed</li>
@@ -155,31 +155,37 @@ const Services = () => {
                             <RenderPackageThree />
                         </div>
                     </div>
-                    <div className='container-fluid text-center py-2 pb-5 mt-5'>
+                    <div className='container text-center pb-5 mt-5'>
                         {/* rendering includes section imported from functionalComponent.js */}
                         <RenderIncluded />
+                    </div>
+                </div>
+                <div className='container-fluid'>
+                    <div className='container'>
                         <div className='row pt-5'>
                             <div className='col-12'>
-                                <h1 className='font-two text-center text-white py-5'>Custom Websites vs Template Websites</h1>
+                                <h1 className='font-two text-center dark-text py-5'>Custom Websites vs Template Websites</h1>
                             </div>
                         </div>
                         <div className='row pb-5'>
                             <RenderDifferences />
                         </div>
                     </div>
-                </div>
-                <div className='bkg-horizontal py-4'>
-
-                </div>
-                <div className='container-fluid row-grey'>
-                    <div className='container pt-5'>
-                        <RenderPackageProcess />
-                        {/* personal/business section */}
+                    <div className='personal-business mb-3'>
+                        <div className='container py-5'>
+                            <RenderPackageProcess />
+                            {/* personal/business section */}
+                            <div className='bkg-white my-4'>
+                            <RenderContact />
+                        </div>
+                        </div>
                     </div>
                     {/* importing render contact plugin*/}
-                    <div className='container-fluid pb-4'>
-                        <RenderContact />
-                    </div>
+                    {/* <div className='container mb-5'>
+                        <div className='bkg-white'>
+                            <RenderContact />
+                        </div>
+                    </div> */}
                 </div>
             </> 
   
