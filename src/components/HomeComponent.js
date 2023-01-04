@@ -173,7 +173,7 @@ class Home extends Component {
                             <div className='col-12'>
                                 <h1 className='font home-title'>Welcome to <span className='gradient-text'>Layerlabs.io</span></h1>
                                 <h3 className='home-header-text font my-3'>Step into the future of web <span className='gradient-text'>design</span>.</h3>
-                                <Link className='home-header-btn btn btn-black font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></Link>
+                                <Link className='home-header-btn btn clear-btn font-two px-4'to='/services'>Services<span className='fa fa-chevron-right ml-2'></span></Link>
                             </div>
                             <div className='col-12 pt-5'>
                                 <a className="fa-brands fa-medium home-fa fa-2xl text-white px-2" href="https://medium.com/@layerlabs.io"></a>
@@ -237,7 +237,7 @@ class Home extends Component {
                 </div>
                 {/* rendering home page cards */}
                 <div className='container mt-5 pb-5'>
-                    <h2 className='font-two'>Bring your visions to life with Layerlabs..</h2>
+                    <h2 className='font grey-text-lite large-text-header-small'>Bring your visions to life with <span className='gradient-text'>Layerlabs..</span></h2>
                     <div className='row py-5'>
                         <div className='col-12 col-md-12 col-lg-4 py-3'>
                             {/* using react animation components */}
@@ -265,12 +265,7 @@ class Home extends Component {
                             </FadeTransform>
                         </div>
                     </div>
-                    <div className='row'>
-                        <div className='col-12'>
-                            <h1 className='font-two pt-5'>Layerlabs services</h1>
-                        </div>
-                    </div>
-                    <RenderServices />
+                    
                 </div>
                 {/* rendering homepage carousel */}
                 {/* <div className='container-fluid'>
@@ -333,7 +328,16 @@ class Home extends Component {
                             <img src='/assets/images/business-app.png' className='img-fluid custom-img move-img my-4' width='290px' height='420px' alt='Personal website'/>
                             </div>
                         </div>
-                
+                        <div className='container'>
+                <div className='row'>
+                            <div className='col-12 pb-3'>
+                                <h1 className='font-two text-center pt-5'><span className='bkg-white grey-text-lite'>Layerlabs services</span></h1>
+                            </div>
+                        </div>
+                        <div className='col-12'>
+                            <RenderServices />
+                        </div>
+                </div>
                 </div>
                 {/* <div className='container-fluid py-4'>
                 <RenderServicesAd />

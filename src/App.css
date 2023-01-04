@@ -146,6 +146,10 @@ p {
   color: #6c757d;
 }
 
+.grey-text-lite {
+  color: #8d99ae;
+}
+
 .large-text {
   font-size: 18px;
 }
@@ -156,6 +160,10 @@ p {
 
 .large-text-header-2 {
   font-size: 75px;
+}
+
+.large-text-header-small {
+  font-size: 45px;
 }
 
 .large-text-two {
@@ -209,6 +217,14 @@ p {
   box-shadow: 0 0 10px rgb(190, 190, 190);
 }
 
+.bkg-white {
+  background-color: rgb(255, 255, 255);
+  padding: 8px 42px 8px 42px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 6px 18px 18px rgba(227, 227, 227, 0.641);
+}
+
 .bkg-dark {
   background-color: #0a2540;
 }
@@ -249,6 +265,7 @@ p {
   padding: 8px;
   border: none;
   border-radius: 25px;
+  box-shadow: 6px 16px 16px rgba(0, 0, 0, 0.029);
 }
 
 .clear-btn-dark {
