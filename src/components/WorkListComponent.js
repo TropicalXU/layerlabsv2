@@ -55,8 +55,10 @@ const WorkDetail = (props) => {
                     </div>
                 </div>
                 {/* importing render services ad plugin */}
-                <div className='container-fluid pt-5'>
-                    <RenderServicesAd />
+                <div className='container pt-5 mb-5'>
+                    <div className='bkg-white'>
+                        <RenderServicesAd />
+                    </div>
                 </div>
             </div>
         </>
