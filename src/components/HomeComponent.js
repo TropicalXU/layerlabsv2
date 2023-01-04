@@ -285,9 +285,9 @@ class Home extends Component {
                     {/* rendering services section */}
 
                     <div className='row header'>
-                        <div className='col-12 col-md-6 p-5'>
+                        <div className='col-12 col-md-6 pt-5 pl-5 pr-5'>
                                 <h2 className='font-two large-text-header-2 gradient-text pt-3'>Interested in a personal website?</h2>
-                                <p className='py-4'>
+                                <p className='pt-4'>
                                     Showcase your work online with a Personal website just for you. What is a personal website? Well essentialy 
                                     it's a unique way to showcase your work and provide professional information about you. When deciding on building 
                                     a personal website you must ask yourself why this is important to you, maybe you already have the answer. By finding 
@@ -307,9 +307,9 @@ class Home extends Component {
                             </div>
                         </div>                 
                         <div className='row header'>
-                            <div className='col-12 col-md-6 order-md-2 p-5'>
+                            <div className='col-12 col-md-6 order-md-2 pt-5 pl-5 pr-5'>
                                 <h2 className='font-two large-text-header-2 gradient-text'>Interested in a business website?</h2>
-                                <p className='py-4'>
+                                <p className='pt-4'>
                                     A website for your business can act as a portal to your customers creating 24/7 on demand awareness to your brand and products. 
                                     It serves as a window in which you can showcase your marketable skills and connect with a targeted audience. When factoring in the costs, 
                                     a website may seem like a luxury that may not seem neccessary. However investing in a website for your business can go a long way in setting 
@@ -328,8 +328,7 @@ class Home extends Component {
                             <img src='/assets/images/business-app.png' className='img-fluid custom-img move-img my-4' width='290px' height='420px' alt='Personal website'/>
                             </div>
                         </div>
-                        <div className='container'>
-                <div className='row'>
+                        <div className='row'>
                             <div className='col-12 pt-5 pb-3'>
                                 <h1 className='font-two text-center pt-5'><span className='grey-text-lite'>Layerlabs services</span></h1>
                             </div>
@@ -337,7 +336,6 @@ class Home extends Component {
                         <div className='col-12'>
                             <RenderServices />
                         </div>
-                </div>
                 </div>
                 {/* <div className='container-fluid py-4'>
                 <RenderServicesAd />
