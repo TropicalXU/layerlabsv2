@@ -61,6 +61,10 @@
     width: 150px;
     height: 150px;
   }
+  .contact .img-fluid {
+    width: 110px;
+    height: 110px;
+  }
   
 }
 

@@ -11,10 +11,10 @@ const WorkDetail = (props) => {
         <>
             <HeaderDark />
             {/* work detail page header image */}
-            <div className='bkg-dark mb-3'>
+            <div className='bkg-dark header mb-3 py-5'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font text-white work-header'>{props.project.title}<span className='gradient-text'> .</span></h1>
+                        <h1 className='font text-white large-text-header-2'>{props.project.title}<span className='gradient-text'> .</span></h1>
                     </div>
                 </div>
             </div>

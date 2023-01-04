@@ -257,7 +257,7 @@ export const RenderPackageProcess = () => {
 //CONTACT COMPONENT-------------------
 export const RenderContact = () => {
     return (
-        <div className='row text-center py-5'>
+        <div className='row contact text-center py-5'>
             <div className='col-12 col-md-2'>
                 <img src='/assets/images/email.png' className='img-fluid' width='180' height='180' alt='Mail' />
             </div>
@@ -301,7 +301,7 @@ export const RenderInstagram = () => {
 //SERVICES AD COMPONENT--------------------
 export const RenderServicesAd = () => {
     return (
-        <div className='row text-center py-5'>
+        <div className='row contact text-center py-5'>
             <div className='col-12 col-md-2 align-self-center'>
                 <img src='/assets/images/package-box.png' width='200' height='200' alt='Box' />
             </div>

@@ -61,10 +61,10 @@ const Projects = (props) => {
         <>  
             <HeaderDark />
             {/* projexts header image */}
-            <div className='bkg-dark py-5'>
+            <div className='bkg-dark header py-5'>
                 <div className='row text-center py-5'>
                     <div className='col-12'>
-                        <h1 className='font work-header'><span className='gradient-text'>Layerlabs</span> <span className='text-white'>Websites<span className='gradient-text'> .</span></span></h1>
+                        <h1 className='font large-text-header-2'><span className='gradient-text'>Layerlabs</span> <span className='text-white'>Websites<span className='gradient-text'> .</span></span></h1>
                     </div>
                 </div>
             </div>
