@@ -111,7 +111,7 @@ const CustomPackage = () => {
                     <Card className='p-4 my-3'>
                         <img src='/assets/images/web-launch.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                         <ul className='list-unstyled text-center font-two grey-text-lite pt-3 pb-4'>
-                            <li>Managed website launch and standard testing to ensure a seemless experience.</li>
+                            <li>Managed website launch and advanced testing to ensure a seemless experience.</li>
                         </ul>
                     </Card>
                 </div>

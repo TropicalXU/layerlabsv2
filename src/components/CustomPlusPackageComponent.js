@@ -139,7 +139,7 @@ const CustomPlusPackage = () => {
                         </div>
                     </div>
                 </div>
-                <div className='personal-business my-4 pt-5'>
+                <div className='container-fluid personal-business my-4 pt-5'>
                     <div className='bkg-white py-5'>
                         <div className='row'>
                             <div className='col-12'>
