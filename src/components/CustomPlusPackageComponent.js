@@ -140,12 +140,12 @@ const CustomPlusPackage = () => {
                     </div>
                 </div>
                 <div className='container-fluid personal-business my-4 pt-5'>
-                    <div className='bkg-white py-5'>
-                        <div className='row'>
-                            <div className='col-12'>
-                                <h1 className='font-two grey-text-lite py-4'>Advanced Package Details</h1>
-                            </div>
+                    <div className='row'>
+                        <div className='col-12 text-center pb-4'>
+                            <h1 className='font-two grey-text-lite py-4'>Advanced Package Details</h1>
                         </div>
+                    </div>
+                    <div className='bkg-white py-5'>
                         <AdvancedPackageDetails />
                     </div>
                     <div className='mt-5 py-5'>
