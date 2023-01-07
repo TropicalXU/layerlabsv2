@@ -339,7 +339,7 @@ class Home extends Component {
                                     </ul>
                                 </div>
                                 <div className='col-12 col-md-6 text-center align-self-center'>
-                                    <img src='/assets/images/business-app.png' className='img-fluid custom-img move-img my-4' width='290px' height='420px' alt='Personal website'/>
+                                    <img src='/assets/images/business-app.png' className='img-fluid custom-img img-grey move-img my-4' width='290px' height='420px' alt='Personal website'/>
                                 </div>
                             </div>
                         </div>
