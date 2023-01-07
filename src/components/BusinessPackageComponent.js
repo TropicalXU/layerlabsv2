@@ -96,8 +96,8 @@ const BusinessPackage = () => {
                 <div className='row packages py-4'>
                 <div className='col-12 col-lg-4'>
                     <div className='p-4 my-3'>
-                    <h3 className='font-two text-center gradient-text'>Integrated Database</h3>
-                        <img src='/assets/images/database.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                    <h3 className='font-two text-center gradient-text'>Database Integration</h3>
+                        <img src='/assets/images/database.jpg' className='custom-img img-hover my-4' width='100%' height='340px' alt='Phase 1' />
                         <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
                             <li>Scalable data storage and managment including ongoing support for all business needs.</li>
                         </ul>
@@ -117,7 +117,7 @@ const BusinessPackage = () => {
                         <h3 className='font-two text-center gradient-text'>Integrated Payments</h3>
                         <img src='/assets/images/online-payment.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                         <ul className='list-unstyled text-center font-two grey-text-lite pt-3 pb-4'>
-                            <li>Integrated payment features and functionality suited for all your business needs.</li>
+                            <li>Integrated payment features and functionality suited for your business to recieve secure payments.</li>
                         </ul>
                     </div>
                 </div>
