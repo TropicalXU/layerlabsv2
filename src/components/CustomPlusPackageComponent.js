@@ -67,7 +67,7 @@ const CustomPlusPackage = () => {
                 <div className='row packages'>
                     <div className='col-12 col-lg-4'>
                         <Card className='p-4 my-3'>
-                            <img src='/assets/images/web-page.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                            <img src='/assets/images/web-page.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                             <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
                                 <li>Choose from 1-10 individual custom designed pages.</li>
                             </ul>
@@ -75,7 +75,7 @@ const CustomPlusPackage = () => {
                     </div>
                     <div className='col-12 col-lg-4'>
                         <Card className='p-4 my-3'>
-                            <img src='/assets/images/packages-pages.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                            <img src='/assets/images/packages-pages.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                             <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
                                 <li>Mobile first designed approach for the latest devices and screen sizes.</li>
                             </ul>
@@ -83,7 +83,7 @@ const CustomPlusPackage = () => {
                     </div>
                     <div className='col-12 col-lg-4'>
                         <Card className='p-4 my-3'>
-                            <img src='/assets/images/wireframing1.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                            <img src='/assets/images/wireframing1.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                             <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
                                 <li>A responsive web design to adjust to all screen sizes including mobile, tablet and large monitors.</li>
                             </ul>
@@ -93,7 +93,7 @@ const CustomPlusPackage = () => {
                 <div className='row packages py-4'>
                 <div className='col-12 col-lg-4'>
                     <Card className='p-4 my-3'>
-                        <img src='/assets/images/seo.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                        <img src='/assets/images/seo.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                         <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
                             <li>In depth Search Engine Optimization improving the quality and quantity of website traffic to your website in search engines.</li>
                         </ul>
@@ -101,7 +101,7 @@ const CustomPlusPackage = () => {
                 </div>
                 <div className='col-12 col-lg-4'>
                     <Card className='p-4 my-3'>
-                        <img src='/assets/images/protection.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                        <img src='/assets/images/protection.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                         <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
                             <li>Including advanced website security to ensure the protection against unauthorized access and safeguarding user data.</li>
                         </ul>
@@ -109,7 +109,7 @@ const CustomPlusPackage = () => {
                 </div>
                 <div className='col-12 col-lg-4'>
                     <Card className='p-4 my-3'>
-                        <img src='/assets/images/web-launch.jpg' className='custom-img img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
+                        <img src='/assets/images/web-launch.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                         <ul className='list-unstyled text-center font-two grey-text-lite pt-3 pb-4'>
                             <li>Managed website launch and standard testing to ensure a seemless experience.</li>
                         </ul>
