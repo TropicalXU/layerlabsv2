@@ -73,7 +73,7 @@ class About extends Component {
                                                 </UncontrolledDropdown>
                                                 <NavItem>
                                                     <NavLink className='nav-link' to='/contact'>
-                                                    <span className='font-two clear-btn text-white px-4'>Request a quote</span>
+                                                    <span className='font-two clear-btn text-white px-4'>Get in touch<i class="fa-solid fa-message ml-2"></i></span>
                                                     </NavLink>
                                                 </NavItem>
                                             </Nav>
