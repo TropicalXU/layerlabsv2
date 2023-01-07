@@ -97,7 +97,7 @@ const BusinessPackage = () => {
                 <div className='col-12 col-lg-4'>
                     <div className='p-4 my-3'>
                     <h3 className='font-two text-center gradient-text'>Integrated Database</h3>
-                        <img src='/assets/images/database.jpg' className='custom-img img-hover my-4' width='100%' height='250px' alt='Phase 1' />
+                        <img src='/assets/images/database.jpg' className='custom-img img-hover img-fluid my-4' width='100%' height='340px' alt='Phase 1' />
                         <ul className='list-unstyled text-center font-two grey-text-lite pt-3'>
                             <li>Scalable data storage and managment including ongoing support for all business needs.</li>
                         </ul>
