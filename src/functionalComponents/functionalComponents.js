@@ -280,13 +280,13 @@ export const RenderInstagram = () => {
             </div>
             <div className='row'>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/insta1.png' className='custom-img my-4' width='100%' height='470px' alt='instagram' />
+                    <img src='/assets/images/insta1.png' className='custom-img img-grey my-4' width='100%' height='470px' alt='instagram' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/insta2.png' className='custom-img my-4' width='100%' height='470px' alt='instagram' />
+                    <img src='/assets/images/insta2.png' className='custom-img img-grey my-4' width='100%' height='470px' alt='instagram' />
                 </div>
                 <div className='col-12 col-md-4'>
-                    <img src='/assets/images/business-app.png' className='custom-img my-4' width='100%' height='470px' alt='instagram' />
+                    <img src='/assets/images/business-app.png' className='custom-img img-grey my-4' width='100%' height='470px' alt='instagram' />
                 </div>
             </div>
             <div className='row pt-5 font-two'>
